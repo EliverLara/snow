@@ -6,3 +6,4 @@ node_modules/
 *.css.map
 
 gnome-shell/
+_gnome-shell/
