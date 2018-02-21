@@ -5,5 +5,4 @@ node_modules/
 .sass-cache/
 *.css.map
 
-gnome-shell/
 _gnome-shell/
