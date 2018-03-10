@@ -10,7 +10,6 @@ headerbar {
 
   color: $headerbar_fg_color;
   border-radius: 0;
-  -GtkPaned-handle-size: 0;
 
   &:backdrop {
     border-color: $backdrop_borders_color;
@@ -100,7 +99,7 @@ headerbar {
                                (destructive-action, $destructive_color) {
       &.#{$b_type} {
         font-weight: bold;
-        min-height: 24px;
+        min-height: 14px;
         margin-top: 5px;
         margin-bottom: 5px;
         border-radius: 3px;

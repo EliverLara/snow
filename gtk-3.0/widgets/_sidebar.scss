@@ -32,7 +32,7 @@
   }
 
   list { 
-    background-color: $base_color;  
+    background-color: darken($base_color, 3%);  
     @if $variant=='light' {
     box-shadow: -10px 0px 12px rgba(162, 162, 165, 0.21) inset,
                 10px -7px 12px $base_color inset,

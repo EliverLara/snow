@@ -254,7 +254,7 @@
 
   background: if( $variant == 'light', 
                       linear-gradient(to bottom, $base_color, $bg_color),
-                      linear-gradient(to bottom, lighten($base_color, 12%), darken($bg_color, 2%))
+                      linear-gradient(to bottom, lighten($base_color, 12%), darken($base_color, 1%))
                   );
 }
 
