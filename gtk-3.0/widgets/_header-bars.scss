@@ -6,11 +6,8 @@ headerbar {
   padding: 0 13px;
   min-height: 34px;
   background: if($variant == 'light', linear-gradient(to bottom, #EAEAEA, #DBDBDB) , mix($base_color, darken($headerbar_color, 8%), 30%));
-  
-
   color: $headerbar_fg_color;
   border-radius: 0;
-
   &:backdrop {
     border-color: $backdrop_borders_color;
    // background-image: none;
@@ -102,8 +99,9 @@ headerbar {
         min-height: 14px;
         margin-top: 5px;
         margin-bottom: 5px;
-        border-radius: 3px;
+        border-radius: 4px;
         @include button(normal, $b_color, white);
+        box-shadow: none;
 
         &:hover { @include button(hover, $b_color, white); }
 
