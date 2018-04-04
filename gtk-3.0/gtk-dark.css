@@ -2333,8 +2333,7 @@ headerbar {
   min-height: 34px;
   background: #0c0e14;
   color: #C3C7D1;
-  border-radius: 0;
-  -GtkPaned-handle-size: 0; }
+  border-radius: 0; }
   .titlebar:backdrop,
   headerbar:backdrop {
     border-color: rgba(91, 93, 102, 0.19);
@@ -2355,7 +2354,7 @@ headerbar {
   .titlebar button,
   headerbar button {
     color: #C3C7D1;
-    border-radius: 0;
+    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid rgba(238, 238, 238, 0.1);
@@ -2427,12 +2426,13 @@ headerbar {
       min-height: 24px;
       margin-top: 5px;
       margin-bottom: 5px;
-      border-radius: 3px;
+      border-radius: 4px;
       font-weight: bold;
       color: white;
       background-color: #181b28;
       text-shadow: none;
-      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: none; }
       .titlebar button.suggested-action:hover,
       headerbar button.suggested-action:hover {
         color: white;
@@ -2476,12 +2476,13 @@ headerbar {
       min-height: 24px;
       margin-top: 5px;
       margin-bottom: 5px;
-      border-radius: 3px;
+      border-radius: 4px;
       font-weight: bold;
       color: white;
       background-color: #181b28;
       text-shadow: none;
-      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: none; }
       .titlebar button.destructive-action:hover,
       headerbar button.destructive-action:hover {
         color: white;
