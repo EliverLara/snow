@@ -105,5 +105,5 @@ $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdro
 
 $scale_bg: if($variant == 'light', transparentize(black,0.86) ,transparentize(white,0.86));
 $scale_disabled_bg: if($variant == 'light', transparentize(black, 0.94) ,transparentize(white, 0.94));
-$suggested_bg_color: linear-gradient(to right, #0acffe 0%, #495aff 100%);
-$destructive_bg_color: linear-gradient(to right, #ee0979, #ff6a00);
+$suggested_bg_color: linear-gradient(to right, #11998e 0%, #38ef7d 100%);
+$destructive_bg_color: linear-gradient(to right, #bc4e9c, #f80759);
