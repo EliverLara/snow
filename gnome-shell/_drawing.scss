@@ -149,7 +149,7 @@
   //
 
     color: $fg_color;
-    @include gradient(#f8f8f8, #eeeeee);
+    @include gradient();
     box-shadow: none;
     border: 1px solid $borders_color;
     text-shadow: 0 1px black;
@@ -167,7 +167,7 @@
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid  transparentize($selected_bg_color, 0.5);
-    background: mix(#f8f8f8, #EEEEEE, 20%);
+    background: mix(#262626, #393939, 20%);
   }
 
   @else if $t==hover {
@@ -178,7 +178,7 @@
                             lighten($osd_bg_color,10%));
 
     color: $selected_bg_color;
-    @include gradient(#f8f8f8, #eeeeee);
+    @include gradient();
     box-shadow: none;
    // border: none;
     text-shadow: 0 1px black;
@@ -230,7 +230,7 @@
   }
 }
 
-@mixin gradient($c1:#f8f8f8, $c2:rgb(223, 223, 223), $direction:vertical){
+@mixin gradient($c1: lighten(#393939, 12%), $c2:darken(#393939, 1%), $direction:vertical){
   background-gradient-start: $c1;
   background-gradient-end: $c2;
   background-gradient-direction: $direction;
