@@ -285,7 +285,7 @@ StScrollBar {
     border-left: none; }
     .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus {
       border-left: none;
-      background: #bc4e9c; }
+      background: #f80759; }
 
 .end-session-dialog-list {
   padding-top: 20px; }
@@ -425,7 +425,7 @@ StScrollBar {
   padding-bottom: 8px; }
 
 .hidden {
-  color: transparent; }
+  color: rgba(0, 0, 0, 0); }
 
 .prompt-dialog-null-label {
   font-size: 10pt;
@@ -637,7 +637,7 @@ StScrollBar {
   background: rgba(68, 71, 90, 0.4); }
 
 .switcher-arrow {
-  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
   color: rgba(248, 248, 248, 0.8); }
   .switcher-arrow:highlighted {
     color: #f8f8f8; }
@@ -1059,17 +1059,25 @@ StScrollBar {
   border-radius: 32px;
   /* wish we could do 50% */
   border: 1px solid rgba(76, 76, 76, 0.93);
-  background: transparent;
-  padding: 13px; }
+  padding: 13px;
+  background-gradient-start: #11998e;
+  background-gradient-end: #38ef7d;
+  background-gradient-direction: horizontal; }
   .system-menu-action:hover, .system-menu-action:focus {
-    border: 1px solid #00c870;
-    color: #00c870;
-    background: transparent; }
+    opacity: 0.5;
+    background: #38ef7d; }
   .system-menu-action:active {
     background-color: #009553;
     color: #fefefe; }
   .system-menu-action > StIcon {
     icon-size: 16px; }
+  .system-menu-action:last-child {
+    background-gradient-start: #bc4e9c;
+    background-gradient-end: #f80759;
+    background-gradient-direction: horizontal; }
+    .system-menu-action:last-child:hover, .system-menu-action:last-child:focus {
+      opacity: 0.5;
+      background: #f80759; }
 
 .ripple-box {
   width: 52px;

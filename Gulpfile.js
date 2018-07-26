@@ -9,18 +9,20 @@ gulp.task('styles', function() {
         .pipe(exec(' gsettings set org.gnome.desktop.interface gtk-theme "Snow"'))
 });
 
-gulp.task('shell-style', function() {
+gulp.task('shell-style', function(done) {
     gulp.src('gnome-shell/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gnome-shell/'))
         .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Snow"'))
+
+    done();
 });
 
 //Watch task
 gulp.task('default',function() {
-    gulp.watch('gtk-3.0/**/*.scss',['styles']);
+    gulp.watch('gtk-3.0/**/*.scss', gulp.series('styles'));
 });
 
 gulp.task('shell',function() {
-    gulp.watch('gnome-shell/*.scss',['shell-style']);
+    gulp.watch('gnome-shell/*.scss', gulp.series('shell-style'));
 });
