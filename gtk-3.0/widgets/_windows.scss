@@ -41,7 +41,8 @@ decoration {
 
   .csd.popup & {
     border-radius: 0;
-    box-shadow:0 4px 8px transparentize(rgb(122, 122, 122), 0.2);
+    box-shadow:0 4px 8px $menu_shadow_color;
+    border: 1px solid $borders_color;
   }
 
   tooltip.csd & {

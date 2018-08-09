@@ -963,24 +963,18 @@ button:backdrop {
 button {
   -gtk-icon-shadow: none; }
 
-.stack-switcher >
-button.needs-attention > label,
-.stack-switcher >
-button.needs-attention > image, stacksidebar row.needs-attention > label {
+.stack-switcher > button.needs-attention > label,
+.stack-switcher > button.needs-attention > image, stacksidebar row.needs-attention > label {
   animation: needs_attention 150ms ease-in;
   background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#495aff), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(rgba(255, 255, 255, 0.769231)), to(transparent));
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
   background-position: right 3px, right 4px; }
-  .stack-switcher >
-  button.needs-attention > label:backdrop,
-  .stack-switcher >
-  button.needs-attention > image:backdrop, stacksidebar row.needs-attention > label:backdrop {
+  .stack-switcher > button.needs-attention > label:backdrop,
+  .stack-switcher > button.needs-attention > image:backdrop, stacksidebar row.needs-attention > label:backdrop {
     background-size: 6px 6px, 0 0; }
-  .stack-switcher >
-  button.needs-attention > label:dir(rtl),
-  .stack-switcher >
-  button.needs-attention > image:dir(rtl), stacksidebar row.needs-attention > label:dir(rtl) {
+  .stack-switcher > button.needs-attention > label:dir(rtl),
+  .stack-switcher > button.needs-attention > image:dir(rtl), stacksidebar row.needs-attention > label:dir(rtl) {
     background-position: left 3px, left 4px; }
 
 toolbar button:hover {
@@ -1101,32 +1095,28 @@ popover.background radiobutton,
   popover.background radiobutton:hover,
   .menuitem.button.flat:hover {
     background-color: #e1e1e1; }
-  modelbutton.flat check:last-child, popover.background checkbutton check:last-child,
-  popover.background radiobutton check:last-child,
-  modelbutton.flat radio:last-child, popover.background checkbutton radio:last-child,
+  modelbutton.flat check:last-child, popover.background checkbutton check:last-child, popover.background radiobutton check:last-child,
+  modelbutton.flat radio:last-child,
+  popover.background checkbutton radio:last-child,
   popover.background radiobutton radio:last-child,
   .menuitem.button.flat check:last-child,
   .menuitem.button.flat radio:last-child {
     margin-left: 8px; }
-  modelbutton.flat check:first-child, popover.background checkbutton check:first-child,
-  popover.background radiobutton check:first-child,
-  modelbutton.flat radio:first-child, popover.background checkbutton radio:first-child,
+  modelbutton.flat check:first-child, popover.background checkbutton check:first-child, popover.background radiobutton check:first-child,
+  modelbutton.flat radio:first-child,
+  popover.background checkbutton radio:first-child,
   popover.background radiobutton radio:first-child,
   .menuitem.button.flat check:first-child,
   .menuitem.button.flat radio:first-child {
     margin-right: 8px; }
 
-modelbutton.flat arrow, popover.background checkbutton arrow,
-popover.background radiobutton arrow {
+modelbutton.flat arrow, popover.background checkbutton arrow, popover.background radiobutton arrow {
   background: none; }
-  modelbutton.flat arrow:hover, popover.background checkbutton arrow:hover,
-  popover.background radiobutton arrow:hover {
+  modelbutton.flat arrow:hover, popover.background checkbutton arrow:hover, popover.background radiobutton arrow:hover {
     background: none; }
-  modelbutton.flat arrow.left, popover.background checkbutton arrow.left,
-  popover.background radiobutton arrow.left {
+  modelbutton.flat arrow.left, popover.background checkbutton arrow.left, popover.background radiobutton arrow.left {
     -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
-  modelbutton.flat arrow.right, popover.background checkbutton arrow.right,
-  popover.background radiobutton arrow.right {
+  modelbutton.flat arrow.right, popover.background checkbutton arrow.right, popover.background radiobutton arrow.right {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
 button.color {
@@ -1903,14 +1893,11 @@ entry progress {
 
 .linked:not(.vertical) > spinbutton:focus:not(.vertical) + spinbutton:not(.vertical),
 .linked:not(.vertical) > spinbutton:focus:not(.vertical) + button,
-.linked:not(.vertical) > spinbutton:focus:not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) >
-entry:focus + spinbutton:not(.vertical),
+.linked:not(.vertical) > spinbutton:focus:not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > entry:focus + spinbutton:not(.vertical),
 .linked:not(.vertical) >
 entry:focus + button,
 .linked:not(.vertical) >
-entry:focus + combobox > box > button.combo,
-.linked:not(.vertical) > spinbutton:focus:not(.vertical) +
-entry, .linked:not(.vertical) >
+entry:focus + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:focus:not(.vertical) + entry, .linked:not(.vertical) >
 entry:focus +
 entry {
   border-left-color: #495aff; }
@@ -1921,14 +1908,11 @@ entry:focus {
 
 .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + spinbutton:not(.vertical),
 .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + button,
-.linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) >
-entry:drop(active) + spinbutton:not(.vertical),
+.linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > entry:drop(active) + spinbutton:not(.vertical),
 .linked:not(.vertical) >
 entry:drop(active) + button,
 .linked:not(.vertical) >
-entry:drop(active) + combobox > box > button.combo,
-.linked:not(.vertical) > spinbutton:drop(active):not(.vertical) +
-entry, .linked:not(.vertical) >
+entry:drop(active) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + entry, .linked:not(.vertical) >
 entry:drop(active) +
 entry {
   border-left-color: #4e9a06; }
@@ -1936,35 +1920,30 @@ entry {
 .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled),
 .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):not(.vertical), .linked.vertical >
 entry:not(:disabled) + entry:not(:disabled),
-.linked.vertical >
-entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical) {
+.linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical) {
   border-top-color: rgba(241, 241, 241, 0.739);
   background-image: linear-gradient(to bottom, #f8f8f8, #f8f8f8); }
   .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled):backdrop,
   .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):backdrop:not(.vertical), .linked.vertical >
   entry:not(:disabled) + entry:not(:disabled):backdrop,
-  .linked.vertical >
-  entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical) {
+  .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical) {
     border-top-color: rgba(240, 240, 240, 0.7651);
     background-image: linear-gradient(to bottom, whitesmoke, whitesmoke); }
 
 .linked.vertical > spinbutton:disabled:not(.vertical) + spinbutton:disabled:not(.vertical),
-.linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, .linked.vertical >
-entry:disabled + spinbutton:disabled:not(.vertical),
+.linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, .linked.vertical > entry:disabled + spinbutton:disabled:not(.vertical),
 .linked.vertical >
 entry:disabled + entry:disabled {
   border-top-color: rgba(241, 241, 241, 0.739); }
 
 .linked.vertical > spinbutton:not(.vertical) + spinbutton:focus:not(:only-child):not(.vertical),
-.linked.vertical > spinbutton:not(.vertical) + entry:focus:not(:only-child), .linked.vertical >
-entry + spinbutton:focus:not(:only-child):not(.vertical),
+.linked.vertical > spinbutton:not(.vertical) + entry:focus:not(:only-child), .linked.vertical > entry + spinbutton:focus:not(:only-child):not(.vertical),
 .linked.vertical >
 entry + entry:focus:not(:only-child) {
   border-top-color: #495aff; }
 
 .linked.vertical > spinbutton:not(.vertical) + spinbutton:drop(active):not(:only-child):not(.vertical),
-.linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), .linked.vertical >
-entry + spinbutton:drop(active):not(:only-child):not(.vertical),
+.linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), .linked.vertical > entry + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical >
 entry + entry:drop(active):not(:only-child) {
   border-top-color: #4e9a06; }
@@ -1972,8 +1951,7 @@ entry + entry:drop(active):not(:only-child) {
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + entry,
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + button,
-.linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical >
-entry:focus:not(:only-child) + spinbutton:not(.vertical),
+.linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical > entry:focus:not(:only-child) + spinbutton:not(.vertical),
 .linked.vertical >
 entry:focus:not(:only-child) + entry,
 .linked.vertical >
@@ -1985,8 +1963,7 @@ entry:focus:not(:only-child) + combobox > box > button.combo {
 .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + spinbutton:not(.vertical),
 .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + entry,
 .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + button,
-.linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical >
-entry:drop(active):not(:only-child) + spinbutton:not(.vertical),
+.linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical > entry:drop(active):not(:only-child) + spinbutton:not(.vertical),
 .linked.vertical >
 entry:drop(active):not(:only-child) + entry,
 .linked.vertical >
@@ -2069,7 +2046,7 @@ scrolledwindow viewport.frame {
   border-style: none; }
 
 scrolledwindow overshoot.top {
-  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(rgba(0, 0, 0, 0.13)), to(transparent)), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
+  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -2086,7 +2063,7 @@ scrolledwindow overshoot.top {
     box-shadow: none; }
 
 scrolledwindow overshoot.bottom {
-  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(rgba(0, 0, 0, 0.13)), to(transparent)), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
+  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0))), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -2103,7 +2080,7 @@ scrolledwindow overshoot.bottom {
     box-shadow: none; }
 
 scrolledwindow overshoot.left {
-  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(rgba(0, 0, 0, 0.13)), to(transparent)), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
+  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0))), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: left center;
@@ -2120,7 +2097,7 @@ scrolledwindow overshoot.left {
     box-shadow: none; }
 
 scrolledwindow overshoot.right {
-  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(rgba(0, 0, 0, 0.13)), to(transparent)), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
+  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0))), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(49, 54, 61, 0.07)), to(rgba(49, 54, 61, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: right center;
@@ -2355,10 +2332,10 @@ headerbar {
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px; }
-  .titlebar entry,
+  .titlebar:not(headerbar) entry, .titlebar entry,
   headerbar entry {
     min-height: 24px; }
-  .titlebar button,
+  .titlebar:not(headerbar) button, .titlebar button,
   headerbar button {
     color: #31363D;
     border-radius: 4px;
@@ -2532,7 +2509,8 @@ headerbar {
       color: transparent;
       box-shadow: none;
       border: none;
-      background-color: transparent; }
+      background-color: transparent;
+      background-repeat: no-repeat; }
       .titlebar button.titlebutton:hover, .titlebar button.titlebutton:active, .titlebar button.titlebutton:checked, .titlebar button.titlebutton:backdrop, .titlebar button.titlebutton:backdrop:hover, .titlebar button.titlebutton *,
       headerbar button.titlebutton:hover,
       headerbar button.titlebutton:active,
@@ -2543,37 +2521,46 @@ headerbar {
         color: transparent;
         box-shadow: none;
         background-color: transparent; }
-  .titlebar .linked > button, .titlebar
-  headerbar .linked > button, .titlebar .linked > button:active, .titlebar .linked > button:checked, .titlebar .linked > button:hover, .titlebar .linked > button:backdrop,
-  headerbar .titlebar .linked > button, .titlebar
-  headerbar .linked > button, headerbar .linked > button,
-  headerbar .titlebar .linked > button:active, .titlebar
-  headerbar .linked > button:active, headerbar .linked > button:active,
-  headerbar .titlebar .linked > button:checked, .titlebar
-  headerbar .linked > button:checked, headerbar .linked > button:checked,
-  headerbar .titlebar .linked > button:hover, .titlebar
+  .titlebar .linked > button,
+  .titlebar headerbar .linked > button, .titlebar .linked > button:active, .titlebar .linked > button:checked, .titlebar .linked > button:hover,
+  .titlebar .linked > button:backdrop,
+  headerbar .titlebar .linked > button,
+  .titlebar headerbar .linked > button,
+  headerbar .linked > button,
+  headerbar .titlebar .linked > button:active,
+  .titlebar headerbar .linked > button:active,
+  headerbar .linked > button:active,
+  headerbar .titlebar .linked > button:checked,
+  .titlebar headerbar .linked > button:checked,
+  headerbar .linked > button:checked,
+  headerbar .titlebar .linked > button:hover,
+  .titlebar headerbar .linked > button:hover,
+  headerbar .titlebar .linked > button:backdrop,
+  .titlebar headerbar .linked > button:backdrop,
   headerbar .linked > button:hover,
-  headerbar .titlebar .linked > button:backdrop, .titlebar
-  headerbar .linked > button:backdrop, headerbar .linked > button:hover, headerbar .linked > button:backdrop {
+  headerbar .linked > button:backdrop {
     border-radius: 0;
     border-right-style: none;
     box-shadow: none;
     margin: 5px 0px;
     min-height: 20px; }
-    .titlebar .linked > button:first-child, .titlebar
-    headerbar .linked > button:first-child,
-    headerbar .titlebar .linked > button:first-child, headerbar .linked > button:first-child {
+    .titlebar .linked > button:first-child,
+    .titlebar headerbar .linked > button:first-child,
+    headerbar .titlebar .linked > button:first-child,
+    headerbar .linked > button:first-child {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px; }
-    .titlebar .linked > button:last-child, .titlebar
-    headerbar .linked > button:last-child,
-    headerbar .titlebar .linked > button:last-child, headerbar .linked > button:last-child {
+    .titlebar .linked > button:last-child,
+    .titlebar headerbar .linked > button:last-child,
+    headerbar .titlebar .linked > button:last-child,
+    headerbar .linked > button:last-child {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       border-right-style: solid; }
-    .titlebar .linked > button:only-child, .titlebar
-    headerbar .linked > button:only-child,
-    headerbar .titlebar .linked > button:only-child, headerbar .linked > button:only-child {
+    .titlebar .linked > button:only-child,
+    .titlebar headerbar .linked > button:only-child,
+    headerbar .titlebar .linked > button:only-child,
+    headerbar .linked > button:only-child {
       border-radius: 3px;
       border-style: solid; }
   .titlebar .linked > button:active,
@@ -2797,20 +2784,20 @@ button:visited {
   *:link:visited,
   button:visited {
     color: rgba(124, 183, 255, 0.5); }
-    *:selected *:link:visited, *:selected button:visited:link, *:selected
-    button:visited {
+    *:selected *:link:visited, *:selected button:visited:link,
+    *:selected button:visited {
       color: #b6bcfe; }
   *:link:hover, button:hover:link,
   button:hover:visited {
     color: #afd3ff; }
-    *:selected *:link:hover, *:selected button:hover:link, *:selected
-    button:hover:visited {
+    *:selected *:link:hover, *:selected button:hover:link,
+    *:selected button:hover:visited {
       color: #eceefe; }
   *:link:active, button:active:link,
   button:active:visited {
     color: #7cb7ff; }
-    *:selected *:link:active, *:selected button:active:link, *:selected
-    button:active:visited {
+    *:selected *:link:active, *:selected button:active:link,
+    *:selected button:active:visited {
       color: #daddfe; }
   *:link:backdrop:backdrop:hover, button:backdrop:backdrop:hover:link,
   button:backdrop:backdrop:hover:visited, *:link:backdrop:backdrop:hover:selected, button:backdrop:backdrop:hover:selected:link,
@@ -2821,8 +2808,7 @@ button:visited {
   button:selected:visited,
   *:selected *:link,
   *:selected button:link,
-  *:selected
-  button:visited {
+  *:selected button:visited {
     color: #daddfe; }
 
 button:link,
@@ -3159,7 +3145,7 @@ notebook > header {
     notebook > header tab:hover {
       color: #5f6268; }
       notebook > header tab:hover.reorderable-page {
-        border-color: transparent;
+        border-color: rgba(0, 0, 0, 0);
         background-color: rgba(230, 230, 230, 0.2); }
     notebook > header tab:backdrop {
       color: #b0b1b4; }
@@ -3170,7 +3156,7 @@ notebook > header {
       color: #31363d;
       box-shadow: -1px 0 0 rgba(0, 0, 0, 0.13), 0px -1px 0 rgba(0, 0, 0, 0.13), 1px 0 0 rgba(0, 0, 0, 0.13); }
       notebook > header tab:checked.reorderable-page {
-        border-color: transparent;
+        border-color: rgba(0, 0, 0, 0);
         background-color: rgba(230, 230, 230, 0.5); }
         notebook > header tab:checked.reorderable-page:hover {
           background-color: rgba(230, 230, 230, 0.7); }
@@ -4102,7 +4088,7 @@ spinbutton:not(.vertical) {
     color: #454950;
     background-image: none;
     border-style: none none none solid;
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 0;
     box-shadow: inset 1px 0px 0px 0px rgba(0, 0, 0, 0.07); }
     spinbutton:not(.vertical) button:dir(rtl) {
@@ -4591,7 +4577,8 @@ decoration {
     box-shadow: none; }
   .csd.popup decoration {
     border-radius: 0;
-    box-shadow: 0 4px 8px rgba(122, 122, 122, 0.8); }
+    box-shadow: 0 4px 8px rgba(122, 122, 122, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.13); }
   tooltip.csd decoration {
     border-radius: 5px;
     box-shadow: none; }
@@ -4635,8 +4622,7 @@ headerbar.selection-mode button.titlebutton,
   .titlebar.selection-mode button.titlebutton:backdrop {
     -gtk-icon-shadow: none; }
 
-.view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus,
-textview text:selected:focus, .view text:selected, iconview text:selected,
+.view:selected:focus, .view:selected, iconview:selected, .view text:selected, iconview text:selected,
 textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
 textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selected, popover.background checkbutton:selected,
@@ -4645,8 +4631,7 @@ popover.background radiobutton:selected,
 entry selection:focus,
 entry selection, row:selected, treeview.view:selected:focus, treeview.view:selected {
   background-color: #495aff; }
-  row:selected label, label:selected, .selection-mode button.titlebutton, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus,
-  textview text:selected:focus, .view text:selected, iconview text:selected,
+  row:selected label, label:selected, .selection-mode button.titlebutton, .view:selected:focus, .view:selected, iconview:selected, .view text:selected, iconview text:selected,
   textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
   textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selected, popover.background checkbutton:selected,
@@ -4662,7 +4647,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     textview text:disabled:selected, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
     textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, modelbutton.flat:disabled:selected, popover.background checkbutton:disabled:selected,
     popover.background radiobutton:disabled:selected,
-    .menuitem.button.flat:disabled:selected, calendar:disabled:selected, spinbutton:not(.vertical) selection:disabled,
+    .menuitem.button.flat:disabled:selected, calendar:disabled:selected, spinbutton:not(.vertical) selection:disabled:focus, spinbutton:not(.vertical) selection:disabled,
     entry selection:disabled, row:disabled:selected {
       color: #a4acff; }
     row:selected label:backdrop, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected, iconview text:backdrop:selected:focus,
@@ -4670,7 +4655,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     textview text:backdrop:selected, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
     textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, label:backdrop selection, modelbutton.flat:backdrop:selected, popover.background checkbutton:backdrop:selected,
     popover.background radiobutton:backdrop:selected,
-    .menuitem.button.flat:backdrop:selected, calendar:backdrop:selected, spinbutton:not(.vertical) selection:backdrop,
+    .menuitem.button.flat:backdrop:selected, calendar:backdrop:selected, spinbutton:not(.vertical) selection:backdrop:focus, spinbutton:not(.vertical) selection:backdrop,
     entry selection:backdrop, row:backdrop:selected {
       color: #fefefe; }
       row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected, .view text:backdrop:disabled:selected, iconview text:backdrop:disabled:selected,
@@ -4914,8 +4899,8 @@ button.raven-trigger {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
 
 .places-menu .unlock-area {
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent; }
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0); }
 
 .places-menu .unlock-area entry {
   border-radius: 0;
@@ -4924,7 +4909,7 @@ button.raven-trigger {
 .places-menu .unlock-area button {
   border-radius: 0;
   border: 0;
-  border-left: 1px solid transparent; }
+  border-left: 1px solid rgba(0, 0, 0, 0); }
 
 .places-menu .alternative-label {
   font-size: 15px;
@@ -5022,92 +5007,80 @@ button.raven-trigger {
 .budgie-panel .pinned button.flat.launcher.running:checked {
   box-shadow: none; }
 
-.top .budgie-panel #tasklist-button, .budgie-panel .top #tasklist-button, .top .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .top button.flat.launcher, .top
-.budgie-panel .pinned button.flat.launcher.running,
-.budgie-panel .pinned .top button.flat.launcher.running {
+.top .budgie-panel #tasklist-button, .budgie-panel .top #tasklist-button, .top .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .top button.flat.launcher,
+.top .budgie-panel .pinned button.flat.launcher.running, .budgie-panel .pinned .top button.flat.launcher.running {
   padding-bottom: 2px;
   border-top: 2px solid transparent; }
   .top .budgie-panel .pinned button.flat.launcher:not(.running) {
     border-top: 2px solid transparent; }
   .top .budgie-panel .pinned button.flat.launcher:not(.running):hover {
     border-top: 2px solid rgba(255, 255, 255, 0.1); }
-  .top .budgie-panel .unpinned button.flat.launcher, .top .budgie-panel .pinned button.flat.launcher.running {
+  .top .budgie-panel .unpinned button.flat.launcher,
+  .top .budgie-panel .pinned button.flat.launcher.running {
     border-top: 2px solid rgba(255, 255, 255, 0.1); }
-  .top .budgie-panel #tasklist-button:hover, .budgie-panel .top #tasklist-button:hover, .top .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .top button.flat.launcher:hover, .top
-  .budgie-panel .pinned button.flat.launcher.running:hover,
-  .budgie-panel .pinned .top button.flat.launcher.running:hover {
+  .top .budgie-panel #tasklist-button:hover, .budgie-panel .top #tasklist-button:hover, .top .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .top button.flat.launcher:hover,
+  .top .budgie-panel .pinned button.flat.launcher.running:hover, .budgie-panel .pinned .top button.flat.launcher.running:hover {
     border-top: 2px solid rgba(255, 255, 255, 0.25); }
-  .top .budgie-panel #tasklist-button:active, .budgie-panel .top #tasklist-button:active, .top .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .top button.flat.launcher:active, .top
-  .budgie-panel .pinned button.flat.launcher.running:active,
-  .budgie-panel .pinned .top button.flat.launcher.running:active, .top .budgie-panel #tasklist-button:checked, .budgie-panel .top #tasklist-button:checked, .top .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .top button.flat.launcher:checked, .top
-  .budgie-panel .pinned button.flat.launcher.running:checked,
-  .budgie-panel .pinned .top button.flat.launcher.running:checked {
+  .top .budgie-panel #tasklist-button:active, .budgie-panel .top #tasklist-button:active, .top .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .top button.flat.launcher:active,
+  .top .budgie-panel .pinned button.flat.launcher.running:active, .budgie-panel .pinned .top button.flat.launcher.running:active, .top .budgie-panel #tasklist-button:checked, .budgie-panel .top #tasklist-button:checked, .top .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .top button.flat.launcher:checked,
+  .top .budgie-panel .pinned button.flat.launcher.running:checked, .budgie-panel .pinned .top button.flat.launcher.running:checked {
     border-top: 2px solid #495aff; }
 
-.bottom .budgie-panel #tasklist-button, .budgie-panel .bottom #tasklist-button, .bottom .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .bottom button.flat.launcher, .bottom
-.budgie-panel .pinned button.flat.launcher.running,
-.budgie-panel .pinned .bottom button.flat.launcher.running {
+.bottom .budgie-panel #tasklist-button, .budgie-panel .bottom #tasklist-button, .bottom .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .bottom button.flat.launcher,
+.bottom .budgie-panel .pinned button.flat.launcher.running, .budgie-panel .pinned .bottom button.flat.launcher.running {
   padding-top: 2px;
   border-bottom: 2px solid transparent; }
   .bottom .budgie-panel .pinned button.flat.launcher:not(.running) {
     border-bottom: 2px solid transparent; }
   .bottom .budgie-panel .pinned button.flat.launcher:not(.running):hover {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
-  .bottom .budgie-panel .unpinned button.flat.launcher, .bottom .budgie-panel .pinned button.flat.launcher.running {
+  .bottom .budgie-panel .unpinned button.flat.launcher,
+  .bottom .budgie-panel .pinned button.flat.launcher.running {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
-  .bottom .budgie-panel #tasklist-button:hover, .budgie-panel .bottom #tasklist-button:hover, .bottom .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .bottom button.flat.launcher:hover, .bottom
-  .budgie-panel .pinned button.flat.launcher.running:hover,
-  .budgie-panel .pinned .bottom button.flat.launcher.running:hover {
+  .bottom .budgie-panel #tasklist-button:hover, .budgie-panel .bottom #tasklist-button:hover, .bottom .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .bottom button.flat.launcher:hover,
+  .bottom .budgie-panel .pinned button.flat.launcher.running:hover, .budgie-panel .pinned .bottom button.flat.launcher.running:hover {
     border-bottom: 2px solid rgba(255, 255, 255, 0.25); }
-  .bottom .budgie-panel #tasklist-button:active, .budgie-panel .bottom #tasklist-button:active, .bottom .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .bottom button.flat.launcher:active, .bottom
-  .budgie-panel .pinned button.flat.launcher.running:active,
-  .budgie-panel .pinned .bottom button.flat.launcher.running:active, .bottom .budgie-panel #tasklist-button:checked, .budgie-panel .bottom #tasklist-button:checked, .bottom .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .bottom button.flat.launcher:checked, .bottom
-  .budgie-panel .pinned button.flat.launcher.running:checked,
-  .budgie-panel .pinned .bottom button.flat.launcher.running:checked {
+  .bottom .budgie-panel #tasklist-button:active, .budgie-panel .bottom #tasklist-button:active, .bottom .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .bottom button.flat.launcher:active,
+  .bottom .budgie-panel .pinned button.flat.launcher.running:active, .budgie-panel .pinned .bottom button.flat.launcher.running:active, .bottom .budgie-panel #tasklist-button:checked, .budgie-panel .bottom #tasklist-button:checked, .bottom .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .bottom button.flat.launcher:checked,
+  .bottom .budgie-panel .pinned button.flat.launcher.running:checked, .budgie-panel .pinned .bottom button.flat.launcher.running:checked {
     border-bottom: 2px solid #495aff; }
 
-.left .budgie-panel #tasklist-button, .budgie-panel .left #tasklist-button, .left .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .left button.flat.launcher, .left
-.budgie-panel .pinned button.flat.launcher.running,
-.budgie-panel .pinned .left button.flat.launcher.running {
+.left .budgie-panel #tasklist-button, .budgie-panel .left #tasklist-button, .left .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .left button.flat.launcher,
+.left .budgie-panel .pinned button.flat.launcher.running, .budgie-panel .pinned .left button.flat.launcher.running {
   padding-right: 2px;
   border-left: 2px solid transparent; }
   .left .budgie-panel .pinned button.flat.launcher:not(.running) {
     border-left: 2px solid transparent; }
   .left .budgie-panel .pinned button.flat.launcher:not(.running):hover {
     border-left: 2px solid rgba(255, 255, 255, 0.1); }
-  .left .budgie-panel .unpinned button.flat.launcher, .left .budgie-panel .pinned button.flat.launcher.running {
+  .left .budgie-panel .unpinned button.flat.launcher,
+  .left .budgie-panel .pinned button.flat.launcher.running {
     border-left: 2px solid rgba(255, 255, 255, 0.1); }
-  .left .budgie-panel #tasklist-button:hover, .budgie-panel .left #tasklist-button:hover, .left .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .left button.flat.launcher:hover, .left
-  .budgie-panel .pinned button.flat.launcher.running:hover,
-  .budgie-panel .pinned .left button.flat.launcher.running:hover {
+  .left .budgie-panel #tasklist-button:hover, .budgie-panel .left #tasklist-button:hover, .left .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .left button.flat.launcher:hover,
+  .left .budgie-panel .pinned button.flat.launcher.running:hover, .budgie-panel .pinned .left button.flat.launcher.running:hover {
     border-left: 2px solid rgba(255, 255, 255, 0.25); }
-  .left .budgie-panel #tasklist-button:active, .budgie-panel .left #tasklist-button:active, .left .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .left button.flat.launcher:active, .left
-  .budgie-panel .pinned button.flat.launcher.running:active,
-  .budgie-panel .pinned .left button.flat.launcher.running:active, .left .budgie-panel #tasklist-button:checked, .budgie-panel .left #tasklist-button:checked, .left .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .left button.flat.launcher:checked, .left
-  .budgie-panel .pinned button.flat.launcher.running:checked,
-  .budgie-panel .pinned .left button.flat.launcher.running:checked {
+  .left .budgie-panel #tasklist-button:active, .budgie-panel .left #tasklist-button:active, .left .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .left button.flat.launcher:active,
+  .left .budgie-panel .pinned button.flat.launcher.running:active, .budgie-panel .pinned .left button.flat.launcher.running:active, .left .budgie-panel #tasklist-button:checked, .budgie-panel .left #tasklist-button:checked, .left .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .left button.flat.launcher:checked,
+  .left .budgie-panel .pinned button.flat.launcher.running:checked, .budgie-panel .pinned .left button.flat.launcher.running:checked {
     border-left: 2px solid #495aff; }
 
-.right .budgie-panel #tasklist-button, .budgie-panel .right #tasklist-button, .right .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .right button.flat.launcher, .right
-.budgie-panel .pinned button.flat.launcher.running,
-.budgie-panel .pinned .right button.flat.launcher.running {
+.right .budgie-panel #tasklist-button, .budgie-panel .right #tasklist-button, .right .budgie-panel .unpinned button.flat.launcher, .budgie-panel .unpinned .right button.flat.launcher,
+.right .budgie-panel .pinned button.flat.launcher.running, .budgie-panel .pinned .right button.flat.launcher.running {
   padding-left: 2px;
   border-right: 2px solid transparent; }
   .right .budgie-panel .pinned button.flat.launcher:not(.running) {
     border-right: 2px solid transparent; }
   .right .budgie-panel .pinned button.flat.launcher:not(.running):hover {
     border-right: 2px solid rgba(255, 255, 255, 0.1); }
-  .right .budgie-panel .unpinned button.flat.launcher, .right .budgie-panel .pinned button.flat.launcher.running {
+  .right .budgie-panel .unpinned button.flat.launcher,
+  .right .budgie-panel .pinned button.flat.launcher.running {
     border-right: 2px solid rgba(255, 255, 255, 0.1); }
-  .right .budgie-panel #tasklist-button:hover, .budgie-panel .right #tasklist-button:hover, .right .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .right button.flat.launcher:hover, .right
-  .budgie-panel .pinned button.flat.launcher.running:hover,
-  .budgie-panel .pinned .right button.flat.launcher.running:hover {
+  .right .budgie-panel #tasklist-button:hover, .budgie-panel .right #tasklist-button:hover, .right .budgie-panel .unpinned button.flat.launcher:hover, .budgie-panel .unpinned .right button.flat.launcher:hover,
+  .right .budgie-panel .pinned button.flat.launcher.running:hover, .budgie-panel .pinned .right button.flat.launcher.running:hover {
     border-right: 2px solid rgba(255, 255, 255, 0.25); }
-  .right .budgie-panel #tasklist-button:active, .budgie-panel .right #tasklist-button:active, .right .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .right button.flat.launcher:active, .right
-  .budgie-panel .pinned button.flat.launcher.running:active,
-  .budgie-panel .pinned .right button.flat.launcher.running:active, .right .budgie-panel #tasklist-button:checked, .budgie-panel .right #tasklist-button:checked, .right .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .right button.flat.launcher:checked, .right
-  .budgie-panel .pinned button.flat.launcher.running:checked,
-  .budgie-panel .pinned .right button.flat.launcher.running:checked {
+  .right .budgie-panel #tasklist-button:active, .budgie-panel .right #tasklist-button:active, .right .budgie-panel .unpinned button.flat.launcher:active, .budgie-panel .unpinned .right button.flat.launcher:active,
+  .right .budgie-panel .pinned button.flat.launcher.running:active, .budgie-panel .pinned .right button.flat.launcher.running:active, .right .budgie-panel #tasklist-button:checked, .budgie-panel .right #tasklist-button:checked, .right .budgie-panel .unpinned button.flat.launcher:checked, .budgie-panel .unpinned .right button.flat.launcher:checked,
+  .right .budgie-panel .pinned button.flat.launcher.running:checked, .budgie-panel .pinned .right button.flat.launcher.running:checked {
     border-right: 2px solid #495aff; }
 
 .top .budgie-panel {
@@ -5455,13 +5428,12 @@ calendar.raven-calendar {
       padding-left: 12px;
       padding-right: 8px; }
 
-.budgie-run-dialog list row:selected .dim-label, .budgie-run-dialog list row:selected label.separator, .budgie-run-dialog list row:selected .titlebar .subtitle, .titlebar .budgie-run-dialog list row:selected .subtitle, .budgie-run-dialog list row:selected
-headerbar .subtitle,
-headerbar .budgie-run-dialog list row:selected .subtitle {
+.budgie-run-dialog list row:selected .dim-label, .budgie-run-dialog list row:selected label.separator, .budgie-run-dialog list row:selected .titlebar .subtitle, .titlebar .budgie-run-dialog list row:selected .subtitle,
+.budgie-run-dialog list row:selected headerbar .subtitle, headerbar .budgie-run-dialog list row:selected .subtitle {
   opacity: 1; }
 
 .budgie-run-dialog scrolledwindow {
-  border-top: 1px solid transparent; }
+  border-top: 1px solid rgba(0, 0, 0, 0); }
 
 .budgie-menubar menu {
   margin: 4px;
@@ -5566,13 +5538,11 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     .nautilus-desktop .nautilus-canvas-item:selected {
       color: #fefefe;
       text-shadow: none; }
-    .nautilus-desktop .nautilus-canvas-item .dim-label:selected, .nautilus-desktop .nautilus-canvas-item label.separator:selected, .nautilus-desktop .nautilus-canvas-item .titlebar .subtitle:selected, .titlebar .nautilus-desktop .nautilus-canvas-item .subtitle:selected, .nautilus-desktop .nautilus-canvas-item
-    headerbar .subtitle:selected,
-    headerbar .nautilus-desktop .nautilus-canvas-item .subtitle:selected {
+    .nautilus-desktop .nautilus-canvas-item .dim-label:selected, .nautilus-desktop .nautilus-canvas-item label.separator:selected, .nautilus-desktop .nautilus-canvas-item .titlebar .subtitle:selected, .titlebar .nautilus-desktop .nautilus-canvas-item .subtitle:selected,
+    .nautilus-desktop .nautilus-canvas-item headerbar .subtitle:selected, headerbar .nautilus-desktop .nautilus-canvas-item .subtitle:selected {
       color: #fefefe; }
-  .nautilus-desktop .nautilus-list .dim-label:selected, .nautilus-desktop .nautilus-list label.separator:selected, .nautilus-desktop .nautilus-list .titlebar .subtitle:selected, .titlebar .nautilus-desktop .nautilus-list .subtitle:selected, .nautilus-desktop .nautilus-list
-  headerbar .subtitle:selected,
-  headerbar .nautilus-desktop .nautilus-list .subtitle:selected {
+  .nautilus-desktop .nautilus-list .dim-label:selected, .nautilus-desktop .nautilus-list label.separator:selected, .nautilus-desktop .nautilus-list .titlebar .subtitle:selected, .titlebar .nautilus-desktop .nautilus-list .subtitle:selected,
+  .nautilus-desktop .nautilus-list headerbar .subtitle:selected, headerbar .nautilus-desktop .nautilus-list .subtitle:selected {
     color: #fefefe; }
 
 /*********
