@@ -4,7 +4,7 @@ gtk-color-scheme = "text_color:#31363D\nbase_color:#f8f8f8"
 # Foreground/background colors
 gtk-color-scheme = "fg_color:#31363d\nbg_color:#dcdcdc"
 # Selection colors
-gtk-color-scheme = "selected_fg_color:#fefefe\nselected_bg_color:#00b0ff"
+gtk-color-scheme = "selected_fg_color:#fefefe\nselected_bg_color:#495aff"
 # Tooltip colors
 gtk-color-scheme = "tooltip_fg_color:#2d2d2d\ntooltip_bg_color:#fefefe"
 # Window colors
@@ -14,7 +14,7 @@ gtk-color-scheme = "panel_bg_color:#263238\npanel_fg_color:#ffffff"
 # Dark Theme - Text/base colors
 gtk-color-scheme = "dark_text_color:#fefefe\ndark_base_color:#505359"
 # Dark Theme - Foreground/background colors
-gtk-color-scheme = "dark_fg_color:#fefefe\ndark_bg_color:#23262E"
+gtk-color-scheme = "dark_fg_color:#263238\ndark_bg_color:#DBDBDB"
 gtk-color-scheme = "sidebar_bg:#DEDDD9"
 
 gtk-auto-mnemonics = 1
