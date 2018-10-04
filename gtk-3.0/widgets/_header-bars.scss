@@ -57,7 +57,7 @@ headerbar {
         
       }
       
-      &.appmenu{
+    &.appmenu{
       background: transparent;
       &:backdrop{background: transparent;}
     }
@@ -79,6 +79,7 @@ headerbar {
         linear-gradient(to bottom, lighten($base_color, 12%), darken($bg_color, 2%))
       );
       border: 1px solid $borders_color;
+      border-radius: 4px;
     }
 
     &:backdrop {
