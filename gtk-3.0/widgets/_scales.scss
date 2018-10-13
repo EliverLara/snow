@@ -155,8 +155,8 @@ scale {
     border-radius: 12px;
 
     background-color: $_scale_bg;
-    box-shadow: inset 0 1px darken(white, 60%),
-                0px 0px 1px 1px darken(white, 60%);
+    box-shadow: inset 0 1px darken($_scale_bg, 5%),
+                0px 0px 1px 1px darken($_scale_bg, 5%);
 
     &:hover { @include button(hover-alt, $edge: $shadow_color); }
 
@@ -287,8 +287,8 @@ scale {
               border-radius: 50%;
 
               background-color: $_scale_bg;
-              box-shadow: inset 0 1px darken(white, 60%),
-                          0px 0px 1px 1px darken(white, 60%);
+              box-shadow: inset 0 1px darken($_scale_bg, 5%),
+                          0px 0px 1px 1px darken($_scale_bg, 5%);
               }
           }
 
