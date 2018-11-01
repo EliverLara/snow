@@ -160,7 +160,17 @@ StScrollBar {
   -slider-active-background-color: #495aff;
   -slider-active-border-color: #B3E235;
   -slider-border-width: 0;
-  -slider-handle-radius: 6px; }
+  -slider-handle-radius: 6px;
+  -barlevel-height: 0.3em;
+  -barlevel-background-color: rgba(0, 0, 0, 0.14);
+  -barlevel-border-color: black;
+  -barlevel-active-background-color: #495aff;
+  -barlevel-active-border-color: #a3be8c;
+  -barlevel-border-width: 0;
+  -barlevel-handle-radius: 6px;
+  -barlevel-overdrive-color: #495aff;
+  -barlevel-overdrive-border-color: transparent;
+  -barlevel-overdrive-separator-width: 0px; }
 
 /* Check Boxes */
 .check-box StBoxLayout {
@@ -417,7 +427,7 @@ StScrollBar {
   padding-bottom: 8px; }
 
 .hidden {
-  color: transparent; }
+  color: rgba(0, 0, 0, 0); }
 
 .prompt-dialog-null-label {
   font-size: 10pt;
@@ -503,7 +513,7 @@ StScrollBar {
   background-color: transparent; }
   .popup-menu .popup-sub-menu {
     background-color: #d7d7d7;
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
+    box-shadow: none; }
   .popup-menu .popup-menu-content {
     padding: 1em 0em;
     background-gradient-start: #f8f8f8;
@@ -583,7 +593,12 @@ StScrollBar {
     height: 0.6em;
     border-radius: 0.3em;
     background-color: rgba(141, 141, 141, 0.45);
-    color: #31363d; }
+    color: #31363d;
+    -barlevel-height: 0.6em;
+    -barlevel-background-color: rgba(141, 141, 141, 0.45);
+    -barlevel-active-background-color: #495aff;
+    -barlevel-overdrive-color: #FF044A;
+    -barlevel-overdrive-separator-width: 0.2em; }
   .osd-window .level-bar {
     background-color: #495aff;
     border-radius: 0.3em; }
@@ -632,7 +647,7 @@ StScrollBar {
   background: rgba(0, 0, 0, 0.15); }
 
 .switcher-arrow {
-  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
   color: rgba(49, 54, 61, 0.8); }
   .switcher-arrow:highlighted {
     color: #31363d; }
@@ -929,7 +944,7 @@ StScrollBar {
 
 .calendar-today {
   font-weight: bold;
-  border: 1px solid transparent; }
+  border: 1px solid rgba(0, 0, 0, 0); }
 
 .calendar-day-with-events {
   color: #484f59;
