@@ -132,6 +132,18 @@ StScrollBar {
   -slider-active-border-color: $lime; //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
+
+  -barlevel-height: 0.3em;
+  -barlevel-background-color: $gray;
+  -barlevel-border-color: black;
+  -barlevel-active-background-color: $selected_bg_color;
+  -barlevel-active-border-color: #a3be8c;
+  -barlevel-border-width: 0;
+  -barlevel-handle-radius: 6px; 
+  -barlevel-overdrive-color: $selected_bg_color;
+  -barlevel-overdrive-border-color: transparent;
+  -barlevel-overdrive-separator-width: 0px;
+
 }
 
 /* Check Boxes */
@@ -524,7 +536,7 @@ StScrollBar {
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
     background-color: darken($bg_color,11%);
-    box-shadow: $depth6;
+    box-shadow: none;
   }
 
   .popup-menu-content { 
@@ -615,6 +627,12 @@ StScrollBar {
     border-radius: 0.3em;
     background-color: transparentize(darken($osd_bg_color,40%),0.5);
     color: $osd_fg_color;
+
+    -barlevel-height: 0.6em;
+    -barlevel-background-color: transparentize(darken($osd_bg_color,40%),0.5);
+    -barlevel-active-background-color: $selected_bg_color;
+    -barlevel-overdrive-color: $red;
+    -barlevel-overdrive-separator-width: 0.2em; 
   }
   .level-bar {
     background-color: $selected_bg_color;
