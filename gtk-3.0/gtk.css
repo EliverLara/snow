@@ -3015,6 +3015,7 @@ menubar,
 menu,
 .menu,
 .context-menu {
+  font: initial;
   margin: 4px;
   padding: 2px 0px;
   background: linear-gradient(to bottom, #f8f8f8 20%, #e6e6e6);
