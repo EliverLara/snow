@@ -3599,57 +3599,6 @@ scale {
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
     row:selected scale slider:disabled, row:selected scale slider {
       border-color: #162cff; }
-    .osd scale slider {
-      color: #fefefe;
-      border-color: rgba(0, 0, 0, 0.7);
-      background-color: rgba(20, 23, 26, 0.8);
-      background-clip: padding-box;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-      text-shadow: 0 1px black;
-      -gtk-icon-shadow: 0 1px black;
-      outline-color: rgba(254, 254, 254, 0.3);
-      border-color: rgba(0, 0, 0, 0.7);
-      background-color: #14171a; }
-      .osd scale slider:hover {
-        color: white;
-        border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(47, 54, 61, 0.8), rgba(47, 54, 61, 0.8));
-        background-clip: padding-box;
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-        text-shadow: 0 1px black;
-        -gtk-icon-shadow: 0 1px black;
-        outline-color: rgba(254, 254, 254, 0.3);
-        background-color: #14171a; }
-      .osd scale slider:active {
-        color: white;
-        border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(33, 38, 43, 0.8), rgba(33, 38, 43, 0.8));
-        background-clip: padding-box;
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-        text-shadow: none;
-        -gtk-icon-shadow: none;
-        outline-color: rgba(254, 254, 254, 0.3);
-        background-color: #14171a; }
-      .osd scale slider:disabled {
-        color: #898b8c;
-        border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(43, 46, 49, 0.5), rgba(43, 46, 49, 0.5));
-        background-clip: padding-box;
-        box-shadow: none;
-        text-shadow: none;
-        -gtk-icon-shadow: none;
-        background-color: #14171a; }
-      .osd scale slider:backdrop {
-        color: #fefefe;
-        border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(20, 23, 26, 0.8), rgba(20, 23, 26, 0.8));
-        background-clip: padding-box;
-        box-shadow: none;
-        text-shadow: none;
-        -gtk-icon-shadow: none;
-        background-color: #14171a; }
-        .osd scale slider:backdrop:disabled {
-          background-color: #14171a; }
   scale value {
     color: alpha(currentColor,0.4); }
   scale marks {
