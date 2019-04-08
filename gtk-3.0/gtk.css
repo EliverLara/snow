@@ -543,12 +543,14 @@ button {
   .app-notification button.flat, popover.background.touch-selection button.flat, popover.background.magnifier button.flat,
   .osd
   button.flat {
-    background-color: transparent;
-    background-image: none;
-    background-color: #f4f4f4;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
+    color: #fefefe;
+    border-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(20, 23, 26, 0.8);
+    background-clip: padding-box;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black;
+    outline-color: rgba(254, 254, 254, 0.3);
     box-shadow: none;
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black; }
@@ -579,10 +581,11 @@ button {
     .app-notification button.flat:backdrop, popover.background.touch-selection button.flat:backdrop, popover.background.magnifier button.flat:backdrop,
     .osd
     button.flat:backdrop {
-      background-color: transparent;
-      background-image: none;
-      background-color: #f4f4f4;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      color: #fefefe;
+      border-color: rgba(0, 0, 0, 0.7);
+      background-image: linear-gradient(to bottom, rgba(20, 23, 26, 0.8), rgba(20, 23, 26, 0.8));
+      background-clip: padding-box;
+      box-shadow: none;
       text-shadow: none;
       -gtk-icon-shadow: none; }
     .app-notification button.flat:active, popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, .app-notification button.flat:checked, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked,
