@@ -298,4 +298,7 @@ notebook {
 
     &:backdrop { background-color: $backdrop_base_color; }
   }
+  button.flat {
+    padding: 1px 3px;
+  }
 }

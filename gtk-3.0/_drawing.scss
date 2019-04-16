@@ -261,14 +261,12 @@
   //
   // hovered button headerbar look
   //
-  color: if($tc==$text_color, $selected_bg_color, $tc);
-  //background-color: transparent;
-  border-radius: 0;
+  color: if($tc==$text_color, $selected_fg_color, $tc);
+  border-radius: 4px;
+  box-shadow: none;
   text-shadow: none;
-  background-image: if( $variant == 'light', 
-  linear-gradient(to bottom, $base_color, $bg_color),
-  linear-gradient(to bottom, lighten($base_color, 12%), darken($bg_color, 2%))
-);
+  border-color:$selected_bg_color;
+  background-image: linear-gradient(to bottom, $selected_bg_color, #2948ff);
   //@include lines(up);
 }
 
@@ -277,8 +275,8 @@
 // backdrop button headerbar look
 //
 color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
-background-color: transparent;
-border-radius: 0;
+bakground-color: transparent;
+border-radius: 4px;
 text-shadow: none;
 box-shadow: none;
 }
