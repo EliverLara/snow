@@ -44,7 +44,7 @@ headerbar {
       box-shadow: none;
       border: none;
       background-image: $suggested_bg_color;
-        &:disabled, &:disabled:backdrop, &:backdrop {
+        &:disabled, &:disabled:backdrop, &:backdrop, &:hover {
           border: none;
           background-image: $suggested_bg_color;
           &:hover,
@@ -58,38 +58,29 @@ headerbar {
       }
       
     &.appmenu{
-      background: transparent;
-      &:backdrop{background: transparent;}
+      &,&:hover,&:active,&:checked {
+        &, &:backdrop {
+          background: transparent;
+        }
+      }
     }
     &:hover,
     &:active,
     &:checked {
-      background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
-      //@include button(hover-header);
+      @include button(hover-header);
     }
 
     &:backdrop,
     &:disabled,
     &:backdrop:disabled {
       @include button(backdrop-header,red,transparentize($fg_color,0.8));
-      background-image: if( $variant == 'light', 
-        linear-gradient(to bottom, $base_color, $bg_color),
-        linear-gradient(to bottom, lighten($base_color, 12%), darken($bg_color, 2%))
-      );
-      border: 1px solid $borders_color;
-      border-radius: 4px;
     }
 
     &:backdrop {
       &:hover,
       &:active,
       &:checked {
-      background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
-       // @include button(hover-header,transparent,transparentize(white,0.7));
+        @include button(hover-header,transparent,transparentize(white,0.7));
       }
     }
 
@@ -167,14 +158,12 @@ headerbar {
     @extend %linked-header;
     &:active, &:checked {
       @extend %linked-header;
-      background: mix($bg_color, $base_color, 20%);
+      @include button(hover-header);
       &:backdrop{
-        color: $backdrop_selected_bg_color;
-        label{
-          color: $backdrop_selected_bg_color;
-        }
+        @include button(hover-header,transparent,transparentize(white,0.7));
       }
     }
+
   }
   .linked > button {
     @extend %linked-button;

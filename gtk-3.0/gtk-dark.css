@@ -2327,13 +2327,14 @@ headerbar {
       box-shadow: none;
       border: none;
       background-image: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
-      .titlebar button.suggested-action:disabled, .titlebar button.suggested-action:disabled:backdrop, .titlebar button.suggested-action:backdrop,
+      .titlebar button.suggested-action:disabled, .titlebar button.suggested-action:disabled:backdrop, .titlebar button.suggested-action:backdrop, .titlebar button.suggested-action:hover,
       headerbar button.suggested-action:disabled,
       headerbar button.suggested-action:disabled:backdrop,
-      headerbar button.suggested-action:backdrop {
+      headerbar button.suggested-action:backdrop,
+      headerbar button.suggested-action:hover {
         border: none;
         background-image: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
-        .titlebar button.suggested-action:disabled:hover, .titlebar button.suggested-action:disabled:active, .titlebar button.suggested-action:disabled:checked, .titlebar button.suggested-action:disabled:backdrop:hover, .titlebar button.suggested-action:disabled:backdrop:active, .titlebar button.suggested-action:disabled:backdrop:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar button.suggested-action:backdrop:active, .titlebar button.suggested-action:backdrop:checked,
+        .titlebar button.suggested-action:disabled:hover, .titlebar button.suggested-action:disabled:active, .titlebar button.suggested-action:disabled:checked, .titlebar button.suggested-action:disabled:backdrop:hover, .titlebar button.suggested-action:disabled:backdrop:active, .titlebar button.suggested-action:disabled:backdrop:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar button.suggested-action:backdrop:active, .titlebar button.suggested-action:backdrop:checked, .titlebar button.suggested-action:hover:hover, .titlebar button.suggested-action:hover:active, .titlebar button.suggested-action:hover:checked,
         headerbar button.suggested-action:disabled:hover,
         headerbar button.suggested-action:disabled:active,
         headerbar button.suggested-action:disabled:checked,
@@ -2342,41 +2343,51 @@ headerbar {
         headerbar button.suggested-action:disabled:backdrop:checked,
         headerbar button.suggested-action:backdrop:hover,
         headerbar button.suggested-action:backdrop:active,
-        headerbar button.suggested-action:backdrop:checked {
+        headerbar button.suggested-action:backdrop:checked,
+        headerbar button.suggested-action:hover:hover,
+        headerbar button.suggested-action:hover:active,
+        headerbar button.suggested-action:hover:checked {
           border: none;
           background-image: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
-    .titlebar button.appmenu,
-    headerbar button.appmenu {
+    .titlebar button.appmenu, .titlebar button.appmenu:backdrop, .titlebar button.appmenu:hover, .titlebar button.appmenu:hover:backdrop, .titlebar button.appmenu:active, .titlebar button.appmenu:active:backdrop, .titlebar button.appmenu:checked, .titlebar button.appmenu:checked:backdrop,
+    headerbar button.appmenu,
+    headerbar button.appmenu:backdrop,
+    headerbar button.appmenu:hover,
+    headerbar button.appmenu:hover:backdrop,
+    headerbar button.appmenu:active,
+    headerbar button.appmenu:active:backdrop,
+    headerbar button.appmenu:checked,
+    headerbar button.appmenu:checked:backdrop {
       background: transparent; }
-      .titlebar button.appmenu:backdrop,
-      headerbar button.appmenu:backdrop {
-        background: transparent; }
     .titlebar button:hover, .titlebar button:active, .titlebar button:checked,
     headerbar button:hover,
     headerbar button:active,
     headerbar button:checked {
-      background-color: transparent;
-      color: #00c870;
-      box-shadow: none; }
+      color: #fefefe;
+      border-radius: 4px;
+      box-shadow: none;
+      text-shadow: none;
+      border-color: #00A45C;
+      background-image: linear-gradient(to bottom, #00c870, #00A45C); }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
     headerbar button:disabled,
     headerbar button:backdrop:disabled {
       color: rgba(248, 248, 242, 0.2);
-      background-color: transparent;
-      border-radius: 0;
+      bakground-color: transparent;
+      border-radius: 4px;
       text-shadow: none;
-      box-shadow: none;
-      background-image: linear-gradient(to bottom, #585858, #212121);
-      border: 1px solid rgba(32, 32, 32, 0.8);
-      border-radius: 4px; }
+      box-shadow: none; }
     .titlebar button:backdrop:hover, .titlebar button:backdrop:active, .titlebar button:backdrop:checked,
     headerbar button:backdrop:hover,
     headerbar button:backdrop:active,
     headerbar button:backdrop:checked {
-      background-color: transparent;
-      color: #00c870;
-      box-shadow: none; }
+      color: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      box-shadow: none;
+      text-shadow: none;
+      border-color: #00A45C;
+      background-image: linear-gradient(to bottom, #00c870, #00A45C); }
     .titlebar button.suggested-action,
     headerbar button.suggested-action {
       font-weight: bold;
@@ -2664,7 +2675,12 @@ headerbar {
   headerbar .titlebar .path-bar-box button:checked,
   .titlebar .path-bar-box headerbar button:checked,
   headerbar .path-bar-box button:checked {
-    background: #353535; }
+    color: #fefefe;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: #00A45C;
+    background-image: linear-gradient(to bottom, #00c870, #00A45C); }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
     .titlebar headerbar .linked > button:checked:backdrop, .titlebar .path-bar-box button:checked:backdrop, headerbar .path-bar-box .titlebar button:checked:backdrop,
@@ -2676,17 +2692,12 @@ headerbar {
     headerbar .linked > button:checked:backdrop,
     .titlebar .path-bar-box headerbar button:checked:backdrop,
     headerbar .path-bar-box button:checked:backdrop {
-      color: rgba(0, 200, 112, 0.6); }
-      .titlebar .linked > button:active:backdrop label, .titlebar headerbar .linked > button:active:backdrop label, .titlebar .path-bar-box button:active:backdrop label, headerbar .path-bar-box .titlebar button:active:backdrop label, .titlebar .linked > button:checked:backdrop label, .titlebar headerbar .linked > button:checked:backdrop label, .titlebar .path-bar-box button:checked:backdrop label, headerbar .path-bar-box .titlebar button:checked:backdrop label,
-      headerbar .titlebar .linked > button:active:backdrop label,
-      headerbar .linked > button:active:backdrop label,
-      .titlebar .path-bar-box headerbar button:active:backdrop label,
-      headerbar .path-bar-box button:active:backdrop label,
-      headerbar .titlebar .linked > button:checked:backdrop label,
-      headerbar .linked > button:checked:backdrop label,
-      .titlebar .path-bar-box headerbar button:checked:backdrop label,
-      headerbar .path-bar-box button:checked:backdrop label {
-        color: rgba(0, 200, 112, 0.6); }
+      color: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      box-shadow: none;
+      text-shadow: none;
+      border-color: #00A45C;
+      background-image: linear-gradient(to bottom, #00c870, #00A45C); }
   .titlebar .path-bar-box .dim-label, .titlebar .path-bar-box label.separator, .titlebar .path-bar-box .subtitle,
   headerbar .path-bar-box .dim-label,
   headerbar .path-bar-box label.separator,
@@ -3356,6 +3367,9 @@ notebook > stack:not(:only-child) {
   background-color: #393939; }
   notebook > stack:not(:only-child):backdrop {
     background-color: #3c3c3c; }
+
+notebook button.flat {
+  padding: 1px 3px; }
 
 /*********
  * Paned *
