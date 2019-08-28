@@ -904,6 +904,10 @@ StScrollBar {
   .pager-button:active {
     background-color: rgba(243, 243, 243, 0.05); }
 
+.calendar-change-month-back StIcon, .calendar-change-month-forward StIcon {
+  icon-size: 1.09em;
+  color: #31363d; }
+
 .calendar-change-month-back {
   background-image: url("assets/calendar-arrow-left.svg"); }
   .calendar-change-month-back:rtl {

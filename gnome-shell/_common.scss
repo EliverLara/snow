@@ -1002,6 +1002,11 @@ StScrollBar {
       &:active { background-color: transparentize($bg_color,0.95); }
     }
 
+    .calendar-change-month-back StIcon, .calendar-change-month-forward StIcon { 
+      icon-size: 1.09em;
+      color: $fg_color;
+    }
+
       .calendar-change-month-back { //arrow back
         background-image: url("assets/calendar-arrow-left.svg");
         &:rtl { background-image: url("assets/calendar-arrow-right.svg"); }
