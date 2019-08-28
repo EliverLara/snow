@@ -1653,14 +1653,7 @@ StScrollBar {
   spacing: 15px; }
 
 .keyboard-key {
-  color: #31363d;
-  background-gradient-start: #f8f8f8;
-  background-gradient-end: #eeeeee;
-  background-gradient-direction: vertical;
-  box-shadow: none;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  text-shadow: 0 1px black;
-  icon-shadow: 0 1px black;
+  background-color: #f3f3f3;
   min-height: 2em;
   min-width: 2em;
   font-size: 14pt;
@@ -1668,34 +1661,23 @@ StScrollBar {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #31363d; }
-  .keyboard-key:focus {
-    color: #31363d;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-    box-shadow: none;
-    border: 1px solid rgba(73, 90, 255, 0.5);
-    background: #f0f0f0; }
-  .keyboard-key:hover, .keyboard-key:checked {
-    color: #495aff;
-    background-gradient-start: #f8f8f8;
-    background-gradient-end: #eeeeee;
-    background-gradient-direction: vertical;
-    box-shadow: none;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+  .keyboard-key:focus, .keyboard-key:hover, .keyboard-key:checked {
+    background-color: white;
+    box-shadow: none; }
   .keyboard-key:active {
-    color: #f7f7f7;
-    background-gradient-start: #495aff;
-    background-gradient-end: #495aff;
-    background-gradient-direction: vertical;
-    box-shadow: none;
-    border: none;
-    text-shadow: none;
-    icon-shadow: none; }
+    background-color: #495aff; }
   .keyboard-key:grayed {
     background-color: rgba(243, 243, 243, 0.95);
     color: #31363d;
     border-color: rgba(0, 0, 0, 0.7); }
+  .keyboard-key.enter-key {
+    background-image: url("assets/key-enter.svg"); }
+  .keyboard-key.shift-key-lowercase {
+    background-image: url("assets/key-shift.svg"); }
+  .keyboard-key.hide-key {
+    background-image: url("assets/key-hide.svg"); }
+  .keyboard-key.layout-key {
+    background-image: url("assets/key-layout.svg"); }
 
 .keyboard-subkeys {
   color: white;

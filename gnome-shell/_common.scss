@@ -1758,8 +1758,8 @@ StScrollBar {
   .keyboard-row { spacing: 15px; }
 
   .keyboard-key {
-    @include button(normal);
-    //background: $base_color;
+    //@include button(normal);
+    background-color: $bg_color;
     min-height: 2em;
     min-width: 2em;
     font-size: 14pt;
@@ -1767,15 +1767,37 @@ StScrollBar {
     border-radius: 5px;
     border: 1px solid $borders-color;
     color: $fg_color;
-    &:focus { @include button(focus); }
-    &:hover,&:checked { @include button(hover); }
-    &:active { @include button(active);}
+    
+    &:focus, &:hover, &:checked {
+      background-color: lighten($bg_color, 5%); 
+      box-shadow: none;
+    }
+    &:active { background-color: $selected_bg_color;}
     &:grayed { //FIXME
       background-color: $osd_bg_color;
       color: $osd_fg_color;
       border-color: $osd_borders_color;
     }
+
+    &.enter-key {
+      background-image: url("assets/key-enter.svg");
+    }
+    
+    &.shift-key-lowercase {
+      background-image: url("assets/key-shift.svg");
+    }
+
+    &.hide-key {
+      background-image: url("assets/key-hide.svg");
+    }
+    
+    &.layout-key {
+      background-image: url("assets/key-layout.svg");
+    }
+    
+    
   }
+  
 
   .keyboard-subkeys { //long press on a key popup
     color: white;
