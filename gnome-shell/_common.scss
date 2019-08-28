@@ -1742,8 +1742,8 @@ StScrollBar {
   .keyboard-row { spacing: 15px; }
 
   .keyboard-key {
-    @include button(normal);
-    background: $base_color;
+    //@include button(normal);
+    background-color: $base_color;
     min-height: 2em;
     min-width: 2em;
     font-size: 14pt;
@@ -1751,9 +1751,8 @@ StScrollBar {
     border-radius: 5px;
     border: 1px solid $borders-color;
     color: white;
-    &:focus { @include button(focus); }
-    &:hover,&:checked { @include button(hover); }
-    &:active { @include button(active);}
+    &:focus, &:hover, &:checked { background-color: lighten($base_color, 5%); }
+    &:active { background-color: $selected_bg_color;}
     &:grayed { //FIXME
       background-color: $osd_bg_color;
       color: $osd_fg_color;
