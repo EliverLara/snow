@@ -75,7 +75,7 @@ StEntry {
   border-radius: 2px;
   padding: 4px;
   border-width: 0;
-  color: $fg_color;
+  color: $fg_color !important;
   //&:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}

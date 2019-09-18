@@ -112,7 +112,7 @@ StEntry {
   border-radius: 2px;
   padding: 4px;
   border-width: 0;
-  color: #31363d;
+  color: #31363d !important;
   selection-background-color: #495aff;
   selected-color: #f7f7f7; }
   StEntry:focus {
