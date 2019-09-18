@@ -1562,11 +1562,13 @@ StScrollBar {
 
     &:hover .page-indicator-icon {  
       background-image: none;
-      background-color: rgba(211, 78, 78, 0.5); 
+      background-color: rgba(255, 255, 255, 0.5); 
     }
     &:active .page-indicator-icon { 
       background-image: none;
       background-color: rgba(255, 255, 255, 0.7);
+      border-width: 2px;
+      margin:0;
     }
     &:checked .page-indicator-icon { 
       background-image: none;
