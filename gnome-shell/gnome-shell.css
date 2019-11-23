@@ -170,6 +170,7 @@ StScrollBar {
   -slider-active-border-color: #84ff39;
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
+  -slider-handle-border-width: 0;
   -barlevel-height: 0.3em;
   -barlevel-background-color: #4c4c4c;
   -barlevel-border-color: black;
@@ -521,7 +522,8 @@ StScrollBar {
 /* Popovers/Menus */
 .popup-menu {
   min-width: 15em;
-  background-color: transparent; }
+  background-color: transparent;
+  color: #f8f8f8; }
   .popup-menu .popup-sub-menu {
     background-color: rgba(20, 20, 20, 0.13);
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
@@ -916,7 +918,8 @@ StScrollBar {
   height: 2.4em;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 1.4em; }
+  border-radius: 1.4em;
+  color: #f8f8f8; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: rgba(51, 51, 51, 0.93); }
   .calendar-day-base:active, .calendar-day-base:selected {
