@@ -970,7 +970,7 @@ StScrollBar {
 /* Message list */
 .message-list {
   width: 31.5em; }
-  .message-list .message-title {
+  .message-list .message-title, .message-list .message-content {
     color: #ebebeb; }
 
 .message-list-clear-button.button {
