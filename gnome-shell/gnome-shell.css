@@ -1000,8 +1000,9 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  border-radius: 1px;
-  background: transparent; }
+  border: 1px solid rgba(68, 71, 90, 0.4);
+  border-radius: 3px;
+  background: rgba(34, 34, 34, 0.93); }
   .message:hover, .message:focus {
     background-color: rgba(43, 43, 43, 0.93);
     box-shadow: 3px 0px 0px 0px #00c870 inset; }
@@ -1029,6 +1030,7 @@ StScrollBar {
   icon-size: 16px; }
 
 .message-content {
+  color: #f8f8f8;
   padding: 10px; }
   .message-content *:hover > StIcon,
   .message-content *:focus > StIcon {
