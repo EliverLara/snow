@@ -3363,12 +3363,6 @@ notebook > header {
         color: #ed254e; }
       notebook > header tab button.flat, notebook > header tab button.flat:backdrop {
         color: alpha(currentColor,0.3); }
-      notebook > header tab button.flat:last-child {
-        margin-left: 4px;
-        margin-right: -4px; }
-      notebook > header tab button.flat:first-child {
-        margin-left: -4px;
-        margin-right: 4px; }
   notebook > header.top tabs, notebook > header.bottom tabs {
     padding-left: 0px;
     padding-right: 0px; }

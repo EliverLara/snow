@@ -225,16 +225,6 @@ notebook {
         // FIXME: generalize .small-button?
         min-width: 20px;
         min-height: 20px;
-
-        &:last-child {
-          margin-left: 4px;
-          margin-right: -4px;
-        }
-
-        &:first-child {
-          margin-left: -4px;
-          margin-right: 4px;
-        }
       }
     }
 
