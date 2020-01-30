@@ -287,11 +287,10 @@ LibraryWindow {
 
 /**level bars**/
 
-.sidebar .source-list{
-  &.view {
+.source-list.view{
     &.level-bar {
       &,&:selected,&:selected:focus{
-        background-color: transparentize(black, 0.86);
+        background: linear-gradient(transparentize(black, 0.86), transparentize(black, 0.86)) ;
         border: 1px solid transparentize(black, 0.86);
         box-shadow: 0 1px 0 transparentize(#fff, 0.75);
         border-radius: 2px;
@@ -302,9 +301,7 @@ LibraryWindow {
     }
     &.fill-block{
       &,&:hover,&:selected,&:selected:focus{
-        background-image: none;
-        background-color: $selected_bg_color;
+        background: linear-gradient($selected_bg_color, $selected_bg_color);
       }
     }
-  }
 } 
