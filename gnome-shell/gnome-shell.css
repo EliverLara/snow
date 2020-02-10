@@ -1047,6 +1047,9 @@ StScrollBar {
   .message-content *:focus > StIcon {
     color: #FF044A; }
 
+.message-close-button {
+  color: #31363d; }
+
 .message-media-control {
   padding: 12px;
   color: #040404; }
@@ -1534,9 +1537,7 @@ StScrollBar {
     border: 1px solid rgba(0, 0, 0, 0.15);
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-bottom: 5px; }
+    padding: 0px; }
     .notification-banner .notification-button:first-child {
       border-radius: 4px 0 0 4px;
       margin-left: 5px;

@@ -1163,6 +1163,10 @@ StScrollBar {
             }
           }
 
+          .message-close-button {
+            color: $fg_color;
+          }
+
           .message-media-control {
             padding: 12px;
             color: darken($fg_color, 20%);
@@ -1651,12 +1655,10 @@ StScrollBar {
     }
     .notification-button {
       @include button(normal);
-      padding-top: 4px;
-      padding-bottom: 4px;
-      margin-bottom: 5px;
+      padding: 0px;
       &:first-child { border-radius: 4px 0 0 4px; margin-left: 5px; border-right: none;}
       &:last-child { border-radius: 0 4px 4px 0; margin-right: 5px;}
-       &:hover, &focus { @include button(hover); }
+      &:hover, &focus { @include button(hover); }
     }
   }
   .summary-source-counter {
