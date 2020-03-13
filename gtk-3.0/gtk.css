@@ -2346,6 +2346,7 @@ headerbar {
     text-shadow: none;
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0.13);
+    font-weight: normal;
     background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
     min-height: 20px;
     margin-top: 5px;
