@@ -2406,7 +2406,7 @@ headerbar {
     headerbar button:disabled,
     headerbar button:backdrop:disabled {
       color: rgba(49, 54, 61, 0.2);
-      bakground-color: transparent;
+      background-color: transparent;
       border-radius: 4px;
       text-shadow: none;
       box-shadow: none; }
