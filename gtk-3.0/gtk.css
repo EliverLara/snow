@@ -3360,6 +3360,7 @@ notebook > header {
         border-color: rgba(142, 142, 142, 0.217);
         background-color: whitesmoke; }
     notebook > header tab button.flat {
+      border: none;
       padding: 0;
       margin-top: 4px;
       margin-bottom: 4px;
@@ -3405,10 +3406,6 @@ notebook > header {
     padding-bottom: 3px; }
   notebook > header.bottom tab {
     padding-top: 3px; }
-  notebook > header button {
-    margin-top: 1px;
-    margin-bottom: 1px;
-    padding: 1px 1px; }
 
 notebook > stack:not(:only-child) {
   background-color: #f8f8f8; }
@@ -3416,7 +3413,11 @@ notebook > stack:not(:only-child) {
     background-color: whitesmoke; }
 
 notebook button.flat {
-  padding: 1px 3px; }
+  padding: 1px 3px;
+  background: transparent;
+  border: none; }
+  notebook button.flat:hover, notebook button.flat:backdrop {
+    background: transparent; }
 
 /*********
  * Paned *
