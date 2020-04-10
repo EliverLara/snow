@@ -265,8 +265,8 @@
   border-radius: 4px;
   box-shadow: none;
   text-shadow: none;
-  border-color: #00A45C;
-  background-image: linear-gradient(to bottom, $selected_bg_color, #00A45C);
+  border-color: $borders_color;
+  background-image: linear-gradient(to bottom, $selected_bg_color, darken($selected_bg_color, 20%));
   //@include lines(up);
 }
 

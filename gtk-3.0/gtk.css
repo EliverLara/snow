@@ -2368,8 +2368,8 @@ headerbar {
       border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
-      border-color: #00A45C;
-      background-image: linear-gradient(to bottom, #00c870, #00A45C); }
+      border-color: rgba(32, 32, 32, 0.8);
+      background-image: linear-gradient(to bottom, #00c870, #006237); }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
     headerbar button:disabled,
@@ -2387,8 +2387,8 @@ headerbar {
       border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
-      border-color: #00A45C;
-      background-image: linear-gradient(to bottom, #00c870, #00A45C); }
+      border-color: rgba(32, 32, 32, 0.8);
+      background-image: linear-gradient(to bottom, #00c870, #006237); }
     .titlebar button.suggested-action,
     headerbar button.suggested-action {
       font-weight: bold;
@@ -2680,8 +2680,8 @@ headerbar {
     border-radius: 4px;
     box-shadow: none;
     text-shadow: none;
-    border-color: #00A45C;
-    background-image: linear-gradient(to bottom, #00c870, #00A45C); }
+    border-color: rgba(32, 32, 32, 0.8);
+    background-image: linear-gradient(to bottom, #00c870, #006237); }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
     .titlebar headerbar .linked > button:checked:backdrop, .titlebar .path-bar-box button:checked:backdrop, headerbar .path-bar-box .titlebar button:checked:backdrop,
@@ -2697,8 +2697,8 @@ headerbar {
       border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
-      border-color: #00A45C;
-      background-image: linear-gradient(to bottom, #00c870, #00A45C); }
+      border-color: rgba(32, 32, 32, 0.8);
+      background-image: linear-gradient(to bottom, #00c870, #006237); }
   .titlebar .path-bar-box .dim-label, .titlebar .path-bar-box label.separator, .titlebar .path-bar-box .subtitle,
   headerbar .path-bar-box .dim-label,
   headerbar .path-bar-box label.separator,
@@ -2723,10 +2723,12 @@ headerbar {
   .titlebar .path-bar-box widget > .text-button:last-child,
   headerbar .path-bar-box widget > .text-button:last-child {
     border-radius: 0px 4px 4px 0px;
-    color: #fff;
-    outline-color: rgba(255, 255, 255, 0.3);
-    background: #00c870;
-    text-shadow: none; }
+    color: #fefefe;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: rgba(32, 32, 32, 0.8);
+    background-image: linear-gradient(to bottom, #00c870, #006237); }
     .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop label {
