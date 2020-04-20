@@ -3047,7 +3047,7 @@ menu,
   font: initial;
   margin: 4px;
   padding: 2px 0px;
-  background: linear-gradient(to bottom, #383838, #141414);
+  background: linear-gradient(to bottom, #282828, #141414);
   border: 1px solid rgba(12, 12, 12, 0.8); }
   .csd menu, .csd
   .menu, .csd
@@ -3472,7 +3472,7 @@ paned.vertical > separator {
 popover.background {
   padding: 2px;
   border-radius: 5px;
-  background: linear-gradient(to bottom, #3f3f3f, #141414);
+  background: linear-gradient(to bottom, #282828, #141414);
   box-shadow: 0 4px 6px transparent; }
   .csd popover.background, popover.background {
     border: 1px solid rgba(12, 12, 12, 0.8); }

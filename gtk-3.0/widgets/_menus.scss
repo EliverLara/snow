@@ -30,7 +30,7 @@ menu,
   font: initial;
   margin: 4px;
   padding: 2px 0px;
-  background: if( $variant == 'light',  linear-gradient(to bottom, $base_color 20%, $bg_color), linear-gradient(to bottom, lighten($bg_color, 12%), darken($bg_color, 2%)));
+  background: if( $variant == 'light',  linear-gradient(to bottom, $base_color 20%, $bg_color), linear-gradient(to bottom, lighten($base_color, 3%), darken($bg_color, 2%)));
   border: 1px solid $borders_color; // adds borders in a non composited env
 
   .csd & { border: none; }  // axes borders in a composited env
