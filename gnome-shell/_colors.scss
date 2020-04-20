@@ -1,6 +1,6 @@
-$base_color:#393939;
-$bg_color: transparentize( #262626, 0.03);
-$gray: lighten(#262626, 15%);
+$base_color:#202020;
+$bg_color: transparentize( #191919, 0.03);
+$gray: lighten(#191919, 15%);
 $fg_color: #f8f8f8;
 $dracula: #161925;
 $topbar_color: #eee;
@@ -11,7 +11,7 @@ $purple: #c74ded;
 $cyan: #00e8c6;
 
 $selected_fg_color: #fefefe;
-$selected_bg_color:#00c870;
+$selected_bg_color:#758173;
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: transparentize(#202020, 0.2);
 $borders_edge: transparentize(white, 0.9);
