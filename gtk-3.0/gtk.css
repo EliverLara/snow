@@ -3203,10 +3203,6 @@ assistant {
 /*************
  * Notebooks *
  *************/
-notebook .frame *:selected, notebook .frame *:selected:backdrop {
-  background: transparent;
-  color: #758173; }
-
 notebook > header {
   padding: 1px;
   border-color: rgba(12, 12, 12, 0.8);
