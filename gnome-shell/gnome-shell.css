@@ -520,16 +520,19 @@ StScrollBar {
     background-color: #d7d7d7;
     box-shadow: none; }
   .popup-menu .popup-menu-content {
-    padding: 1em 0em;
+    padding: 16px 0;
     background-gradient-start: #f8f8f8;
     background-gradient-end: #dfdfdf;
     background-gradient-direction: vertical; }
   .popup-menu .popup-menu-item {
-    spacing: 12px; }
+    spacing: 6px;
+    padding: 6px; }
     .popup-menu .popup-menu-item:ltr {
-      padding: .4em 1.75em .4em 0em; }
+      padding-right: 1.75em;
+      padding-left: 0; }
     .popup-menu .popup-menu-item:rtl {
-      padding: .4em 0em .4em 1.75em; }
+      padding-right: 0;
+      padding-left: 1.75em; }
     .popup-menu .popup-menu-item:checked {
       background-color: rgba(73, 90, 255, 0.9);
       color: #f7f7f7;
@@ -569,12 +572,17 @@ StScrollBar {
   -arrow-box-shadow: 0 1px 3px black; }
 
 .popup-separator-menu-item {
-  height: 0px;
-  margin: 6px 64px;
-  background-color: transparent;
-  border-color: transparent;
-  border-bottom-width: 1px;
-  border-bottom-style: solid; }
+  background: transparent; }
+  .popup-separator-menu-item-separator {
+    height: 0px;
+    margin: 6px 64px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-width: 1px;
+    border-bottom-style: solid; }
+  .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+    margin: 0 64px 0 32px;
+    background: transparent; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -789,6 +797,10 @@ StScrollBar {
       .lock-screen #panel .panel-button:hover,
       .lock-screen #panel .panel-button:active {
         color: #484f59; }
+    #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
+      box-shadow: none; }
+      #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+        box-shadow: none; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
     spacing: 2px; }
@@ -819,6 +831,11 @@ StScrollBar {
 
 .calendar {
   margin-bottom: 1em; }
+
+.calendar, .world-clocks-button, .weather-button {
+  background: transparent;
+  border: none;
+  color: #31363d; }
 
 .calendar,
 .datemenu-today-button,
@@ -979,6 +996,8 @@ StScrollBar {
 /* Message list */
 .message-list {
   width: 31.5em; }
+  .message-list .message-title, .message-list .message-content, .message-list .message-body {
+    color: #282c32; }
 
 .message-list-clear-button.button {
   box-shadow: none;
@@ -1071,6 +1090,21 @@ StScrollBar {
     border-radius: 2px;
     icon-size: 16px;
     padding: 8px; }
+
+/* World clocks */
+.world-clocks-button .world-clocks-city {
+  color: #31363d;
+  font-weight: normal; }
+
+.world-clocks-button .world-clocks-time {
+  font-weight: bold;
+  color: #31363d;
+  font-feature-settings: "lnum";
+  text-align: right; }
+
+.world-clocks-button .world-clocks-timezone {
+  color: #040404;
+  font-feature-settings: "tnum"; }
 
 .system-switch-user-submenu-icon.user-icon {
   icon-size: 20px;
@@ -1174,7 +1208,8 @@ StScrollBar {
   icon-size: 32px; }
 
 .nm-dialog-scroll-view {
-  border: 2px solid rgba(0, 0, 0, 0.15); }
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  background: transparent; }
 
 .nm-dialog-header {
   font-weight: bold; }
@@ -1235,6 +1270,8 @@ StScrollBar {
   color: #31363d;
   background-color: rgba(243, 243, 243, 0.6);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+  .search-entry * {
+    color: #31363d; }
   .search-entry:focus {
     border-width: 0;
     color: #31363d;
@@ -1261,6 +1298,10 @@ StScrollBar {
   spacing: 16px; }
 
 .search-section-content {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
   spacing: 32px; }
 
 .list-search-results {
