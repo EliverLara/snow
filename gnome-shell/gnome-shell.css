@@ -1019,7 +1019,8 @@ StScrollBar {
 .message {
   border: 1px solid rgba(32, 32, 32, 0.8);
   border-radius: 3px;
-  background: rgba(21, 21, 21, 0.97); }
+  background: rgba(21, 21, 21, 0.97);
+  box-shadow: none; }
   .message:hover, .message:focus {
     background-color: rgba(30, 30, 30, 0.97);
     box-shadow: 3px 0px 0px 0px #758173 inset; }
@@ -1558,8 +1559,9 @@ StScrollBar {
     padding-top: 2px;
     spacing: 1px; }
   .notification-banner .notification-button {
-    padding: 0px;
-    background-color: rgba(25, 25, 25, 0.87); }
+    padding: 5px;
+    background-color: rgba(25, 25, 25, 0.87);
+    box-shadow: none; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 3px; }
     .notification-banner .notification-button:last-child {
