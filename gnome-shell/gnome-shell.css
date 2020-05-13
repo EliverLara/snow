@@ -1028,7 +1028,8 @@ StScrollBar {
 .message {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 3px;
-  background: #efefef; }
+  background: #efefef;
+  box-shadow: none; }
   .message:hover, .message:focus {
     background-color: #f8f8f8;
     box-shadow: 3px 0px 0px 0px #495aff inset; }
@@ -1578,7 +1579,7 @@ StScrollBar {
     border: 1px solid rgba(0, 0, 0, 0.15);
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    padding: 0px; }
+    padding: 5px; }
     .notification-banner .notification-button:first-child {
       border-radius: 4px 0 0 4px;
       margin-left: 5px;
