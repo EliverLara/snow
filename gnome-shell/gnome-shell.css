@@ -734,7 +734,7 @@ StScrollBar {
 
 /* TOP BAR */
 #panel {
-  background-color: rgba(3, 3, 5, 0.7);
+  background-color: rgba(3, 3, 5, 0.95);
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
@@ -771,7 +771,7 @@ StScrollBar {
     #panel .panel-button .popup-menu-arrow {
       icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9); }
     #panel .panel-button:hover {
-      background: rgba(22, 25, 37, 0.7);
+      background: rgba(22, 25, 37, 0.95);
       color: white;
       text-shadow: 0px 0px 8px black; }
       #panel .panel-button:hover .system-status-icon,
@@ -779,7 +779,7 @@ StScrollBar {
       #panel .panel-button:hover .popup-menu-arrow {
         icon-shadow: 0px 0px 8px black; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-      background: rgba(22, 25, 37, 0.7);
+      background: rgba(22, 25, 37, 0.95);
       box-shadow: inset 0 -2px 0px #828e80;
       color: white; }
       #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
@@ -1094,6 +1094,23 @@ StScrollBar {
   color: #c5c5c5;
   font-feature-settings: "tnum"; }
 
+/* Weather */
+.weather-button .weather-header {
+  color: #dfdfdf;
+  font-weight: bold; }
+  .weather-button .weather-header.location {
+    font-weight: normal; }
+
+.weather-button .weather-forecast-time {
+  color: #dfdfdf;
+  font-feature-settings: "tnum";
+  font-weight: normal;
+  padding-top: 0.2em;
+  padding-bottom: 0.4em; }
+
+.weather-button .weather-forecast-temp {
+  font-weight: bold; }
+
 .system-switch-user-submenu-icon.user-icon {
   icon-size: 20px;
   padding: 0 2px; }
@@ -1324,7 +1341,7 @@ StScrollBar {
 #dash {
   font-size: 9pt;
   color: #eee;
-  background-color: rgba(3, 3, 5, 0.7);
+  background-color: rgba(3, 3, 5, 0.95);
   padding: 6px 0;
   border: 1px solid rgba(32, 32, 32, 0.8);
   border-left: 0px;
@@ -1346,7 +1363,7 @@ StScrollBar {
   border-radius: 7px;
   padding: 4px 12px;
   color: #eee;
-  background-color: rgba(3, 3, 5, 0.7);
+  background-color: rgba(3, 3, 5, 0.95);
   text-align: center;
   -x-offset: 8px; }
 
