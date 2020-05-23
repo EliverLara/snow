@@ -1107,6 +1107,23 @@ StScrollBar {
   color: #040404;
   font-feature-settings: "tnum"; }
 
+/* Weather */
+.weather-button .weather-header {
+  color: #1a1d21;
+  font-weight: bold; }
+  .weather-button .weather-header.location {
+    font-weight: normal; }
+
+.weather-button .weather-forecast-time {
+  color: #1a1d21;
+  font-feature-settings: "tnum";
+  font-weight: normal;
+  padding-top: 0.2em;
+  padding-bottom: 0.4em; }
+
+.weather-button .weather-forecast-temp {
+  font-weight: bold; }
+
 .system-switch-user-submenu-icon.user-icon {
   icon-size: 20px;
   padding: 0 2px; }
