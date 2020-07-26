@@ -542,6 +542,7 @@ StScrollBar {
   .popup-sub-menu {
     background-color: darken($bg_color,11%);
     box-shadow: none;
+    border-color: $borders_color;
   }
 
   .popup-menu-content { 
@@ -766,9 +767,10 @@ StScrollBar {
 
 %osd-panel {
   color: $_bubble_fg_color;
-  @include gradient();
+  background-color: rgb(233, 233, 233);
   border: 1px solid $borders_color;
-  border-radius: 2px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px $borders_color;
   padding: 12px;
 }
 

@@ -518,7 +518,8 @@ StScrollBar {
   color: #31363d; }
   .popup-menu .popup-sub-menu {
     background-color: #d7d7d7;
-    box-shadow: none; }
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.15); }
   .popup-menu .popup-menu-content {
     padding: 16px 0;
     background-gradient-start: #f8f8f8;
@@ -708,11 +709,10 @@ StScrollBar {
 .resize-popup,
 .switcher-list, .workspace-switcher-container {
   color: #31363d;
-  background-gradient-start: #f8f8f8;
-  background-gradient-end: #dfdfdf;
-  background-gradient-direction: vertical;
+  background-color: #e9e9e9;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
   padding: 12px; }
 
 /* Tiled window previews */
