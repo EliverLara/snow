@@ -5732,11 +5732,18 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   background-color: #e6e6e6; }
 
 /*********
-* Gnucash *
+ * Gnucash *
 *********/
-.GncMainWindow entry.register-foreground {
+#gnc-id-main-window entry.gnc-class-register-foreground {
   background: transparent;
-  border: none; }
+  border: none;
+  box-shadow: none; }
+
+#gnc-id-main-window .arrow.button.toggle {
+  transition: none;
+  box-shadow: none; }
+  #gnc-id-main-window .arrow.button.toggle:hover {
+    border-color: #495aff; }
 
 .xfce4-panel.panel {
   background-color: rgba(235, 235, 235, 0.7);
