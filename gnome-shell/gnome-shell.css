@@ -832,7 +832,7 @@ StScrollBar {
 .calendar {
   margin-bottom: 1em; }
 
-.calendar, .world-clocks-button, .weather-button {
+.calendar, .world-clocks-button, .weather-button, .events-button {
   background: transparent;
   border: none;
   color: #31363d; }
@@ -863,7 +863,8 @@ StScrollBar {
 .world-clocks-button,
 .weather-button,
 .events-section-title,
-.message-list-section-title {
+.message-list-section-title,
+.events-button {
   border-radius: 4px;
   padding: .4em; }
 
@@ -881,14 +882,17 @@ StScrollBar {
 .events-section-title:hover,
 .events-section-title:focus,
 .message-list-section-title:hover,
-.message-list-section-title:focus {
+.message-list-section-title:focus,
+.events-button:hover,
+.events-button:focus {
   background-color: white; }
 
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
 .events-section-title:active,
-.message-list-section-title:active {
+.message-list-section-title:active,
+.events-button:active {
   color: white;
   background-color: #495aff; }
 
@@ -898,7 +902,8 @@ StScrollBar {
 .world-clocks-header,
 .weather-header,
 .events-section-title,
-.message-list-section-title {
+.message-list-section-title,
+.events-title, .event-time {
   color: black;
   font-weight: bold; }
 
@@ -971,7 +976,18 @@ StScrollBar {
 
 .calendar-today {
   font-weight: bold;
-  border: 1px solid rgba(0, 0, 0, 0); }
+  border: 1px solid #495aff;
+  background-color: transparent;
+  color: #495aff; }
+  .calendar-today:hover, .calendar-today:focus {
+    background-color: #5868ff;
+    color: #f7f7f7; }
+  .calendar-today:active, .calendar-today:selected {
+    background-color: #495aff;
+    color: #f7f7f7; }
+    .calendar-today:active:hover, .calendar-today:active:focus, .calendar-today:selected:hover, .calendar-today:selected:focus {
+      background-color: #5868ff;
+      color: #f7f7f7; }
 
 .calendar-day-with-events {
   color: #484f59;

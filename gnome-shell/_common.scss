@@ -941,7 +941,7 @@ StScrollBar {
     margin-bottom: 1em;
   }
 
-  .calendar, .world-clocks-button, .weather-button {
+  .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
     border: none;
     color: $fg_color;
@@ -968,7 +968,8 @@ StScrollBar {
     .world-clocks-button,
     .weather-button,
     .events-section-title,
-    .message-list-section-title {
+    .message-list-section-title,
+    .events-button {
       border-radius: 4px;
       padding: .4em;
     }
@@ -985,7 +986,8 @@ StScrollBar {
     .world-clocks-button,
     .weather-button,
     .events-section-title,
-    .message-list-section-title {
+    .message-list-section-title,
+    .events-button {
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active {
         color: lighten($selected_fg_color,5%);
@@ -1003,7 +1005,8 @@ StScrollBar {
     .world-clocks-header,
     .weather-header,
     .events-section-title,
-    .message-list-section-title {
+    .message-list-section-title,
+    .events-title, .event-time {
       color: darken($fg_color,40%);
       font-weight: bold;
     }
@@ -1078,11 +1081,27 @@ StScrollBar {
       .calendar-nonwork-day {
         color: $insensitive_fg_color;
       }
+      // Today
       .calendar-today {
         font-weight: bold;
-        //color: lighten($fg_color,10%);
-        //background-color: darken($bg_color,5%);
-        border: 1px solid transparentize($borders_color,0.5);
+        border: 1px solid $selected_bg_color;
+        background-color: transparent;
+        color: $selected_bg_color;
+
+        &:hover, &:focus {
+          background-color:lighten($selected_bg_color, 3%);
+          color: $selected_fg_color;
+        }
+
+        &:active, &:selected {
+          background-color: $selected_bg_color;
+          color: $selected_fg_color;
+
+          &:hover, &:focus {
+            background-color:lighten($selected_bg_color, 3%);
+            color: $selected_fg_color;
+          }
+        }
       }
       .calendar-day-with-events {
         color: lighten($fg_color,10%);
