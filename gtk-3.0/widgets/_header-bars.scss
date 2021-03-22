@@ -290,7 +290,9 @@ headerbar {
   }
 
   > separator {
-    background: transparent;
+     &, &:backdrop {
+      background: if($variant == 'light', linear-gradient(to bottom, #EAEAEA, #DBDBDB) , mix($base_color, darken($headerbar_color, 8%), 30%));
+    }
   }
 
   @extend %titlebar;
