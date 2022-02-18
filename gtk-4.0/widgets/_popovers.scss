@@ -11,7 +11,7 @@ popover.background {
   > contents {
     $_popover_border: if($variant=='light', transparentize(black, 0.77), transparentize(black, 0.25));
 
-    background: if( $variant == 'light', linear-gradient(to bottom, $base_color 20%, $bg_color), linear-gradient(to bottom, lighten($base_color, 12%), darken($bg_color, 2%)));
+    background: if( $variant == 'light', linear-gradient(to bottom, $base_color 20%, $bg_color), linear-gradient(to bottom, lighten($base_color, 3%), darken($bg_color, 2%)));
     background-clip: padding-box;
     border: 1px solid $borders_color;
     box-shadow: 0 4px 6px $menu_shadow_color;

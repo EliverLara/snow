@@ -487,7 +487,7 @@
   box-shadow: inset 0 1px $hc; // top highlight
 }
 
-@mixin overshoot($p, $t:normal, $c:darken($base_color, 7%)) {
+@mixin overshoot($p, $t:normal, $c:lighten($base_color, 7%)) {
 //
 // overshoot
 //
