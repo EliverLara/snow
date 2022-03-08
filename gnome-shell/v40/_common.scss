@@ -1424,8 +1424,8 @@ StScrollBar {
   .search-entry {
     width: 320px;
     padding: 7px 9px;
-    border-radius: 2px;
-    border: 1px solid $borders_color;
+    border-radius: 10px;
+    border: 2px solid $borders_color;
     color: $fg_color;
     background-color: transparentize($bg_color, 0.4);
     box-shadow: $depth;
@@ -1437,6 +1437,7 @@ StScrollBar {
       background-color: transparentize($bg_color, 0.2);
       border-color: $selected_bg_color;
       .search-entry-icon { color: $fg_color; }
+      border-color: $selected_bg_color;
     }
   }
 
