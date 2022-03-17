@@ -31,7 +31,7 @@ stage {
 }
 
 .modal-dialog-linked-button {
-  padding: 4px;
+  padding: 6px;
   margin: 5px 0px;
   border: 1px solid $borders_color;
   color: $fg_color;
@@ -55,15 +55,15 @@ stage {
   }
 
   &:first-child { 
-    border-radius: 4px 0px 0px 4px; 
+    border-radius: 10px 0px 0px 10px; 
     margin-left: 5px;  
   }
   &:last-child { 
-    border-radius: 0px 4px 4px 0px; 
+    border-radius: 0px 10px 10px 0px; 
     margin-right: 5px;
 
   }
-  &:first-child:last-child { border-radius: 4px; }
+  &:first-child:last-child { border-radius: 10px; }
 }
 
 /* Entries */
@@ -189,7 +189,7 @@ StScrollBar {
 
 .modal-dialog {
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
   color: $osd_fg_color;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
