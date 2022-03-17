@@ -542,7 +542,10 @@ StScrollBar {
     box-shadow: $depth6;
   }
 
-  .popup-menu-content { padding: 1em 0em; }
+  .popup-menu-content { 
+    padding: 16px 0; 
+    border-radius: 10px;
+  }
   .popup-menu-item {
     spacing: 6px;
     padding: 6px;
@@ -585,7 +588,7 @@ StScrollBar {
   }
   .popup-menu-boxpointer,
   .candidate-popup-boxpointer {
-    -arrow-border-radius: 5px;
+    -arrow-border-radius: 10px;
     -arrow-background-color: $bg_color;
     -arrow-border-width: 1px;
     -arrow-border-color: $borders_color;
