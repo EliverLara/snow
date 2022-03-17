@@ -544,6 +544,7 @@ StScrollBar {
 
   .popup-menu-content { 
     padding: 16px 0; 
+    border-radius: 10px;
     @include gradient();
   }
   .popup-menu-item {
@@ -588,7 +589,7 @@ StScrollBar {
   }
   .popup-menu-boxpointer,
   .candidate-popup-boxpointer {
-    -arrow-border-radius: 3px;
+    -arrow-border-radius: 10px;
     -arrow-background-color: $bg_color;
     -arrow-border-width: 1px;
     -arrow-border-color: $borders_color;

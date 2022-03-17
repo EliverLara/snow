@@ -513,6 +513,7 @@ StScrollBar {
     border-color: rgba(0, 0, 0, 0.15); }
   .popup-menu .popup-menu-content {
     padding: 16px 0;
+    border-radius: 10px;
     background-gradient-start: #f8f8f8;
     background-gradient-end: #dfdfdf;
     background-gradient-direction: vertical; }
@@ -555,7 +556,7 @@ StScrollBar {
 
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
-  -arrow-border-radius: 3px;
+  -arrow-border-radius: 10px;
   -arrow-background-color: #f3f3f3;
   -arrow-border-width: 1px;
   -arrow-border-color: rgba(0, 0, 0, 0.15);
