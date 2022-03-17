@@ -53,7 +53,7 @@ stage {
     icon-shadow: 0 1px black; }
 
 .modal-dialog-linked-button {
-  padding: 4px;
+  padding: 6px;
   margin: 5px 0px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #31363d;
@@ -94,13 +94,13 @@ stage {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .modal-dialog-linked-button:first-child {
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 10px 0px 0px 10px;
     margin-left: 5px; }
   .modal-dialog-linked-button:last-child {
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 10px 10px 0px;
     margin-right: 5px; }
   .modal-dialog-linked-button:first-child:last-child {
-    border-radius: 4px; }
+    border-radius: 10px; }
 
 /* Entries */
 StEntry {
@@ -221,7 +221,7 @@ StScrollBar {
 
 .modal-dialog {
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
   color: #31363d;
   background-gradient-start: #f8f8f8;
   background-gradient-end: #dfdfdf;
