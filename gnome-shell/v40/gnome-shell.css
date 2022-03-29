@@ -1273,7 +1273,8 @@ StScrollBar {
   .search-entry:hover, .search-entry:focus {
     background-color: rgba(25, 25, 25, 0.77);
     border-color: #758173;
-    border-color: #758173; }
+    border-color: #758173;
+    box-shadow: none; }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #f8f8f8; }
 
