@@ -1280,18 +1280,14 @@ StScrollBar {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
   .search-entry * {
     color: #31363d; }
-  .search-entry:focus {
-    border-color: #495aff;
-    color: #31363d;
-    background-color: rgba(254, 254, 254, 0.8);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.3); }
   .search-entry .search-entry-icon {
     icon-size: 1em;
     padding: 0 4px;
     color: rgba(49, 54, 61, 0.7); }
   .search-entry:hover, .search-entry:focus {
     background-color: rgba(254, 254, 254, 0.8);
-    border-color: #495aff; }
+    border-color: #495aff;
+    box-shadow: none; }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #31363d; }
 

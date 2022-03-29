@@ -1449,12 +1449,6 @@ StScrollBar {
     background-color: transparentize($bg_color, 0.4);
     box-shadow: $depth;
     * {color: $fg_color; }
-    &:focus {
-      border-color: $selected_bg_color;
-      color: $fg_color;
-      background-color: transparentize(#fefefe, 0.2);
-      box-shadow: $depth2;
-    }
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
@@ -1462,6 +1456,7 @@ StScrollBar {
       background-color: transparentize(#fefefe, 0.2);
       .search-entry-icon { color: $fg_color; }
       border-color: $selected_bg_color;
+      box-shadow: none;
     }
   }
 
