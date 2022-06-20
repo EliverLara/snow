@@ -953,13 +953,6 @@ StScrollBar {
 }
 
   // calendar popover
-  #calendarArea {
-    padding: 0.75em 1.0em;
-  }
-
-  .calendar {
-    margin-bottom: 1em;
-  }
 
   .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
@@ -971,16 +964,6 @@ StScrollBar {
     box-shadow: none;
   }
 
-    .calendar,
-    .datemenu-today-button,
-    .datemenu-displays-box,
-    .message-list-sections {
-      margin: 0 1.5em;
-    }
-
-    .datemenu-calendar-column { spacing: 0.5em; }
-    .datemenu-displays-section { padding-bottom: 3em; }
-    .datemenu-displays-box { spacing: 1em; }
 
     .datemenu-calendar-column {
       border: 0 solid $gray;
@@ -989,21 +972,10 @@ StScrollBar {
     }
 
     .datemenu-today-button,
-    .world-clocks-button,
-    .weather-button,
     .events-section-title,
-    .message-list-section-title,
-    .events-button {
+    .message-list-section-title {
       border-radius: 4px;
       padding: .4em;
-    }
-
-    .message-list-section-list:ltr {
-      padding-left: .4em;
-    }
-
-    .message-list-section-list:rtl {
-      padding-right: .4em;
     }
 
     .datemenu-today-button,
@@ -1012,7 +984,7 @@ StScrollBar {
     .events-section-title,
     .message-list-section-title,
     .events-button {
-      &:hover,&:focus { background-color: lighten($bg_color,5%); }
+      &:hover,&:focus { background-color: darken($bg_color, 8%); }
       &:active {
         color: lighten($selected_fg_color,5%);
         background-color: $selected_bg_color;
@@ -1020,10 +992,12 @@ StScrollBar {
     }
 
     .datemenu-today-button .day-label {
+      color: $fg_color;
     }
 
     .datemenu-today-button .date-label {
       font-size: 1.5em;
+      color: $fg_color;
     }
 
     .world-clocks-header,
@@ -1079,13 +1053,14 @@ StScrollBar {
       width: 2.4em; height: 2.4em;
       padding: 0.1em;
       margin: 2px;
-      border-radius: 1.4em;
+      border-radius: 99px;
       color: $fg_color;
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active,&:selected {
         color: darken($selected_fg_color,5%);
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
+        box-shadow: none;
       }
       &.calendar-day-heading {  //day of week heading
         color: darken($fg_color,40%);
@@ -1110,20 +1085,20 @@ StScrollBar {
         font-weight: bold;
         border: 1px solid $selected_bg_color;
         background-color: transparent;
-        color: $selected_bg_color;
+        color: $selected_bg_color !important;
 
         &:hover, &:focus {
           background-color:lighten($selected_bg_color, 3%);
-          color: $selected_fg_color;
+          color: $selected_fg_color !important;
         }
 
         &:active, &:selected {
           background-color: $selected_bg_color;
-          color: $selected_fg_color;
+          color: $selected_fg_color !important;
 
           &:hover, &:focus {
             background-color:lighten($selected_bg_color, 3%);
-            color: $selected_fg_color;
+            color: $selected_fg_color !important;
           }
         }
       }
@@ -1149,7 +1124,6 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        width: 31.5em;
         .message-title, .message-content, .message-body {
           color: darken($fg_color,4%);
         }
