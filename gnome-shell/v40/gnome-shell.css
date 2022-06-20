@@ -814,32 +814,11 @@ StScrollBar {
     #panel.solid .popup-menu-arrow {
       icon-shadow: none; }
 
-#calendarArea {
-  padding: 0.75em 1.0em; }
-
-.calendar {
-  margin-bottom: 1em; }
-
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background: transparent;
   border: none;
   color: #f8f8f8;
   box-shadow: none; }
-
-.calendar,
-.datemenu-today-button,
-.datemenu-displays-box,
-.message-list-sections {
-  margin: 0 1.5em; }
-
-.datemenu-calendar-column {
-  spacing: 0.5em; }
-
-.datemenu-displays-section {
-  padding-bottom: 3em; }
-
-.datemenu-displays-box {
-  spacing: 1em; }
 
 .datemenu-calendar-column {
   border: 0 solid rgba(32, 32, 32, 0.8); }
@@ -849,19 +828,10 @@ StScrollBar {
     border-right-width: 1px; }
 
 .datemenu-today-button,
-.world-clocks-button,
-.weather-button,
 .events-section-title,
-.message-list-section-title,
-.events-button {
+.message-list-section-title {
   border-radius: 4px;
   padding: .4em; }
-
-.message-list-section-list:ltr {
-  padding-left: .4em; }
-
-.message-list-section-list:rtl {
-  padding-right: .4em; }
 
 .datemenu-today-button:hover, .datemenu-today-button:focus,
 .world-clocks-button:hover,
@@ -874,7 +844,7 @@ StScrollBar {
 .message-list-section-title:focus,
 .events-button:hover,
 .events-button:focus {
-  background-color: rgba(38, 38, 38, 0.97); }
+  background-color: rgba(5, 5, 5, 0.97); }
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
@@ -884,8 +854,12 @@ StScrollBar {
   color: white;
   background-color: #758173; }
 
+.datemenu-today-button .day-label {
+  color: #f8f8f8; }
+
 .datemenu-today-button .date-label {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: #f8f8f8; }
 
 .world-clocks-header,
 .weather-header,
@@ -933,14 +907,15 @@ StScrollBar {
   height: 2.4em;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 1.4em;
+  border-radius: 99px;
   color: #f8f8f8; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: rgba(38, 38, 38, 0.97); }
   .calendar-day-base:active, .calendar-day-base:selected {
     color: white;
     background-color: #758173;
-    border-color: transparent; }
+    border-color: transparent;
+    box-shadow: none; }
   .calendar-day-base.calendar-day-heading {
     color: #929292;
     margin-top: 1em;
@@ -962,16 +937,16 @@ StScrollBar {
   font-weight: bold;
   border: 1px solid #758173;
   background-color: transparent;
-  color: #758173; }
+  color: #758173 !important; }
   .calendar-today:hover, .calendar-today:focus {
     background-color: #7d897a;
-    color: #fefefe; }
+    color: #fefefe !important; }
   .calendar-today:active, .calendar-today:selected {
     background-color: #758173;
-    color: #fefefe; }
+    color: #fefefe !important; }
     .calendar-today:active:hover, .calendar-today:active:focus, .calendar-today:selected:hover, .calendar-today:selected:focus {
       background-color: #7d897a;
-      color: #fefefe; }
+      color: #fefefe !important; }
 
 .calendar-day-with-events {
   color: white;
@@ -994,10 +969,8 @@ StScrollBar {
   color: rgba(25, 25, 25, 0.97); }
 
 /* Message list */
-.message-list {
-  width: 31.5em; }
-  .message-list .message-title, .message-list .message-content, .message-list .message-body {
-    color: #eeeeee; }
+.message-list .message-title, .message-list .message-content, .message-list .message-body {
+  color: #eeeeee; }
 
 .message-list-sections {
   spacing: 1em; }
