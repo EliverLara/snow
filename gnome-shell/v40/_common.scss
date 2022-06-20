@@ -895,6 +895,7 @@ StScrollBar {
       // a box-shadow
       box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 20%);;
       color: #fff;
+      text-shadow: none;
 
       &.clock-display {
         box-shadow: none;
@@ -1107,6 +1108,7 @@ StScrollBar {
 
       /* Message list */
       .message-list {
+        border: none;
         .message-title, .message-content, .message-body {
           color: darken($fg_color,4%);
         }
@@ -1393,7 +1395,7 @@ StScrollBar {
 }
 
 #overviewGroup {
-  background-color: lighten($_bubble_bg_color, 5%);
+  background-color: lighten($bg_color, 55%);
 }
 
 
@@ -1604,10 +1606,12 @@ StScrollBar {
   /* App Folders */
 .app-well-app.app-folder {
   background-color: lighten($base_color, 10%);
+  border-radius: 12px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
   background-color:  lighten($bg_color, 10%);
+  border: none;
   .edit-folder-button {
     @extend %button;
 
