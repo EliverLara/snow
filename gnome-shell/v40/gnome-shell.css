@@ -776,7 +776,8 @@ StScrollBar {
           box-shadow: inset 0 0 0 100px #e0e0e0; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
       box-shadow: inset 0 0 0 100px #495aff;
-      color: #fff; }
+      color: #fff;
+      text-shadow: none; }
       #panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
         box-shadow: none; }
         #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
@@ -975,8 +976,10 @@ StScrollBar {
   color: #f3f3f3; }
 
 /* Message list */
-.message-list .message-title, .message-list .message-content, .message-list .message-body {
-  color: #282c32; }
+.message-list {
+  border: none; }
+  .message-list .message-title, .message-list .message-content, .message-list .message-body {
+    color: #282c32; }
 
 .message-list-sections {
   spacing: 1em; }
@@ -1226,7 +1229,7 @@ StScrollBar {
   spacing: 24px; }
 
 #overviewGroup {
-  background-color: rgba(103, 103, 103, 0.95); }
+  background-color: #676767; }
 
 .overview-controls {
   padding-bottom: 32px; }
@@ -1430,10 +1433,12 @@ StScrollBar {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: rgba(243, 243, 243, 0.05); }
+  background-color: rgba(243, 243, 243, 0.05);
+  border-radius: 12px; }
 
 .app-folder-dialog {
-  background-color: rgba(167, 167, 167, 0.8); }
+  background-color: rgba(167, 167, 167, 0.8);
+  border: none; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;
