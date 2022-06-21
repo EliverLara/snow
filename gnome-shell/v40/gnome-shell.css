@@ -520,7 +520,7 @@ StScrollBar {
     margin-bottom: 1.75em; }
 
 .popup-sub-menu {
-  background-color: rgba(7, 7, 7, 0.97);
+  background-color: rgba(43, 43, 43, 0.97);
   box-shadow: none;
   border: none;
   border-radius: 0px 0px 6px 6px; }
@@ -530,7 +530,7 @@ StScrollBar {
     .popup-sub-menu .popup-menu-item:last-child {
       border-radius: 0 0 6px 6px; }
     .popup-sub-menu .popup-menu-item:active, .popup-sub-menu .popup-menu-item.selected, .popup-sub-menu .popup-menu-item:hover, .popup-sub-menu .popup-menu-item:focus {
-      background-color: rgba(0, 0, 0, 0.97) !important;
+      background-color: rgba(53, 53, 53, 0.97) !important;
       color: #f8f8f8; }
 
 .popup-menu-content {
@@ -547,7 +547,7 @@ StScrollBar {
   .popup-menu-item:rtl {
     padding-right: 6px; }
   .popup-menu-item:active, .popup-menu-item.selected, .popup-menu-item:hover, .popup-menu-item:focus {
-    background-color: rgba(2, 2, 2, 0.97) !important;
+    background-color: rgba(48, 48, 48, 0.97) !important;
     color: #f8f8f8; }
   .popup-menu-item:checked {
     background-color: rgba(117, 129, 115, 0.8) !important;
@@ -845,7 +845,7 @@ StScrollBar {
 .message-list-section-title:focus,
 .events-button:hover,
 .events-button:focus {
-  background-color: rgba(5, 5, 5, 0.97); }
+  background-color: rgba(45, 45, 45, 0.97); }
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
@@ -1001,18 +1001,6 @@ StScrollBar {
   .message:hover, .message:focus {
     background-color: rgba(30, 30, 30, 0.97);
     box-shadow: 3px 0px 0px 0px #758173 inset; }
-
-.message-icon-bin {
-  padding: 10px 3px 10px 10px; }
-  .message-icon-bin:rtl {
-    padding: 10px 10px 10px 3px; }
-
-.message-icon-bin > StIcon {
-  icon-size: 16px;
-  -st-icon-style: symbolic; }
-
-.message-secondary-bin {
-  padding: 0 12px; }
 
 .message-secondary-bin > .event-time {
   color: #d2d2d2;
@@ -1525,15 +1513,13 @@ StScrollBar {
   font-size: 11pt;
   width: 34em;
   margin: 5px;
-  border-radius: 3px;
-  color: #eee;
-  background-color: rgba(25, 25, 25, 0.97);
-  border: 1px solid rgba(32, 32, 32, 0.8);
-  box-shadow: 0 1px 4px black; }
-  .notification-banner:hover {
-    background-color: rgba(25, 25, 25, 0.93); }
-  .notification-banner:focus {
-    background-color: rgba(25, 25, 25, 0.93); }
+  border-radius: 12px;
+  color: #f8f8f8;
+  background-color: rgba(7, 7, 7, 0.97);
+  border: 1px solid rgba(32, 32, 32, 0.8); }
+  .notification-banner:hover, .notification-banner:focus {
+    background-color: rgba(0, 0, 0, 0.97);
+    box-shadow: none; }
   .notification-banner .notification-icon {
     padding: 5px; }
   .notification-banner .notification-content {
@@ -1544,17 +1530,18 @@ StScrollBar {
   .notification-banner .notification-actions {
     background-color: rgba(20, 20, 20, 0.97);
     padding-top: 2px;
-    spacing: 1px; }
+    spacing: 1px;
+    border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
-    padding: 5px;
+    padding: 7px;
     background-color: rgba(25, 25, 25, 0.87);
     box-shadow: none; }
     .notification-banner .notification-button:first-child {
-      border-radius: 0 0 0 3px; }
+      border-radius: 0 0 0 12px; }
     .notification-banner .notification-button:last-child {
-      border-radius: 0 0 3px 0; }
+      border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      background-color: rgba(20, 20, 20, 0.97);
+      background-color: rgba(30, 30, 30, 0.97);
       color: #758173; }
 
 .summary-source-counter {

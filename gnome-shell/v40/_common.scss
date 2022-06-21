@@ -545,7 +545,7 @@ StScrollBar {
 
 .popup-menu-arrow { } //defined globally in the TOP BAR
 .popup-sub-menu {
-  background-color: darken($bg_color, 7%);
+  background-color: lighten($bg_color, 7%);
   box-shadow: none;
   border: none;
   border-radius: 0px 0px 6px 6px;
@@ -560,7 +560,7 @@ StScrollBar {
     &:active,
     &.selected,
     &:hover,
-    &:focus { background-color: darken($bg_color, 11%) !important; color: $fg_color; }
+    &:focus { background-color: lighten($bg_color, 11%) !important; color: $fg_color; }
   }
 
 }
@@ -582,7 +582,7 @@ StScrollBar {
   &:active,
   &.selected,
   &:hover,
-  &:focus { background-color: darken($bg_color, 9%) !important; color: $fg_color; }
+  &:focus { background-color: lighten($bg_color, 9%) !important; color: $fg_color; }
 
   &:checked { 
     background-color: transparentize($selected_bg_color, 0.2) !important;
@@ -974,7 +974,7 @@ StScrollBar {
     .events-section-title,
     .message-list-section-title,
     .events-button {
-      &:hover,&:focus { background-color: darken($bg_color, 8%); }
+      &:hover,&:focus { background-color: lighten($bg_color, 8%); }
       &:active {
         color: lighten($selected_fg_color,5%);
         background-color: $selected_bg_color;
@@ -1147,20 +1147,6 @@ StScrollBar {
           background: darken($bg_color, 1.7%);
           box-shadow: none;
         }
-
-          .message-icon-bin {
-            padding: 10px 3px 10px 10px;
-            &:rtl { padding: 10px 10px 10px 3px; }
-          }
-
-          .message-icon-bin > StIcon {
-            icon-size: 16px;
-            -st-icon-style: symbolic;
-          }
-
-          .message-secondary-bin {
-            padding: 0 12px;
-          }
 
           .message-secondary-bin > .event-time {
             color: darken($fg_color, 15%);
@@ -1731,13 +1717,12 @@ StScrollBar {
     font-size: 11pt;
     width: 34em;
     margin: 5px;
-    border-radius: 3px;
-    color: $topbar_color;
-    background-color: $bg_color;
+    border-radius: 12px;
+    color: $_bubble_fg_color;
+    background-color:  darken($bg_color, 7%);
     border: 1px solid $borders_color;
-    box-shadow: 0 1px 4px black;
-    &:hover { background-color: transparentize($bg_color, 0.04); }
-    &:focus { background-color: transparentize($bg_color, 0.04); }
+    //box-shadow: 0 1px 4px black;
+    &:hover, &:focus { background-color: darken($bg_color, 10%); box-shadow: none; }
 
     .notification-icon { padding: 5px; }
     .notification-content { padding: 5px; spacing: 5px; }
@@ -1746,14 +1731,15 @@ StScrollBar {
       background-color: darken($bg_color, 2%);
       padding-top: 2px;
       spacing: 1px;
+      border-radius: 0px 0px 12px 12px;
     }
     .notification-button {
-      padding: 5px;
+      padding: 7px;
       background-color: transparentize($bg_color, 0.1);
       box-shadow: none;
-      &:first-child { border-radius: 0 0 0 3px; }
-      &:last-child { border-radius: 0 0 3px 0; }
-      &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
+      &:first-child { border-radius: 0 0 0 12px; }
+      &:last-child { border-radius: 0 0 12px 0; }
+      &:hover, &focus { background-color: lighten($bg_color,2%); color: $selected_bg_color;}
     }
   }
   .summary-source-counter {
