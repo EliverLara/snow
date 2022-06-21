@@ -1008,19 +1008,6 @@ StScrollBar {
     background-color: #f8f8f8;
     box-shadow: 3px 0px 0px 0px #495aff inset; }
 
-.message-icon-bin {
-  padding: 10px 3px 10px 10px; }
-  .message-icon-bin:rtl {
-    padding: 10px 10px 10px 3px; }
-
-.message-icon-bin > StIcon {
-  color: #040404;
-  icon-size: 16px;
-  -st-icon-style: symbolic; }
-
-.message-secondary-bin {
-  padding: 0 12px; }
-
 .message-secondary-bin > .event-time {
   color: black;
   font-size: 0.7em;
@@ -1534,15 +1521,13 @@ StScrollBar {
   font-size: 11pt;
   width: 34em;
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 12px;
   color: #31363d;
   background-color: #e1e1e1;
   border: 1px solid rgba(0, 0, 0, 0.15); }
-  .notification-banner:hover {
-    background-color: #e1e1e1;
+  .notification-banner:hover, .notification-banner:focus {
+    background-color: #dadada;
     box-shadow: none; }
-  .notification-banner:focus {
-    background-color: rgba(243, 243, 243, 0.95); }
   .notification-banner .notification-icon {
     padding: 5px; }
   .notification-banner .notification-content {
@@ -1552,8 +1537,7 @@ StScrollBar {
     icon-size: 1.09em; }
   .notification-banner .notification-actions {
     background-color: #e1e1e1;
-    padding-top: 0px;
-    spacing: 0px; }
+    border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
     color: #31363d;
     background-gradient-start: #f8f8f8;
@@ -1563,14 +1547,12 @@ StScrollBar {
     border: 1px solid rgba(0, 0, 0, 0.15);
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    padding: 5px; }
+    padding: 7px; }
     .notification-banner .notification-button:first-child {
-      border-radius: 4px 0 0 4px;
-      margin-left: 5px;
+      border-radius: 0px 0 0 12px;
       border-right: none; }
     .notification-banner .notification-button:last-child {
-      border-radius: 0 4px 4px 0;
-      margin-right: 5px; }
+      border-radius: 0 0px 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
       color: #495aff;
       background-gradient-start: #f8f8f8;
