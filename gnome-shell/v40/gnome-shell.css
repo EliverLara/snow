@@ -917,7 +917,8 @@ StScrollBar {
   border-radius: 99px;
   color: #31363d; }
   .calendar-day-base:hover, .calendar-day-base:focus {
-    background-color: white; }
+    background-color: #dadada;
+    box-shadow: none; }
   .calendar-day-base:active, .calendar-day-base:selected {
     color: #eaeaea;
     background-color: #495aff;
@@ -1001,12 +1002,11 @@ StScrollBar {
 
 .message {
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 3px;
-  background: #efefef;
+  border-radius: 8px;
+  background: #e9e9e9;
   box-shadow: none; }
   .message:hover, .message:focus {
-    background-color: #f8f8f8;
-    box-shadow: 3px 0px 0px 0px #495aff inset; }
+    background-color: #dadada; }
 
 .message-secondary-bin > .event-time {
   color: black;
