@@ -159,6 +159,7 @@ StScrollBar {
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
   -slider-handle-border-width: 0;
+  -slider-handle-border-color: transparent;
   -barlevel-height: 0.3em;
   -barlevel-background-color: rgba(0, 0, 0, 0.14);
   -barlevel-border-color: black;
@@ -533,7 +534,8 @@ StScrollBar {
 
 .popup-menu-item {
   spacing: 6px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  background-gradient-direction: none; }
   .popup-menu-item:ltr {
     padding-left: 6px; }
   .popup-menu-item:rtl {
@@ -915,7 +917,8 @@ StScrollBar {
   padding: 0.1em;
   margin: 2px;
   border-radius: 99px;
-  color: #31363d; }
+  color: #31363d;
+  background-gradient-direction: none; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: #dadada;
     box-shadow: none; }
@@ -1426,6 +1429,8 @@ StScrollBar {
 .app-folder-dialog {
   background-color: rgba(167, 167, 167, 0.8);
   border: none; }
+  .app-folder-dialog .folder-name-label {
+    color: #31363d; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;
