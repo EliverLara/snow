@@ -1210,7 +1210,7 @@ StScrollBar {
   spacing: 24px; }
 
 #overviewGroup {
-  background-color: #676767; }
+  background-color: #dadada; }
 
 .overview-controls {
   padding-bottom: 32px; }
@@ -1230,7 +1230,7 @@ StScrollBar {
 .window-caption {
   spacing: 20px;
   color: #31363d;
-  background-color: rgba(243, 243, 243, 0.65);
+  background-color: rgba(243, 243, 243, 0.85);
   border-radius: 2px;
   padding: 4px 8px; }
 
@@ -1278,17 +1278,17 @@ StScrollBar {
 
 .search-section-separator {
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.2); }
+  background-color: rgba(37, 37, 37, 0.2); }
 
 .list-search-result-content {
   spacing: 30px; }
 
 .list-search-result-title {
-  color: white;
+  color: #31363d;
   spacing: 12px; }
 
 .list-search-result-description {
-  color: rgba(255, 255, 255, 0.5); }
+  color: #3a4048; }
 
 .list-search-provider-details {
   width: 150px;
@@ -1303,7 +1303,7 @@ StScrollBar {
 
 /* DASHBOARD */
 .dash-background {
-  background-color: rgba(243, 243, 243, 0.6); }
+  background-color: rgba(243, 243, 243, 0.85); }
 
 .dash-separator {
   width: 1px;
@@ -1354,12 +1354,12 @@ StScrollBar {
 .search-provider-icon:active, .search-provider-icon:checked,
 .list-search-result:active,
 .list-search-result:checked {
-  background-color: rgba(218, 218, 218, 0.85); }
+  background-color: rgba(205, 205, 205, 0.9); }
 .search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:hover,
 .list-search-result:focus,
 .list-search-result:selected,
 .list-search-result:hover {
-  background-color: rgba(243, 243, 243, 0.3);
+  background-color: #cdcdcd;
   transition-duration: 200ms; }
 
 .app-well-app,
@@ -1387,7 +1387,7 @@ StScrollBar {
   .grid-search-result:hover .overview-icon,
   .grid-search-result:focus .overview-icon,
   .grid-search-result:selected .overview-icon {
-    background-color: rgba(243, 243, 243, 0.45);
+    background-color: #cdcdcd;
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
@@ -1405,7 +1405,7 @@ StScrollBar {
 .app-well-app.app-folder .overview-icon,
 .show-apps .overview-icon,
 .grid-search-result .overview-icon {
-  color: #f7f7f7;
+  color: #31363d;
   padding: 7px 6px;
   border: none;
   transition-duration: 100ms;
@@ -1414,11 +1414,11 @@ StScrollBar {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: rgba(243, 243, 243, 0.05);
+  background-color: #b3b3b3;
   border-radius: 12px; }
 
 .app-folder-dialog {
-  background-color: rgba(167, 167, 167, 0.8);
+  background-color: rgba(243, 243, 243, 0.9);
   border: none; }
   .app-folder-dialog .folder-name-label {
     color: #31363d; }
@@ -1462,18 +1462,17 @@ StScrollBar {
     height: 12px;
     border-radius: 12px;
     background-image: none;
-    background-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(0, 0, 0, 0.3); }
   .page-indicator:hover .page-indicator-icon {
     background-image: none;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5); }
   .page-indicator:active .page-indicator-icon {
     background-image: none;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-width: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 0; }
   .page-indicator:checked .page-indicator-icon {
     background-image: none;
-    background-color: #FFFFFF;
+    background-color: #495aff;
     transition-duration: 0s; }
 
 .app-well-app > .overview-icon.overview-icon-with-label,

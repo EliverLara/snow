@@ -1397,7 +1397,7 @@ $slider_size: 16px;
 }
 
 #overviewGroup {
-  background-color: darken($bg_color, 55%);
+  background-color: darken($bg_color, 10%);
 }
 
 .overview-controls {
@@ -1423,7 +1423,7 @@ $slider_size: 16px;
   .window-caption {
     spacing: 20px;
     color: $fg_color;
-    background-color: transparentize($osd_bg_color,.3);
+    background-color: transparentize($osd_bg_color, .1);
     border-radius: 2px;
     padding: 4px 8px;
   }
@@ -1475,11 +1475,11 @@ $slider_size: 16px;
   }
   .list-search-results { spacing: 3px; }
 
-  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
+  .search-section-separator { height: 2px; background-color: rgba(37, 37, 37, 0.2); }
 
   .list-search-result-content { spacing: 30px; }
-  .list-search-result-title { color: lighten($selected_fg_color,5%); spacing: 12px; }
-  .list-search-result-description { color: transparentize(lighten($selected_fg_color,15%), 0.5); }
+  .list-search-result-title { color: $fg_color; spacing: 12px; }
+  .list-search-result-description { color: lighten($fg_color, 4%); }
   .list-search-provider-details { width: 150px; color: lighten($osd_fg_color,5%); margin-top: 0.24em; }
   .list-search-provider-content { spacing: 20px; }
   .search-provider-icon { padding: 15px; }
@@ -1488,7 +1488,7 @@ $slider_size: 16px;
   /* DASHBOARD */
 
   .dash-background {
-    background-color: $_bubble_transparent;
+    background-color: transparentize($bg_color, 0.15);
   }
   
   .dash-separator {
@@ -1542,9 +1542,9 @@ $slider_size: 16px;
   .search-provider-icon,
   .list-search-result {
     @extend %icon_tile;
-    &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
+    &:active, &:checked { background-color: transparentize(darken($bg_color,15%),.1); }
     &:focus, &:selected, &:hover {
-      background-color: transparentize($bg_color,.7);
+      background-color: darken($bg_color, 15%);
       transition-duration: 200ms;
     }
   }
@@ -1566,7 +1566,7 @@ $slider_size: 16px;
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: transparentize($osd_bg_color,.5);
+      background-color: darken($bg_color, 15%);
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
@@ -1583,7 +1583,7 @@ $slider_size: 16px;
   }
 
   %icon_tile {
-    color: $selected_fg_color;
+    color: $fg_color;
     padding: 7px 6px;
     border: none;
     transition-duration: 100ms;
@@ -1593,12 +1593,12 @@ $slider_size: 16px;
 
   /* App Folders */
 .app-well-app.app-folder {
-  background-color: transparentize($osd_bg_color, 0.9);
+  background-color: darken($bg_color, 25%);
   border-radius: 12px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
-  background-color:   transparentize(darken($bg_color, 30%), 0.2);
+  background-color:   transparentize($bg_color, 0.1);
   border: none;
 
   & .folder-name-label { color: $fg_color; }
@@ -1650,22 +1650,21 @@ $slider_size: 16px;
       height: 12px;
       border-radius: 12px;
       background-image: none;
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(0, 0, 0, 0.3);
     }
 
     &:hover .page-indicator-icon {  
       background-image: none;
-      background-color: rgba(255, 255, 255, 0.5); 
+      background-color: rgba(0, 0, 0, 0.5); 
     }
     &:active .page-indicator-icon { 
       background-image: none;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-width: 2px;
+      background-color: rgba(0, 0, 0, 0.7);
       margin:0;
     }
     &:checked .page-indicator-icon { 
       background-image: none;
-      background-color: #FFFFFF;
+      background-color: $selected_bg_color;
       transition-duration: 0s; 
     }
   }
