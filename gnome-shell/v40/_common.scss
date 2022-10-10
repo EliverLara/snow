@@ -1382,7 +1382,7 @@ $slider_size: 16px;
 }
 
 #overviewGroup {
-  background-color: lighten($bg_color, 55%);
+  background-color: lighten($bg_color, 5%);
 }
 
 
@@ -1658,7 +1658,6 @@ $slider_size: 16px;
     &:active .page-indicator-icon { 
       background-image: none;
       background-color: rgba(255, 255, 255, 0.7);
-      border-width: 2px;
       margin:0;
     }
     &:checked .page-indicator-icon { 
