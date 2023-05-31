@@ -149,9 +149,9 @@
   //
 
     color: $fg_color;
-    @include gradient(#f8f8f8, #eeeeee);
+    background-color: darken($bg_color, 7%);
     box-shadow: none;
-    border: 1px solid $borders_color;
+    border: none;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
   }
@@ -166,8 +166,8 @@
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
-    border: 1px solid  transparentize($selected_bg_color, 0.5);
-    background: mix(#f8f8f8, #EEEEEE, 20%);
+    border: none;
+    background: darken($bg_color, 13%);
   }
 
   @else if $t==hover {
@@ -177,8 +177,8 @@
     $_bg: if($c!=$osd_bg_color, transparentize($c, 0.3),
                             lighten($osd_bg_color,10%));
 
-    color: $selected_bg_color;
-    @include gradient(#f8f8f8, #eeeeee);
+    color: $fg_color;
+    background-color: darken($bg_color, 13%);
     box-shadow: none;
    // border: none;
     text-shadow: 0 1px black;
@@ -192,7 +192,7 @@
     $_bg: if($c!=$bg_color, $c, $selected_bg_color);
 
     color: $selected_fg_color;
-    @include gradient($selected_bg_color, $selected_bg_color);
+   background-color: $selected_bg_color;
     // This should be none, but it's creating some issues with borders, so to
     // workaround it for now, use inset wich goes through a different code path.
     // see https://bugzilla.gnome.org/show_bug.cgi?id=752934
