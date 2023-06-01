@@ -13,15 +13,11 @@ stage {
   background-color: rgba(43, 43, 43, 0.97);
   box-shadow: none;
   border: none;
-  text-shadow: 0 1px black;
-  icon-shadow: 0 1px black;
   border-radius: 6px;
   padding: 6px 32px;
   font-weight: bold; }
   .button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus {
     color: #f8f8f8;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
     box-shadow: none;
     border: none;
     background: rgba(58, 58, 58, 0.97); }
@@ -42,9 +38,7 @@ stage {
   .button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover {
     color: #f8f8f8;
     background-color: rgba(58, 58, 58, 0.97);
-    box-shadow: none;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+    box-shadow: none; }
 
 .modal-dialog-linked-button {
   padding: 6px;
@@ -74,24 +68,18 @@ stage {
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
     color: #f8f8f8;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
     box-shadow: none;
     border: none;
     background: rgba(58, 58, 58, 0.97); }
     .modal-dialog-linked-button:focus:hover {
       color: #f8f8f8;
-      text-shadow: 0 1px black;
-      icon-shadow: 0 1px black;
       box-shadow: none;
       border: none;
       background: rgba(58, 58, 58, 0.97); }
   .modal-dialog-linked-button:hover {
     color: #f8f8f8;
     background-color: rgba(58, 58, 58, 0.97);
-    box-shadow: none;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+    box-shadow: none; }
   .modal-dialog-linked-button:first-child {
     border-radius: 10px 0px 0px 10px;
     margin-left: 5px; }
@@ -103,17 +91,19 @@ stage {
 
 /* Entries */
 StEntry {
-  background-color: #3f3f3f;
+  background-color: rgba(61, 61, 61, 0.97);
   border-color: rgba(32, 32, 32, 0.8);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 4px;
-  border-width: 0;
-  color: #f8f8f8 !important;
+  border-width: 2px;
+  color: #f8f8f8;
   selection-background-color: #758173;
   selected-color: #fefefe; }
+  StEntry:hover {
+    background-color: rgba(71, 71, 71, 0.97); }
   StEntry:focus {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+    border-color: #758173;
+    box-shadow: none; }
   StEntry:insensitive {
     color: rgba(140, 140, 140, 0.985);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
@@ -121,6 +111,8 @@ StEntry {
     icon-size: 16px;
     warning-color: #ff9f39;
     padding: 0 4px; }
+  StEntry StLabel.hint-text {
+    color: rgba(248, 248, 248, 0.7); }
 
 /* Scrollbars */
 StScrollView.vfade {
@@ -216,8 +208,6 @@ StScrollBar {
   color: #f8f8f8;
   background-color: rgba(12, 12, 12, 0.92);
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
-  .modal-dialog .modal-dialog-content-box {
-    padding: 24px; }
   .modal-dialog .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px; }
@@ -227,10 +217,10 @@ StScrollBar {
     spacing: 6px; }
   .modal-dialog .run-dialog-button-box {
     padding-top: 1em; }
-  .modal-dialog .run-dialog-label {
+  .modal-dialog .run-dialog-label, .modal-dialog .run-dialog-description {
     font-size: 12pt;
     font-weight: bold;
-    color: #dfdfdf;
+    color: #f8f8f8;
     padding-bottom: .4em; }
 
 .mount-dialog-subject,
@@ -778,9 +768,13 @@ StScrollBar {
       icon-size: 1.09em;
       padding: 0 5px; }
     .unlock-screen #panel .panel-button, .login-screen #panel .panel-button, .lock-screen #panel .panel-button {
-      color: white; }
+      color: #dfdfdf; }
       .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
-        color: white; }
+        color: #dfdfdf; }
+  #panel:overview .panel-button {
+    color: #eee !important; }
+    #panel:overview .panel-button:active, #panel:overview .panel-button:overview, #panel:overview .panel-button:focus, #panel:overview .panel-button:checked {
+      color: #fff !important; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
     spacing: 2px; }
@@ -802,7 +796,7 @@ StScrollBar {
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background: transparent;
   border: none;
-  color: #f8f8f8;
+  color: #f8f8f8 !important;
   box-shadow: none; }
 
 .datemenu-calendar-column {
@@ -829,15 +823,22 @@ StScrollBar {
 .message-list-section-title:focus,
 .events-button:hover,
 .events-button:focus {
-  background-color: rgba(45, 45, 45, 0.97); }
+  color: #f8f8f8;
+  background-color: rgba(58, 58, 58, 0.97);
+  box-shadow: none;
+  text-shadow: none; }
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
 .events-section-title:active,
 .message-list-section-title:active,
 .events-button:active {
-  color: white;
-  background-color: #758173; }
+  color: #fefefe;
+  background-color: #758173;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  icon-shadow: none; }
 
 .datemenu-today-button .day-label {
   color: #f8f8f8; }
@@ -850,9 +851,10 @@ StScrollBar {
 .weather-header,
 .events-section-title,
 .message-list-section-title,
-.events-title, .event-time {
-  color: #929292;
-  font-weight: bold; }
+.events-title, .event-time, .events-list {
+  color: #f8f8f8;
+  font-weight: bold;
+  text-shadow: none; }
 
 .world-clocks-grid {
   spacing-rows: 0.4em; }
@@ -980,12 +982,15 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  border: 1px solid rgba(32, 32, 32, 0.8);
-  border-radius: 8px;
-  background: rgba(30, 30, 30, 0.97);
-  box-shadow: none; }
+  color: #f8f8f8;
+  background-color: rgba(43, 43, 43, 0.97);
+  box-shadow: none;
+  border: none;
+  text-shadow: none; }
   .message:hover, .message:focus {
-    background-color: rgba(43, 43, 43, 0.97); }
+    color: #f8f8f8;
+    background-color: rgba(58, 58, 58, 0.97);
+    box-shadow: none; }
 
 .message-secondary-bin > .event-time {
   color: #d2d2d2;
@@ -1018,6 +1023,16 @@ StScrollBar {
     color: #f8f8f8; }
   .message-media-control:insensitive {
     color: #929292; }
+
+/* Media Controls */
+.message-media-control {
+  color: #f8f8f8; }
+  .message-media-control:hover {
+    background-color: rgba(0, 0, 0, 0.97); }
+  .message-media-control:active {
+    background-color: rgba(0, 0, 0, 0.97); }
+  .message-media-control:insensitive {
+    color: rgba(153, 153, 153, 0.985); }
 
 .media-message-cover-icon {
   icon-size: 48px !important; }
@@ -1218,25 +1233,13 @@ StScrollBar {
 
 .search-entry {
   width: 320px;
-  padding: 7px 9px;
+  padding: 9px;
   border-radius: 10px;
-  border: 2px solid rgba(32, 32, 32, 0.8);
-  color: #f8f8f8;
-  background-color: rgba(25, 25, 25, 0.57);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
-  .search-entry * {
-    color: #f8f8f8; }
+  border-color: transparent; }
   .search-entry .search-entry-icon {
     icon-size: 1em;
     padding: 0 4px;
     color: rgba(248, 248, 248, 0.7); }
-  .search-entry:hover, .search-entry:focus {
-    background-color: rgba(25, 25, 25, 0.77);
-    border-color: #758173;
-    border-color: #758173;
-    box-shadow: none; }
-    .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
-      color: #f8f8f8; }
 
 .search-provider-icon:focus,
 .list-search-result:focus, .search-provider-icon:hover,
@@ -1390,7 +1393,8 @@ StScrollBar {
   border: none;
   transition-duration: 100ms;
   text-align: center;
-  box-shadow: none; }
+  box-shadow: none;
+  border-radius: 12px; }
 
 /* App Folders */
 .app-well-app.app-folder {
@@ -1478,6 +1482,28 @@ StScrollBar {
 .all-apps,
 .frequent-apps > StBoxLayout {
   padding: 0px 88px 10px 88px; }
+
+.page-navigation-arrow {
+  margin: 6px;
+  padding: 18px;
+  width: 24px;
+  height: 24px;
+  border-radius: 99px; }
+  .page-navigation-arrow StIcon {
+    color: #f8f8f8; }
+  .page-navigation-arrow:insensitive {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    icon-shadow: none; }
+  .page-navigation-arrow:hover {
+    background-color: rgba(117, 129, 115, 0.5); }
+    .page-navigation-arrow:hover StIcon {
+      color: #fefefe; }
+  .page-navigation-arrow:active {
+    background-color: #758173; }
 
 .workspace-thumbnails {
   color: #f8f8f8;
@@ -1722,15 +1748,11 @@ StScrollBar {
       color: #f8f8f8;
       background-color: rgba(43, 43, 43, 0.97);
       box-shadow: none;
-      border: none;
-      text-shadow: 0 1px black;
-      icon-shadow: 0 1px black; }
+      border: none; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
         color: #f8f8f8;
         background-color: rgba(58, 58, 58, 0.97);
-        box-shadow: none;
-        text-shadow: 0 1px black;
-        icon-shadow: 0 1px black; }
+        box-shadow: none; }
       .login-dialog .modal-dialog-button:default:active {
         color: #fefefe;
         background-color: #758173;
@@ -2038,8 +2060,6 @@ StScrollBar {
   background-color: rgba(43, 43, 43, 0.97);
   box-shadow: none;
   border: none;
-  text-shadow: 0 1px black;
-  icon-shadow: 0 1px black;
   padding: 6px 10.5px; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
     color: #fefefe;
@@ -2085,8 +2105,6 @@ StScrollBar {
 .quick-slider .icon-button:hover {
   color: #f8f8f8;
   background-color: rgba(58, 58, 58, 0.97);
-  box-shadow: none;
-  text-shadow: 0 1px black;
-  icon-shadow: 0 1px black; }
+  box-shadow: none; }
 
 /*# sourceMappingURL=gnome-shell.css.map */

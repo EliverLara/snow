@@ -55,19 +55,21 @@
 // normal, focus, insensitive
 //
 
-  @if $t==normal {
-    background-color: $gray;
-    border-color: $borders_color;
- 
-    @include _shadows($depth);
-
-  }
-  @if $t==focus { @include _shadows($depth); }
-  @if $t==hover { }
-  @if $t==insensitive {
-    color: $insensitive_fg_color;
-    box-shadow: $depth;
-  }
+@if $t==normal {
+  background-color: lighten($bg_color, 14%);
+  border-color: $borders_color;
+}
+@if $t==focus { 
+  border-color: $selected_bg_color; 
+  box-shadow: none;
+}
+@if $t==hover {  
+  background-color: lighten($bg_color, 18%);
+}
+@if $t==insensitive {
+  color: $insensitive_fg_color;
+  box-shadow: $depth;
+}
 }
 
 // buttons
@@ -152,8 +154,6 @@
     background-color: lighten($bg_color, 7%);
     box-shadow: none;
     border: none;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
   }
   @if $t==focus {
   //
@@ -163,8 +163,6 @@
                           $osd_bg_color);
 
     color: $osd_fg_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
     box-shadow: none;
     border: none;
     background: lighten($bg_color, 13%);
@@ -180,10 +178,6 @@
     color: $fg_color;
     background-color: lighten($bg_color, 13%);
     box-shadow: none;
-   // border: none;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-
   }
   @else if $t==active {
   //
@@ -192,7 +186,7 @@
     $_bg: if($c!=$bg_color, $c, $selected_bg_color);
 
     color: $selected_fg_color;
-   background-color: $selected_bg_color;
+    background-color: $selected_bg_color;
     // This should be none, but it's creating some issues with borders, so to
     // workaround it for now, use inset wich goes through a different code path.
     // see https://bugzilla.gnome.org/show_bug.cgi?id=752934
