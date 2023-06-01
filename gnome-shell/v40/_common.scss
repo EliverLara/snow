@@ -69,11 +69,11 @@ stage {
 /* Entries */
 StEntry {
   @include entry(normal);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 4px;
-  border-width: 0;
-  color: $fg_color !important;
-  //&:hover { @include entry(hover);}
+  border-width: 2px;
+  color: $fg_color;
+  &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}
   selection-background-color: $selected_bg_color;
@@ -83,6 +83,9 @@ StEntry {
     warning-color: $warning_color;
     padding: 0 4px;
   }
+  
+  StLabel.hint-text { color: transparentize($fg_color, 0.3); }
+
 }
 
 
@@ -189,7 +192,7 @@ $slider_size: 16px;
   color: $osd_fg_color;
   @include gradient();
 
-  .modal-dialog-content-box { padding: 24px; }
+  // .modal-dialog-content-box { padding: 24px; }
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -200,10 +203,10 @@ $slider_size: 16px;
     spacing: 6px;
   }
   .run-dialog-button-box { padding-top: 1em; }
-  .run-dialog-label {
+  .run-dialog-label, .run-dialog-description {
     @include fontsize($font-size + 1.1);
     font-weight: bold;
-    color: darken($osd_fg_color,10%);
+    color: $fg_color;
     padding-bottom: .4em;
   }
 
@@ -906,9 +909,14 @@ $slider_size: 16px;
     .unlock-screen &,
     .login-screen &,
     .lock-screen & {
-      color: lighten($fg_color, 10%);
-      &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
+      color: darken($fg_color, 10%);
+      &:focus, &:hover, &:active { color: darken($fg_color, 10%); }
     }
+  }
+
+  &:overview .panel-button  {
+    color: $topbar_color !important;
+    &:active, &:overview, &:focus, &:checked { color:#fff !important; }
   }
 
   .panel-status-indicators-box,
@@ -956,10 +964,7 @@ $slider_size: 16px;
   .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
     border: none;
-    color: $fg_color;
-    background: transparent;
-    border: none;
-    color: $fg_color;
+    color: $fg_color !important;
     box-shadow: none;
   }
 
@@ -983,11 +988,11 @@ $slider_size: 16px;
     .events-section-title,
     .message-list-section-title,
     .events-button {
-      &:hover,&:focus { background-color: darken($bg_color, 8%); }
-      &:active {
-        color: lighten($selected_fg_color,5%);
-        background-color: $selected_bg_color;
+      &:hover,&:focus { 
+        @include button(hover); 
+        text-shadow: none;
       }
+      &:active { @include button(active); }
     }
 
     .datemenu-today-button .day-label {
@@ -1003,10 +1008,12 @@ $slider_size: 16px;
     .weather-header,
     .events-section-title,
     .message-list-section-title,
-    .events-title, .event-time {
-      color: darken($fg_color,40%);
+    .events-title, .event-time, .events-list {
+      color: $fg_color;
       font-weight: bold;
+      text-shadow: none;
     }
+
 
     .world-clocks-grid {
       spacing-rows: 0.4em;
@@ -1158,13 +1165,9 @@ $slider_size: 16px;
         }
 
         .message {
-          &:hover,&:focus { 
-            background-color: darken($bg_color, 10%);
-           }
-          border: 1px solid $borders_color;
-          border-radius: 8px;
-          background: darken($bg_color, 4%);
-          box-shadow: none;
+          &:hover, &:focus { @include button(hover); }
+          @include button(normal);
+          text-shadow: none;
         }
 
           .message-secondary-bin > .event-time {
@@ -1205,6 +1208,24 @@ $slider_size: 16px;
             &:hover { color: $fg_color; }
             &:insensitive { color: darken($fg_color,40%); }
           }
+
+/* Media Controls */
+.message-media-control {
+
+  color: $fg_color;
+
+  // colors are lightened since the media controls are in a card
+  &:hover {
+    background-color: darken($bg_color, 24%);
+  }
+
+  &:active { 
+    background-color: darken($bg_color, 28%);
+  }
+
+  &:insensitive { color: lighten($insensitive_fg_color, 5%); }
+
+}
 
           .media-message-cover-icon {
             icon-size: 48px !important;
@@ -1432,22 +1453,12 @@ $slider_size: 16px;
   //search entry
   .search-entry {
     width: 320px;
-    padding: 7px 9px;
+    padding: 9px;
     border-radius: 10px;
-    border: 2px solid $borders_color;
-    color: $fg_color;
-    background-color: transparentize($bg_color, 0.4);
-    box-shadow: $depth;
-    * {color: $fg_color; }
-
+    border-color: transparent;
+  
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
-
-    &:hover, &:focus {
-      background-color: transparentize(#fefefe, 0.2);
-      .search-entry-icon { color: $fg_color; }
-      border-color: $selected_bg_color;
-      box-shadow: none;
-    }
+  
   }
 
   //search results
@@ -1590,6 +1601,7 @@ $slider_size: 16px;
     transition-duration: 100ms;
     text-align: center;
     box-shadow: none;
+    border-radius: 12px;
   }
 
   /* App Folders */
@@ -1701,6 +1713,24 @@ $slider_size: 16px;
     // horizontal padding to make sure scrollbars or dash don't overlap content
     padding: 0px 88px 10px 88px;
   }
+
+.page-navigation-arrow {
+  margin: 6px;
+  padding: 18px;
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  
+  StIcon { color: $fg_color; }
+
+  &:insensitive { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
+  &:hover { 
+    background-color: transparentize($selected_bg_color, 0.5);
+    StIcon { color: $selected_fg_color; }
+  }
+  &:active {background-color: $selected_bg_color;}
+}
+  
 
 %overview-panel {
   color:  $_bubble_fg_color;
