@@ -1,10 +1,10 @@
 /***********
  * Sidebar *
  ***********/
-.sidebar {
+.sidebar, .nautilus-window .navigation-sidebar {
   border-style: none;
   border-width: 0;
-  background-color: mix($bg_color, $base_color, 50%);
+  background-color: $base_color;
 
   .frame{
     border: none;
@@ -41,10 +41,12 @@
               
   }
   row{
-    padding: 8px 14px;
+    padding: 2px 14px;
     transition: all .12s ease-in;
+    border-radius: 0;
+    margin: 0;
     &:selected{
-      background: if($variant == 'light', transparentize( lighten($bg_color, 3%), 0.4), transparentize(lighten($base_color, 7%), 0.4));
+      background: if($variant == 'light', transparentize( lighten($bg_color, 2%), 0.4), transparentize(lighten($base_color, 7%), 0.4));
       color: #ACACAC;
       border-left: 4px solid $selected_bg_color;
       &:backdrop{
@@ -59,6 +61,7 @@
       }
       label{
         color: #ACACAC;
+        font-weight: bold;
       }
     }
   }
