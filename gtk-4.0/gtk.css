@@ -3271,6 +3271,21 @@ notebook button.flat {
   notebook button.flat:hover, notebook button.flat:backdrop {
     background: transparent; }
 
+tabbox {
+  background-color: #ebebeb;
+  padding: 0px; }
+  tabbox > tabboxchild {
+    margin: 0 -3px;
+    border-radius: 0; }
+  tabbox > tab,
+  tabbox > tabboxchild > tab {
+    border-radius: 0; }
+    tabbox > tab:checked, tabbox > tab:selected,
+    tabbox > tabboxchild > tab:checked,
+    tabbox > tabboxchild > tab:selected {
+      background: #f8f8f8;
+      color: #31363d; }
+
 /*********
  * Paned *
  *********/
