@@ -252,7 +252,7 @@ popover.background.magnifier > contents, .osd {
     background-image: radial-gradient(farthest-side, #9ca69b 95%, rgba(156, 166, 155, 0)); } }
 notebook > header > tabs > arrow,
 button {
-  min-height: 20px;
+  min-height: 22px;
   min-width: 16px;
   padding: 2px 6px;
   border: 1px solid rgba(12, 12, 12, 0.8);
@@ -373,7 +373,7 @@ button {
         color: rgba(254, 254, 254, 0.7); }
   notebook > header > tabs > arrow.image-button,
   button.image-button {
-    min-width: 24px;
+    min-width: 22px;
     padding-left: 4px;
     padding-right: 4px; }
   notebook > header > tabs > arrow.image-button.circular, notebook > header > tabs > arrow.image-button.sidebar-button,
@@ -406,8 +406,8 @@ row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
   row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
     color: #898986; }
 button.osd {
-  min-width: 24px;
-  min-height: 20px;
+  min-width: 22px;
+  min-height: 22px;
   color: #fefefe;
   border-radius: 5px;
   outline-color: rgba(254, 254, 254, 0.3);
@@ -2108,7 +2108,7 @@ GraniteWidgetsWelcome {
  ***************/
 .titlebar:not(headerbar), .titlebar, headerbar {
   padding: 0 13px;
-  min-height: 34px;
+  min-height: 38px;
   background: #0d0d0d;
   color: #f8f8f2;
   border-radius: 0; }
@@ -2138,13 +2138,10 @@ GraniteWidgetsWelcome {
     border: 1px solid rgba(12, 12, 12, 0.8);
     font-weight: normal;
     background: linear-gradient(to bottom, #3f3f3f, #141414);
-    min-height: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    min-height: 22px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     box-shadow: none; }
-    .titlebar button.image-button,
-    headerbar button.image-button {
-      padding: 3px 4px; }
     .titlebar button.suggested-action,
     headerbar button.suggested-action {
       box-shadow: none;
@@ -2214,9 +2211,9 @@ GraniteWidgetsWelcome {
     .titlebar button.suggested-action,
     headerbar button.suggested-action {
       font-weight: bold;
-      min-height: 24px;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      min-height: 22px;
+      margin-top: 8px;
+      margin-bottom: 8px;
       border-radius: 4px;
       font-weight: normal;
       color: white;
@@ -2260,9 +2257,9 @@ GraniteWidgetsWelcome {
     .titlebar button.destructive-action,
     headerbar button.destructive-action {
       font-weight: bold;
-      min-height: 24px;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      min-height: 22px;
+      margin-top: 8px;
+      margin-bottom: 8px;
       border-radius: 4px;
       font-weight: normal;
       color: white;
@@ -2710,12 +2707,21 @@ GraniteWidgetsWelcome {
 
 headerbar entry,
 headerbar spinbutton,
-headerbar separator {
-  margin-top: 5px;
-  margin-bottom: 5px; }
+headerbar separator:not(.sidebar),
+headerbar button,
+headerbar menubutton {
+  margin-top: 3px;
+  margin-bottom: 3px; }
+headerbar menubutton > button,
+headerbar spinbutton > button,
+headerbar splitbutton > button,
+headerbar splitbutton > menubutton,
+headerbar entry > menubutton {
+  margin-top: 0px;
+  margin-bottom: 0px; }
 headerbar switch {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 0;
+  margin-bottom: 0; }
 headerbar separator {
   background: transparent; }
 
@@ -5548,6 +5554,74 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   background-color: rgba(24, 24, 24, 0.95); }
   .nautilus-window.background:backdrop {
     background-color: rgba(24, 24, 24, 0.95); }
+.nautilus-window #NautilusPathBar {
+  height: 22px;
+  color: #f8f8f2;
+  border-radius: 4px;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid rgba(12, 12, 12, 0.8);
+  font-weight: normal;
+  background: linear-gradient(to bottom, #3f3f3f, #141414); }
+  .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar .subtitle,
+  .nautilus-window #NautilusPathBar headerbar .subtitle,
+  headerbar .nautilus-window #NautilusPathBar .subtitle {
+    color: transparent;
+    margin-right: -5px; }
+  .nautilus-window #NautilusPathBar button .horizontal > .dim-label, .nautilus-window #NautilusPathBar button .horizontal > label.separator, .nautilus-window #NautilusPathBar button .titlebar .horizontal > .subtitle, .titlebar .nautilus-window #NautilusPathBar button .horizontal > .subtitle,
+  .nautilus-window #NautilusPathBar button headerbar .horizontal > .subtitle,
+  headerbar .nautilus-window #NautilusPathBar button .horizontal > .subtitle {
+    color: #f8f8f2;
+    padding: 3px 12px;
+    margin: 0;
+    border-right: 1px solid rgba(12, 12, 12, 0.8); }
+  .nautilus-window #NautilusPathBar button:hover .dim-label, .nautilus-window #NautilusPathBar button:hover label.separator, .nautilus-window #NautilusPathBar button:hover .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:hover .subtitle,
+  .nautilus-window #NautilusPathBar button:hover headerbar .subtitle,
+  headerbar .nautilus-window #NautilusPathBar button:hover .subtitle, .nautilus-window #NautilusPathBar button:focus .dim-label, .nautilus-window #NautilusPathBar button:focus label.separator, .nautilus-window #NautilusPathBar button:focus .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:focus .subtitle,
+  .nautilus-window #NautilusPathBar button:focus headerbar .subtitle,
+  headerbar .nautilus-window #NautilusPathBar button:focus .subtitle {
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: #758173;
+    background-image: linear-gradient(to bottom, #758173, #444b43); }
+  .nautilus-window #NautilusPathBar button > .horizontal > image.dim-label, .nautilus-window #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle,
+  .nautilus-window #NautilusPathBar headerbar button > .horizontal > image.subtitle,
+  headerbar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle {
+    padding: 3px 0px 3px 12px;
+    border-right: none;
+    margin-right: -6px; }
+  .nautilus-window #NautilusPathBar button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0; }
+  .nautilus-window #NautilusPathBar .current-dir label {
+    padding: 1px 12px; }
+  .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background: #758173;
+    text-shadow: none; }
+  .nautilus-window #NautilusPathBar button.current-dir:only-child image {
+    margin-right: -6px;
+    padding: 0px 0px 0px 12px;
+    border-radius: 4px 0px 0px 4px; }
+.nautilus-window #NautilusQueryEditor {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  min-height: 22px; }
+  .nautilus-window #NautilusQueryEditor #NautilusQueryEditorTag > button {
+    margin: 0; }
+  .nautilus-window #NautilusQueryEditor > menubutton > button {
+    min-width: 16px;
+    min-height: 16px;
+    margin: 4px;
+    -gtk-icon-size: 12px;
+    padding: 0 4px; }
+  .nautilus-window #NautilusQueryEditor > text, .nautilus-window #NautilusQueryEditor > image {
+    margin: 0; }
 .nautilus-window notebook > stack:only-child {
   background-color: #202020; }
   .nautilus-window notebook > stack:only-child:backdrop {
