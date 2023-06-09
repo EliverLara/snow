@@ -78,19 +78,19 @@ read if you used those and something break with a version upgrade you're on your
 /***************
 * Action bars *
 ***************/
-.action-bar {
-  background-color: #030305;
+.action-bar, actionbar > revealer > box {
+  background-color: #0c0e15;
   border: solid rgba(238, 238, 238, 0.1);
   border-width: 1px 0 0 0;
   color: #C3C7D1;
   box-shadow: none; }
-  .action-bar:backdrop {
+  .action-bar:backdrop, actionbar > revealer > box:backdrop {
     background-color: #030305;
     box-shadow: none; }
-  .action-bar:first-child {
+  .action-bar:first-child, actionbar > revealer > box:first-child {
     border-radius: 6px 6px 0px 0px;
     border-width: 1px 1px 0px 1px; }
-  .action-bar:last-child {
+  .action-bar:last-child, actionbar > revealer > box:last-child {
     border-radius: 0 0 6px 6px;
     border-width: 0px 1px 1px 1px; }
 
@@ -3270,18 +3270,25 @@ notebook button.flat {
   notebook button.flat:hover, notebook button.flat:backdrop {
     background: transparent; }
 
-tabbox {
+tabbar:backdrop .box > scrolledwindow,
+tabbar:backdrop .box > .start-action,
+tabbar:backdrop .box > .end-action {
+  filter: opacity(1); }
+tabbar tabbox {
   background-color: #171a26;
-  padding: 0px; }
-  tabbox > tabboxchild {
+  padding: 0px;
+  color: #C3C7D1; }
+  tabbar tabbox:backdrop {
+    background-color: #161925; }
+  tabbar tabbox > tabboxchild {
     margin: 0 -3px;
     border-radius: 0; }
-  tabbox > tab,
-  tabbox > tabboxchild > tab {
+  tabbar tabbox > tab,
+  tabbar tabbox > tabboxchild > tab {
     border-radius: 0; }
-    tabbox > tab:checked, tabbox > tab:selected,
-    tabbox > tabboxchild > tab:checked,
-    tabbox > tabboxchild > tab:selected {
+    tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
+    tabbar tabbox > tabboxchild > tab:checked,
+    tabbar tabbox > tabboxchild > tab:selected {
       background: #181b28;
       color: #C3C7D1; }
 
