@@ -3445,6 +3445,8 @@ popover.background {
     popover.background > arrow label,
     popover.background > contents label {
       color: #C3C7D1; }
+  popover.background button:checked label, popover.background button:active label, popover.background button:hover label {
+    color: #fefefe; }
   popover.background:backdrop {
     background-color: transparent;
     box-shadow: none; }
@@ -5765,6 +5767,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     margin: 4px;
     -gtk-icon-size: 12px;
     padding: 0 4px; }
+    .nautilus-window #NautilusQueryEditor > menubutton > button:hover image, .nautilus-window #NautilusQueryEditor > menubutton > button:active image, .nautilus-window #NautilusQueryEditor > menubutton > button:checked image {
+      color: #fefefe; }
   .nautilus-window #NautilusQueryEditor > text, .nautilus-window #NautilusQueryEditor > image {
     margin: 0; }
 .nautilus-window notebook > stack:only-child {

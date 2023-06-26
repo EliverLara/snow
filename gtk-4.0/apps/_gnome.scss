@@ -121,6 +121,9 @@
       margin: 4px;
       -gtk-icon-size: 12px;
       padding: 0 4px;
+      &:hover, &:active, &:checked {
+        image { color: $selected_fg_color; }
+      }
     }
 
     > text, > image { margin: 0; }
