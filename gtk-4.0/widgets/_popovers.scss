@@ -17,7 +17,10 @@ popover.background {
     box-shadow: 0 4px 6px $menu_shadow_color;
     label { color: $fg_color; }
   }
-
+  button:checked, button:active, button:hover {
+    label { color: $selected_fg_color; }
+    
+  }
   &:backdrop {
     background-color: transparent;
     box-shadow: none;
