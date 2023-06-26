@@ -5784,7 +5784,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     box-shadow: none;
     text-shadow: none;
     border-color: #758173;
-    background-image: linear-gradient(to bottom, #758173, #444b43); }
+    background-image: linear-gradient(to bottom, #758173, #444b43);
+    border-radius: 0; }
   .nautilus-window #NautilusPathBar button > .horizontal > image.dim-label, .nautilus-window #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle,
   .nautilus-window #NautilusPathBar headerbar button > .horizontal > image.subtitle,
   headerbar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle {

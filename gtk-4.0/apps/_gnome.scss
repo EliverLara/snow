@@ -67,7 +67,10 @@
         border-right: 1px solid $borders_color;
       }
       &:hover, &:focus {
-        .dim-label {@include button(hover-header, $selected_bg_color, #fff); }
+        .dim-label {
+          @include button(hover-header, $selected_bg_color, #fff); 
+          border-radius: 0;
+        }
       }
     }
 
