@@ -202,6 +202,10 @@ StScrollBar {
   background-gradient-start: #f8f8f8;
   background-gradient-end: #dfdfdf;
   background-gradient-direction: vertical; }
+  .modal-dialog .modal-dialog-content-box {
+    margin: 32px 40px;
+    spacing: 32px;
+    max-width: 28em; }
   .modal-dialog .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px; }
@@ -243,7 +247,6 @@ StScrollBar {
 
 /* End Session Dialog */
 .end-session-dialog {
-  spacing: 42px;
   border: none; }
   .end-session-dialog .modal-dialog-linked-button:first-child {
     border-right: none; }
@@ -369,7 +372,7 @@ StScrollBar {
 
 /* Password or Authentication Dialog */
 .prompt-dialog {
-  width: 34em;
+  width: 28em;
   border: none;
   border-radius: 2px; }
   .prompt-dialog .message-dialog-main-layout {
