@@ -5745,6 +5745,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     border: none;
     margin: 0;
     padding: 0; }
+    .nautilus-window #NautilusPathBar button:hover, .nautilus-window #NautilusPathBar button:active, .nautilus-window #NautilusPathBar button:checked {
+      color: #495aff; }
   .nautilus-window #NautilusPathBar .current-dir label {
     padding: 1px 12px; }
   .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
