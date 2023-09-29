@@ -87,6 +87,9 @@
       border: none;
       margin: 0;
       padding: 0;
+      &:hover, &:active, &:checked {
+        color: $selected_bg_color;
+      }
     }
 
     // Selected dir
