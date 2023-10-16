@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Snow</name>
+	<name>Snow-alien</name>
 	<author>Eliver Lara &lt;eliverlara@gmail&gt;</author>
 	<copyright>&#194;Eliver Lara, 2023</copyright>
 	<date>2023</date>
-	<description>Snow Window Theme</description>
+	<description>Snow-alien Window Theme</description>
 </info>
 
 
 <!-- CONSTANTS -->
-<constant name="C_titlebar" value="#dbdbdb" />
-<constant name="C_titlebar_unfocused" value="#dbdbdb" />
-<constant name="C_border_focused" value="#dbdbdb" />
-<constant name="C_border_unfocused" value="#dbdbdb" />
-<constant name="C_title_focused" value="#31363D" />
-<constant name="C_title_unfocused" value="#909296" />
+<constant name="C_titlebar" value="#0d0d0d" />
+<constant name="C_titlebar_unfocused" value="#0d0d0d" />
+<constant name="C_border_focused" value="#0d0d0d" />
+<constant name="C_border_unfocused" value="#0d0d0d" />
+<constant name="C_title_focused" value="#ffffff" />
+<constant name="C_title_unfocused" value="#999999" />
 
 <constant name="C_wm_button_background" value="#fc2" />
-<constant name="C_wm_button_foreground" value="#283141" />
-<constant name="C_wm_button_unfocused" value="#e6e8eb" />
+<constant name="C_wm_button_foreground" value="#ffffff" />
+<constant name="C_wm_button_unfocused" value="#999999" />
 
 <constant name="C_close_button" value="#283141" />
 <constant name="C_maximize_button" value="#283141" />
