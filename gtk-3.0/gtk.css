@@ -2925,7 +2925,7 @@ list {
 
 row {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.13); }
+  border-color: rgba(12, 12, 12, 0.8); }
   row:hover {
     transition: none; }
   row:backdrop {
