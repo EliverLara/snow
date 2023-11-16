@@ -890,7 +890,7 @@ StScrollBar {
   .calendar-change-month-forward:rtl {
     background-image: url("assets/calendar-arrow-left.svg"); }
 
-.calendar-day-base {
+.calendar-day-base, .calendar-day {
   font-size: 80%;
   text-align: center;
   width: 2.4em;
@@ -898,17 +898,17 @@ StScrollBar {
   padding: 0.1em;
   margin: 2px;
   border-radius: 99px;
-  color: #31363d;
+  color: #31363d !important;
   background-gradient-direction: none; }
-  .calendar-day-base:hover, .calendar-day-base:focus {
+  .calendar-day-base:hover, .calendar-day-base:focus, .calendar-day:hover, .calendar-day:focus {
     background-color: #dadada;
-    box-shadow: none; }
-  .calendar-day-base:active, .calendar-day-base:selected {
-    color: #eaeaea;
+    box-shadow: none !important; }
+  .calendar-day-base:active, .calendar-day-base:selected, .calendar-day:active, .calendar-day:selected {
+    color: #f7f7f7 !important;
     background-color: #495aff;
     border-color: transparent;
-    box-shadow: none; }
-  .calendar-day-base.calendar-day-heading {
+    box-shadow: none !important; }
+  .calendar-day-base.calendar-day-heading, .calendar-day.calendar-day-heading {
     color: black;
     margin-top: 1em;
     font-size: 70%; }
