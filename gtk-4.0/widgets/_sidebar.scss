@@ -128,6 +128,8 @@ placessidebar {
   > viewport.frame { border-style: none; }
 
   row {
+    label { padding-left: 8px; }
+    
     &.sidebar-new-bookmark-row { color: $yellow; }
 
     &:drop(active):not(:disabled) {
