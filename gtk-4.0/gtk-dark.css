@@ -587,18 +587,19 @@ button.suggested-action {
   border: none;
   box-shadow: none;
   color: white;
-  border-radius: 100px;
+  border-radius: 4px;
   background: linear-gradient(to right, #0acffe 0%, #495aff 100%); }
   .selection-mode windowcontrols button, button.suggested-action.flat {
     box-shadow: none;
     color: white;
-    border-radius: 100px;
+    border-radius: 4px;
     background: linear-gradient(to right, #0acffe 0%, #495aff 100%); }
   button.suggested-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #00c1e4;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.8; }
   button.suggested-action:active, button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -697,18 +698,19 @@ button.destructive-action {
   border: none;
   box-shadow: none;
   color: white;
-  border-radius: 100px;
+  border-radius: 4px;
   background: linear-gradient(to right, #ee0979, #ff6a00); }
   button.destructive-action.flat {
     box-shadow: none;
     color: white;
-    border-radius: 100px;
+    border-radius: 4px;
     background: linear-gradient(to right, #0acffe 0%, #495aff 100%); }
   button.destructive-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #ce1138;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.8; }
   button.destructive-action:active, button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -3450,10 +3452,8 @@ popover.background {
     background: linear-gradient(to bottom, #2f354f, #12151f);
     background-clip: padding-box;
     border: 1px solid rgba(238, 238, 238, 0.1);
-    box-shadow: 0 4px 6px transparent; }
-    popover.background > arrow label,
-    popover.background > contents label {
-      color: #C3C7D1; }
+    box-shadow: 0 4px 6px transparent;
+    color: inherit; }
   popover.background button:checked label, popover.background button:active label, popover.background button:hover label {
     color: #fefefe; }
   popover.background:backdrop {
