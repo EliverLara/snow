@@ -22,12 +22,6 @@ list, listview {
 }
 
 row {
-  // padding: 5px 11px;
-  // transition: all 150ms $ease-out-quad;
-
-  // label {
-  //   padding-left: 8px;
-  // }
 
   &:hover { transition: none; }
 
@@ -67,7 +61,7 @@ columnview {
 
     // align horizontal sizing with header buttons
     > cell {
-      padding: 8px 6px;
+      padding: 2px 6px;
 
       &:not(:first-child) {
         border-left: 1px solid transparent;
