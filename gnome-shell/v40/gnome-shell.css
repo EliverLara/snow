@@ -709,7 +709,8 @@ StScrollBar {
   transition-duration: 500ms;
   font-weight: bold;
   height: 2.1em;
-  padding: 0px 0px; }
+  padding: 0px 0px;
+  box-shadow: none; }
   #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
     background-color: transparent; }
   #panel #panelLeft, #panel #panelCenter {
