@@ -32,7 +32,6 @@ spinbutton {
     /* :not here just to bump specificity above that of the list button styling */
     > button.image-button.up:not(.flat),
     > button.image-button.down:not(.flat) {
-      min-height: 16px;
       margin: 0;
       padding-bottom: 0;
       padding-top: 0;
@@ -42,12 +41,13 @@ spinbutton {
       border-color: transparentize($borders_color, 0.7);
       border-radius: 0;
       box-shadow: none;
+      background-color: transparent;
 
       &:dir(rtl) { border-style: none solid none none; }
 
       &:hover {
         color: $fg_color;
-        background-color: lighten($base_color, 10%);
+        background-color: $base_color;
       }
 
       &:disabled {
@@ -56,14 +56,13 @@ spinbutton {
       }
 
       &:active {
-        background-color: lighten($base_color, 13%);
-        box-shadow: inset 0 2px 3px -1px transparentize(black, 0.8);
-        color: $selected_fg_color;
+        background-color: $base_color;
+        box-shadow:  none;
       }
 
-      &:dir(ltr):last-child { border-radius: 0 3px 3px 0; }
+      &:dir(ltr):last-child { border-radius: 0 6px 6px 0; }
 
-      &:dir(rtl):first-child { border-radius: 3px 0 0 3px; }
+      &:dir(rtl):first-child { border-radius: 6px 0 0 6px; }
     }
   }
 
@@ -105,9 +104,9 @@ spinbutton {
         box-shadow: none;
       }
 
-      &:dir(ltr):last-child { border-radius: 0 3px 3px 0; }
+      &:dir(ltr):last-child { border-radius: 0 6px 6px 0; }
 
-      &:dir(rtl):first-child { border-radius: 3px 0 0 3px; }
+      &:dir(rtl):first-child { border-radius: 6px 0 0 6px; }
     }
   }
 
@@ -138,7 +137,6 @@ spinbutton {
         background-color: $backdrop_selected_bg_color;
         color: transparent;
         &:focus-within {
-          background-color: $selected_bg_color;
           color: $fg_color;
         }
       }
@@ -193,3 +191,4 @@ spinbutton {
 
   font-feature-settings: "tnum";
 }
+
