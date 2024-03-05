@@ -6149,42 +6149,42 @@ ConversationListView {
   font-weight: bold; }
 
 .nemo-window .places-treeview {
-  -NemoPlacesTreeView-disk-full-bg-color: white;
+  -NemoPlacesTreeView-disk-full-bg-color: #434343;
   -NemoPlacesTreeView-disk-full-fg-color: #f9dc5c;
   -GtkTreeView-vertical-separator: 10; }
   .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
   .nemo-window .places-treeview iconview.cell:hover {
-    background: rgba(231, 231, 231, 0.7); }
+    background: rgba(21, 21, 21, 0.7); }
   .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
   .nemo-window .places-treeview iconview.cell:selected {
-    background: #495aff;
+    background: #758173;
     color: #fefefe; }
 .nemo-window .sidebar {
-  background-color: #efefef; }
+  background-color: #1d1d1d; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
-    color: #31363d;
+    color: #f8f8f2;
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
   min-height: 28px;
   padding: 5px;
-  color: #31363d;
-  border: 1px solid #495aff;
+  color: #f8f8f2;
+  border: 1px solid #758173;
   border-radius: 3px; }
   .nemo-window .nemo-window-pane widget.entry:selected {
-    background-color: #495aff;
+    background-color: #758173;
     color: #fefefe; }
 .nemo-window toolbar.primary-toolbar {
   margin-bottom: -1px;
-  background: #e6e6e6; }
+  background: #191919; }
   .nemo-window toolbar.primary-toolbar button {
-    color: #31363D;
+    color: #f8f8f2;
     border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
-    border: 1px solid rgba(0, 0, 0, 0.13);
+    border: 1px solid rgba(12, 12, 12, 0.8);
     font-weight: normal;
-    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
+    background: linear-gradient(to bottom, #3f3f3f, #1d1d1d);
     min-height: 24px;
     padding: 3px; }
     .nemo-window toolbar.primary-toolbar button:hover {
@@ -6192,51 +6192,51 @@ ConversationListView {
       border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
-      border-color: #495aff;
-      background-image: linear-gradient(to bottom, #495aff, #0015e2); }
+      border-color: rgba(12, 12, 12, 0.8);
+      background-image: linear-gradient(to bottom, #758173, #444b43); }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       color: #fefefe;
       outline-color: rgba(254, 254, 254, 0.3);
-      background: #495aff;
+      background: #758173;
       text-shadow: none; }
       .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
-        color: #fefefe;
+        color: rgba(254, 254, 254, 0.5);
         background-color: transparent;
         border-radius: 4px;
         text-shadow: none;
         box-shadow: none; }
     .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
-      color: rgba(49, 54, 61, 0.4);
+      color: rgba(248, 248, 242, 0.4);
       background-color: transparent;
       border-radius: 4px;
       text-shadow: none;
       box-shadow: none; }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
 .nemo-window .nemo-inactive-pane iconview {
-  background-color: #f0f0f0; }
+  background-color: #181818; }
 
 .caja-notebook .frame {
   border-width: 0 0 1px; }
 .caja-notebook .entry {
-  background: #e6e6e6;
-  color: #31363d;
-  border-color: #495aff; }
+  background: #191919;
+  color: #f8f8f2;
+  border-color: #758173; }
   .caja-notebook .entry:selected {
-    background: #495aff;
+    background: #758173;
     color: #fefefe; }
 
 /**************
 * Caja sidebar *
 **************/
 .caja-side-pane {
-  background: #efefef; }
+  background: #1d1d1d; }
   .caja-side-pane .frame {
     border-width: 1px 0 0; }
   .caja-side-pane treeview.view,
   .caja-side-pane textview.view text,
   .caja-side-pane viewport.frame,
   .caja-side-pane widget .vertical {
-    background: #efefef;
+    background: #1d1d1d;
     padding: 3px 2px; }
     .caja-side-pane treeview.view:hover, .caja-side-pane treeview.view:selected,
     .caja-side-pane textview.view text:hover,
@@ -6245,23 +6245,23 @@ ConversationListView {
     .caja-side-pane viewport.frame:selected,
     .caja-side-pane widget .vertical:hover,
     .caja-side-pane widget .vertical:selected {
-      background-color: #3548ff;
+      background-color: #6b7669;
       color: #fefefe; }
 
 /**************
 * Caja pathbar *
 **************/
 .caja-navigation-window paned {
-  background: #f8f8f8; }
+  background: #202020; }
   .caja-navigation-window paned button.image-button,
   .caja-navigation-window paned .caja-pathbar button {
-    color: #31363D;
+    color: #f8f8f2;
     border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
-    border: 1px solid rgba(0, 0, 0, 0.13);
+    border: 1px solid rgba(12, 12, 12, 0.8);
     font-weight: normal;
-    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6); }
+    background: linear-gradient(to bottom, #3f3f3f, #1d1d1d); }
     .caja-navigation-window paned button.image-button:hover, .caja-navigation-window paned button.image-button:checked,
     .caja-navigation-window paned .caja-pathbar button:hover,
     .caja-navigation-window paned .caja-pathbar button:checked {
@@ -6269,10 +6269,10 @@ ConversationListView {
       border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
-      border-color: #495aff;
-      background-image: linear-gradient(to bottom, #495aff, #0015e2); }
+      border-color: rgba(12, 12, 12, 0.8);
+      background-image: linear-gradient(to bottom, #758173, #444b43); }
   .caja-navigation-window paned .caja-pathbar button {
-    border-right: 1px solid rgba(0, 0, 0, 0.13);
+    border-right: 1px solid rgba(12, 12, 12, 0.8);
     border-left: none;
     box-shadow: none;
     min-height: 20px;
@@ -6281,7 +6281,7 @@ ConversationListView {
     .caja-navigation-window paned .caja-pathbar button.image-button, .caja-navigation-window paned .caja-pathbar button.text-button, .caja-navigation-window paned .caja-pathbar button.toggle {
       border-radius: 0; }
     .caja-navigation-window paned .caja-pathbar button:first-child {
-      border-left: 1px solid rgba(0, 0, 0, 0.13); }
+      border-left: 1px solid rgba(12, 12, 12, 0.8); }
     .caja-navigation-window paned .caja-pathbar button.slider-button:first-child {
       border-radius: 6px 0px 0px 6px; }
     .caja-navigation-window paned .caja-pathbar button.slider-button:nth-child(2) {
