@@ -6122,4 +6122,143 @@ ConversationListView {
   border-bottom-width: 0;
   font-weight: bold; }
 
+.nemo-window .places-treeview {
+  -NemoPlacesTreeView-disk-full-bg-color: #333a57;
+  -NemoPlacesTreeView-disk-full-fg-color: #f9dc5c;
+  -GtkTreeView-vertical-separator: 10; }
+  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
+  .nemo-window .places-treeview iconview.cell:hover {
+    background: rgba(17, 20, 29, 0.7); }
+  .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
+  .nemo-window .places-treeview iconview.cell:selected {
+    background: #495aff;
+    color: #fefefe; }
+.nemo-window .sidebar {
+  background-color: #171a27; }
+  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
+    color: #C3C7D1;
+    background-color: transparent; }
+.nemo-window .nemo-window-pane widget.entry {
+  background-clip: padding-box;
+  min-height: 28px;
+  padding: 5px;
+  color: #C3C7D1;
+  border: 1px solid #495aff;
+  border-radius: 3px; }
+  .nemo-window .nemo-window-pane widget.entry:selected {
+    background-color: #495aff;
+    color: #fefefe; }
+.nemo-window toolbar.primary-toolbar {
+  margin-bottom: -1px;
+  background: #161925; }
+  .nemo-window toolbar.primary-toolbar button {
+    color: #C3C7D1;
+    border-radius: 4px;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(238, 238, 238, 0.1);
+    font-weight: normal;
+    background: linear-gradient(to bottom, #2f354f, #12151f);
+    min-height: 24px;
+    padding: 3px; }
+    .nemo-window toolbar.primary-toolbar button:hover {
+      color: #fefefe;
+      border-radius: 4px;
+      box-shadow: none;
+      text-shadow: none;
+      border-color: #495aff;
+      background-image: linear-gradient(to bottom, #495aff, #0015e2); }
+    .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
+      color: #fefefe;
+      outline-color: rgba(254, 254, 254, 0.3);
+      background: #495aff;
+      text-shadow: none; }
+      .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
+        color: rgba(254, 254, 254, 0.5);
+        background-color: transparent;
+        border-radius: 4px;
+        text-shadow: none;
+        box-shadow: none; }
+    .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
+      color: rgba(195, 199, 209, 0.4);
+      background-color: transparent;
+      border-radius: 4px;
+      text-shadow: none;
+      box-shadow: none; }
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane iconview {
+  background-color: #12151f; }
+
+.caja-notebook .frame {
+  border-width: 0 0 1px; }
+.caja-notebook .entry {
+  background: #161925;
+  color: #C3C7D1;
+  border-color: #495aff; }
+  .caja-notebook .entry:selected {
+    background: #495aff;
+    color: #fefefe; }
+
+/**************
+* Caja sidebar *
+**************/
+.caja-side-pane {
+  background: #171a27; }
+  .caja-side-pane .frame {
+    border-width: 1px 0 0; }
+  .caja-side-pane treeview.view,
+  .caja-side-pane textview.view text,
+  .caja-side-pane viewport.frame,
+  .caja-side-pane widget .vertical {
+    background: #171a27;
+    padding: 3px 2px; }
+    .caja-side-pane treeview.view:hover, .caja-side-pane treeview.view:selected,
+    .caja-side-pane textview.view text:hover,
+    .caja-side-pane textview.view text:selected,
+    .caja-side-pane viewport.frame:hover,
+    .caja-side-pane viewport.frame:selected,
+    .caja-side-pane widget .vertical:hover,
+    .caja-side-pane widget .vertical:selected {
+      background-color: #3548ff;
+      color: #fefefe; }
+
+/**************
+* Caja pathbar *
+**************/
+.caja-navigation-window paned {
+  background: #181b28; }
+  .caja-navigation-window paned button.image-button,
+  .caja-navigation-window paned .caja-pathbar button {
+    color: #C3C7D1;
+    border-radius: 4px;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(238, 238, 238, 0.1);
+    font-weight: normal;
+    background: linear-gradient(to bottom, #2f354f, #12151f); }
+    .caja-navigation-window paned button.image-button:hover, .caja-navigation-window paned button.image-button:checked,
+    .caja-navigation-window paned .caja-pathbar button:hover,
+    .caja-navigation-window paned .caja-pathbar button:checked {
+      color: #fefefe;
+      border-radius: 4px;
+      box-shadow: none;
+      text-shadow: none;
+      border-color: #495aff;
+      background-image: linear-gradient(to bottom, #495aff, #0015e2); }
+  .caja-navigation-window paned .caja-pathbar button {
+    border-right: 1px solid rgba(238, 238, 238, 0.1);
+    border-left: none;
+    box-shadow: none;
+    min-height: 20px;
+    padding: 3px 5px;
+    margin-right: -3px; }
+    .caja-navigation-window paned .caja-pathbar button.image-button, .caja-navigation-window paned .caja-pathbar button.text-button, .caja-navigation-window paned .caja-pathbar button.toggle {
+      border-radius: 0; }
+    .caja-navigation-window paned .caja-pathbar button:first-child {
+      border-left: 1px solid rgba(238, 238, 238, 0.1); }
+    .caja-navigation-window paned .caja-pathbar button.slider-button:first-child {
+      border-radius: 6px 0px 0px 6px; }
+    .caja-navigation-window paned .caja-pathbar button.slider-button:nth-child(2) {
+      border-radius: 0px 6px 6px 0px; }
+
 /*# sourceMappingURL=gtk-dark.css.map */
