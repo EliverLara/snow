@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Snow
+Name=Snow-alien
 Comment=A light theme with some gradients
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Snow
-MetacityTheme=Snow
+GtkTheme=Snow-alien
+MetacityTheme=Snow-alien
 IconTheme=Boston
 ButtonLayout=:minimize,maximize,close
