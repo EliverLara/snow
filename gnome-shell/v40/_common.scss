@@ -1028,7 +1028,7 @@ $slider_size: 16px;
 
     .calendar-month-label {
       background-color: transparent;
-      color: darken($fg_color,5%);
+      color: darken($fg_color,5%) !important;
       font-weight: bold;
       padding: 8px 0;
       &:focus {}

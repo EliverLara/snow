@@ -867,7 +867,7 @@ StScrollBar {
 
 .calendar-month-label {
   background-color: transparent;
-  color: #26292f;
+  color: #26292f !important;
   font-weight: bold;
   padding: 8px 0; }
 
