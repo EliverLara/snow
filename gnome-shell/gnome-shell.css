@@ -102,7 +102,7 @@ StEntry {
   selected-color: #fefefe; }
   StEntry:focus {
     border-color: #758173;
-    box-shadow: none; }
+    box-shadow: none !important; }
   StEntry:insensitive {
     color: rgba(140, 140, 140, 0.985);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
