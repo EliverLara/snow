@@ -1522,6 +1522,13 @@ $slider_size: 16px;
     -x-offset: 8px;
   }
 
+  #dash {
+    // Running app indicator (also shown in app grid)
+    .app-well-app-running-dot, .app-grid-running-dot  {
+      margin-bottom: 14px; // hardcoded
+    }
+  }
+
   /* App Vault/Grid */
   .icon-grid {
     spacing: 30px;
@@ -1598,7 +1605,7 @@ $slider_size: 16px;
     background-color: black;
     border-radius: 10px !important;
     box-shadow: 0px 0px 5px 4px transparentize(black,0.2);
-    //margin-bottom: 2px;
+    margin-bottom: 2px;
   }
 
   %icon_tile {
