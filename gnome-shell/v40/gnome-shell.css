@@ -588,7 +588,6 @@ StScrollBar {
   .osd-window .level {
     height: 0.4em;
     border-radius: 0.3em;
-    background-color: rgba(0, 0, 0, 0.42);
     color: #f8f8f8;
     border: 1px solid rgba(32, 32, 32, 0.8);
     -barlevel-height: 0.4em;
