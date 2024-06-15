@@ -2685,6 +2685,58 @@ GraniteWidgetsWelcome {
     .titlebar .path-bar-box widget > .text-button:last-child:only-child,
     headerbar .path-bar-box widget > .text-button:last-child:only-child {
       border-radius: 4px; }
+  .titlebar .path-buttons-box,
+  headerbar .path-buttons-box {
+    border: 1px solid rgba(238, 238, 238, 0.1);
+    min-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #C3C7D1;
+    background-color: #181b28;
+    text-shadow: none;
+    border-radius: 4px 0px 0px 4px; }
+    .titlebar .path-buttons-box .dim-label, .titlebar .path-buttons-box label.separator, .titlebar .path-buttons-box .subtitle,
+    headerbar .path-buttons-box .dim-label,
+    headerbar .path-buttons-box label.separator,
+    headerbar .path-buttons-box .subtitle {
+      color: transparent;
+      margin-right: -7px; }
+    .titlebar .path-buttons-box button > .horizontal > .dim-label, .titlebar .path-buttons-box button > .horizontal > label.separator, .titlebar .path-buttons-box button > .horizontal > .subtitle,
+    headerbar .path-buttons-box button > .horizontal > .dim-label,
+    headerbar .path-buttons-box button > .horizontal > label.separator,
+    headerbar .path-buttons-box button > .horizontal > .subtitle {
+      color: #C3C7D1;
+      padding: 3px 12px;
+      margin: 0;
+      border-right: 1px solid rgba(238, 238, 238, 0.1); }
+    .titlebar .path-buttons-box button > .horizontal > image.dim-label, .titlebar .path-buttons-box button > .horizontal > image.subtitle,
+    headerbar .path-buttons-box button > .horizontal > image.dim-label,
+    headerbar .path-buttons-box button > .horizontal > image.subtitle {
+      padding: 3px 0px 3px 12px;
+      border-right: none; }
+    .titlebar .path-buttons-box button,
+    headerbar .path-buttons-box button {
+      background: transparent;
+      border: none;
+      margin: 0;
+      padding: 0; }
+    .titlebar .path-buttons-box .current-dir label,
+    headerbar .path-buttons-box .current-dir label {
+      padding: 3px 12px; }
+    .titlebar .path-buttons-box .current-dir label, .titlebar .path-buttons-box .current-dir image,
+    headerbar .path-buttons-box .current-dir label,
+    headerbar .path-buttons-box .current-dir image {
+      color: #fefefe;
+      outline-color: rgba(254, 254, 254, 0.3);
+      background: #495aff;
+      text-shadow: none;
+      border-radius: 0px; }
+    .titlebar .path-buttons-box button.current-dir:only-child image,
+    headerbar .path-buttons-box button.current-dir:only-child image {
+      margin-right: -6px;
+      padding: 0px 6px 0px 12px;
+      border-radius: 4px 0px 0px 4px; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,
