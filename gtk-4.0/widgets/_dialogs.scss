@@ -19,7 +19,7 @@
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
-      background-color: transparentize(if($variant=='light', $base_color, darken($main_dark_color, 5%)), 0.05);
+      background-color: transparentize(if($variant=='light', $base_color, darken($bg_color, 5%)), 0.05);
       color: $fg_color;
       border-radius: 10px;
     }
