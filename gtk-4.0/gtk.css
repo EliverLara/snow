@@ -4344,7 +4344,7 @@ placessidebar row:drop(active):not(:disabled) {
       color: #fefefe; }
 
 .bottom-bar {
-  background-color: #f8f8f8; }
+  background-color: #202020; }
   .bottom-bar button {
     background-color: transparent;
     border-radius: 0px;
