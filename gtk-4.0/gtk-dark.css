@@ -4342,6 +4342,15 @@ placessidebar row:drop(active):not(:disabled) {
     placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
       color: #fefefe; }
 
+.bottom-bar {
+  background-color: #181b28; }
+  .bottom-bar button {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none; }
+    .bottom-bar button .view, .bottom-bar button iconview {
+      background-color: transparent; }
+
 /*****************
  * GtkSpinButton *
  *****************/
