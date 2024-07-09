@@ -41,11 +41,12 @@
     background-color: lighten($panel_bg_color, 10%);
     }
     &:active, &:checked {
-    color: $selected_fg_color;
-    border: none;
-    background-color: $selected_bg_color;
+        color: $selected_fg_color;
+        border: none;
+        background-color: transparentize($selected_bg_color, 0.7);
+        box-shadow: 0px -2px $selected_bg_color inset;
 
-    label, image { color: inherit; }
+        label, image { color: inherit; }
     }
 }
 

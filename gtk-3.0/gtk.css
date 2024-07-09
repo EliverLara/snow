@@ -5733,7 +5733,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .xfce4-panel.panel button:active:not(.open_group), .xfce4-panel.panel button:checked:not(.open_group) {
     color: #fefefe;
     border: none;
-    background-color: #758173; }
+    background-color: rgba(117, 129, 115, 0.3);
+    box-shadow: 0px -2px #758173 inset; }
     .xfce4-panel.panel button:active:not(.open_group) label, .xfce4-panel.panel button:active:not(.open_group) image, .xfce4-panel.panel button:checked:not(.open_group) label, .xfce4-panel.panel button:checked:not(.open_group) image {
       color: inherit; }
 
