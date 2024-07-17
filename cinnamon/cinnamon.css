@@ -1188,7 +1188,7 @@ StScrollBar {
   padding-left: 8px;
   padding-right: 8px;
   transition-duration: 100;
-  color: rgba(254, 254, 254, 0.6); }
+  color: #31363d; }
   .window-list-item-box.top, .window-list-item-box.bottom {
     border-bottom-width: 2px; }
     .window-list-item-box.top StLabel, .window-list-item-box.bottom StLabel {
@@ -1206,12 +1206,12 @@ StScrollBar {
     .window-list-item-box.left StBin {
       padding-left: 1px; }
   .window-list-item-box:hover, .window-list-item-box:groupFocus {
-    color: #fefefe;
-    background-color: rgba(254, 254, 254, 0.1); }
+    color: #31363d;
+    background-color: rgba(0, 0, 0, 0.14); }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
-    color: #fefefe;
+    color: #31363d;
     border-color: #3f51ff;
-    background-color: rgba(49, 54, 61, 0.1); }
+    background-color: rgba(49, 54, 61, 0.2); }
   .window-list-item-box .progress {
     background-color: rgba(73, 90, 255, 0.8); }
 .window-list-item-demands-attention {
@@ -1239,7 +1239,7 @@ StScrollBar {
   padding-left: 8px;
   padding-right: 8px;
   transition-duration: 100;
-  color: rgba(254, 254, 254, 0.6); }
+  color: #31363d; }
   .grouped-window-list-item-box.top, .grouped-window-list-item-box.bottom {
     border-bottom-width: 2px; }
     .grouped-window-list-item-box.top StLabel, .grouped-window-list-item-box.bottom StLabel {
@@ -1257,11 +1257,11 @@ StScrollBar {
     .grouped-window-list-item-box.left StBin {
       padding-left: 1px; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
-    color: #fefefe;
+    color: #31363d;
     border-color: rgba(166, 166, 166, 0.9); }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:active:hover, .grouped-window-list-item-box:focus, .grouped-window-list-item-box:active:focus, .grouped-window-list-item-box:focus:hover, .grouped-window-list-item-box:active:focus:hover {
     background-color: rgba(0, 0, 0, 0.14);
-    color: #fefefe;
+    color: #31363d;
     border-color: #3f51ff; }
   .grouped-window-list-item-box .progress {
     background-color: rgba(73, 90, 255, 0.8); }

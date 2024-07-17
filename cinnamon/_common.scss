@@ -1495,7 +1495,7 @@ StScrollBar {
     padding-left: 8px;
     padding-right: 8px;
     transition-duration: 100;
-    color: transparentize($selected_fg_color, 0.4);
+    color: $panel_fg;
 
     &.top,
     &.bottom {
@@ -1522,17 +1522,17 @@ StScrollBar {
 
     &:hover,
     &:groupFocus {
-      color: $selected_fg_color;
-      background-color: transparentize($selected_fg_color, 0.9);
+      color: $panel_fg;
+      background-color: $gray;
     }
 
     &:active,
     &:checked,
     &:focus,
     &:running {
-      color: $selected_fg_color;
+      color: $panel_fg;
       border-color: $blue;
-      background-color: transparentize($panel_fg, 0.9);
+      background-color: transparentize($panel_fg, 0.8);
     }
 
     & .progress {
@@ -1577,7 +1577,7 @@ StScrollBar {
     padding-left: 8px;
     padding-right: 8px;
     transition-duration: 100;
-    color: transparentize($selected_fg_color, 0.4);
+    color: $panel_fg;
 
     &.top,
     &.bottom {
@@ -1604,7 +1604,7 @@ StScrollBar {
 
     &:active,
     &:checked {
-      color: $selected_fg_color;
+      color: $panel_fg;
       border-color: darken($panel_bg, 35%);
     }
 
@@ -1615,7 +1615,7 @@ StScrollBar {
     &:focus:hover,
     &:active:focus:hover {
       background-color: $gray;
-      color: $selected_fg_color;
+      color: $panel_fg;
       border-color: $blue;
     }
 
