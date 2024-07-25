@@ -992,7 +992,8 @@ StScrollBar {
   background-color: rgba(43, 43, 43, 0.97);
   box-shadow: none;
   border: none;
-  text-shadow: none; }
+  text-shadow: none;
+  border: 1px solid rgba(43, 43, 43, 0.97); }
   .message:hover, .message:focus {
     color: #f8f8f8;
     background-color: rgba(58, 58, 58, 0.97);
