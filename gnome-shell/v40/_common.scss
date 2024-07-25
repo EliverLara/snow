@@ -1174,6 +1174,7 @@ $slider_size: 16px;
           &:hover, &:focus { @include button(hover); }
           @include button(normal);
           text-shadow: none;
+          border: 1px solid darken($bg_color, 7%);
         }
 
           .message-secondary-bin > .event-time {
