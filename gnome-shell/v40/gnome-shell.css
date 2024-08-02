@@ -1003,6 +1003,9 @@ StScrollBar {
     color: #31363d;
     background-color: #d2d2d2;
     box-shadow: none; }
+  .message * {
+    color: #31363d;
+    text-shadow: none; }
 
 .message-secondary-bin > .event-time {
   color: black;

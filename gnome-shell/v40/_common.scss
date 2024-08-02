@@ -1175,6 +1175,10 @@ $slider_size: 16px;
           @include button(normal);
           text-shadow: none;
           border: 1px solid darken($bg_color, 7%);
+          * { 
+            color: $fg_color; 
+            text-shadow: none;
+          }
         }
 
           .message-secondary-bin > .event-time {
