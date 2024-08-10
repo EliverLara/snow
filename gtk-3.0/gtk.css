@@ -6364,4 +6364,76 @@ ConversationListView {
     .caja-navigation-window paned .caja-pathbar button.slider-button:nth-child(2) {
       border-radius: 0px 6px 6px 0px; }
 
+/* thunar */
+.thunar toolbar {
+  background-color: #e6e6e6; }
+
+/* buttons in toolbar */
+.thunar toolbar.horizontal button.flat.image-button {
+  background-color: transparent;
+  border: none; }
+  .thunar toolbar.horizontal button.flat.image-button image {
+    -gtk-icon-transform: scale(0.72); }
+  .thunar toolbar.horizontal button.flat.image-button:hover {
+    color: #fefefe;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: #495aff;
+    background-image: linear-gradient(to bottom, #495aff, #0015e2); }
+
+/* path-bar of thunar */
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button,
+.thunar toolbar .path-bar-button {
+  color: #31363D;
+  border-radius: 4px;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  font-weight: normal;
+  background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
+  border-radius: 0;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.13);
+  box-shadow: none;
+  min-height: 20px;
+  padding: 3px 4px; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:first-child,
+  .thunar toolbar .path-bar-button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:last-child,
+  .thunar toolbar .path-bar-button:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right-style: solid; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:only-child,
+  .thunar toolbar .path-bar-button:only-child {
+    border-radius: 4px;
+    border-style: solid; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover,
+  .thunar toolbar .path-bar-button:hover {
+    color: #495aff; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked,
+  .thunar toolbar .path-bar-button:checked {
+    color: #fefefe;
+    outline-color: rgba(254, 254, 254, 0.3);
+    background: #495aff;
+    text-shadow: none; }
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .toggle.path-bar-button:hover,
+.thunar toolbar .toggle.path-bar-button:hover {
+  color: #fefefe;
+  outline-color: rgba(254, 254, 254, 0.3);
+  background: #495aff;
+  text-shadow: none; }
+
+/* thunar sidepane */
+.thunar scrolledwindow.sidebar treeview.view {
+  background: #f3f3f3;
+  padding: 1.5px; }
+  .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:selected {
+    background: #495aff;
+    color: #fefefe;
+    border-radius: 0;
+    box-shadow: none; }
+
 /*# sourceMappingURL=gtk.css.map */
