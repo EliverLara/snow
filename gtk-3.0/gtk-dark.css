@@ -6368,7 +6368,7 @@ ConversationListView {
 
 /* thunar */
 .thunar toolbar {
-  background-color: #161925; }
+  background-color: #191919; }
 
 /* buttons in toolbar */
 .thunar toolbar.horizontal button.flat.image-button {
@@ -6381,21 +6381,21 @@ ConversationListView {
     border-radius: 4px;
     box-shadow: none;
     text-shadow: none;
-    border-color: #495aff;
-    background-image: linear-gradient(to bottom, #495aff, #0015e2); }
+    border-color: rgba(12, 12, 12, 0.8);
+    background-image: linear-gradient(to bottom, #758173, #444b43); }
 
 /* path-bar of thunar */
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button,
 .thunar toolbar .path-bar-button {
-  color: #C3C7D1;
+  color: #f8f8f2;
   border-radius: 4px;
   text-shadow: none;
   box-shadow: none;
-  border: 1px solid rgba(238, 238, 238, 0.1);
+  border: 1px solid rgba(12, 12, 12, 0.8);
   font-weight: normal;
-  background: linear-gradient(to bottom, #2f354f, #12151f);
+  background: linear-gradient(to bottom, #3f3f3f, #1d1d1d);
   border-radius: 0;
-  border-right: 0.5px solid rgba(238, 238, 238, 0.1);
+  border-right: 0.5px solid rgba(12, 12, 12, 0.8);
   box-shadow: none;
   min-height: 20px;
   padding: 3px 4px; }
@@ -6414,26 +6414,26 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     border-style: solid; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover,
   .thunar toolbar .path-bar-button:hover {
-    color: #495aff; }
+    color: #758173; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked,
   .thunar toolbar .path-bar-button:checked {
     color: #fefefe;
     outline-color: rgba(254, 254, 254, 0.3);
-    background: #495aff;
+    background: #758173;
     text-shadow: none; }
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .toggle.path-bar-button:hover,
 .thunar toolbar .toggle.path-bar-button:hover {
   color: #fefefe;
   outline-color: rgba(254, 254, 254, 0.3);
-  background: #495aff;
+  background: #758173;
   text-shadow: none; }
 
 /* thunar sidepane */
 .thunar scrolledwindow.sidebar treeview.view {
-  background: #141722;
+  background: #1b1b1b;
   padding: 1.5px; }
   .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:selected {
-    background: #495aff;
+    background: #758173;
     color: #fefefe;
     border-radius: 0;
     box-shadow: none; }
