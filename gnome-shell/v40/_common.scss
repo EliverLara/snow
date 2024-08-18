@@ -1597,9 +1597,9 @@ $slider_size: 16px;
 
   .app-well-app-running-dot, .app-grid-running-dot { //running apps indicator
     width: 4px; height: 4px;
-    background-color: $selected_bg_color;
+    background-color: $fg_color;
     border-radius: 10px !important;
-    box-shadow: 0px 0px 5px 4px transparentize($selected_bg_color,0.2);
+    box-shadow: 0px 0px 5px 4px transparentize($fg_color, 0.2);
     margin-bottom: 0px;
   }
 

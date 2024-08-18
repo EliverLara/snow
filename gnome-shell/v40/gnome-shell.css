@@ -1401,9 +1401,9 @@ StScrollBar {
 .app-well-app-running-dot, .app-grid-running-dot {
   width: 4px;
   height: 4px;
-  background-color: #758173;
+  background-color: #f8f8f8;
   border-radius: 10px !important;
-  box-shadow: 0px 0px 5px 4px rgba(117, 129, 115, 0.8);
+  box-shadow: 0px 0px 5px 4px rgba(248, 248, 248, 0.8);
   margin-bottom: 0px; }
 
 .app-well-app .overview-icon,
