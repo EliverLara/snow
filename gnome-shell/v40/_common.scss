@@ -1459,6 +1459,7 @@ $slider_size: 16px;
   //search results
 
   %search-section-content-item {  
+    background-color: transparent;
     &:focus,
     &:hover,
     &:selected {
