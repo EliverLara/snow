@@ -3567,8 +3567,9 @@ popover.menu {
     padding: 0 12px;
     border-radius: 5px; }
     popover.menu modelbutton:selected, popover.menu.background > contents .view row:selected, popover.menu.background > contents iconview row:selected {
-      color: #C3C7D1;
       background-color: #12151f; }
+      popover.menu modelbutton:selected, popover.menu modelbutton:selected label, popover.menu.background > contents .view row:selected, popover.menu.background > contents iconview row:selected, popover.menu.background > contents .view row:selected label, popover.menu.background > contents iconview row:selected label {
+        color: #C3C7D1; }
     popover.menu modelbutton:selected:active, popover.menu.background > contents .view row:selected:active, popover.menu.background > contents iconview row:selected:active {
       background-color: black; }
   popover.menu label.title {
