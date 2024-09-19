@@ -8,32 +8,32 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button, .icon-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button {
+.button, .icon-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   color: #31363d;
   background-color: #e1e1e1;
   box-shadow: none;
   border: none;
   font-weight: bold; }
-  .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus {
+  .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     color: #31363d;
     box-shadow: none;
     border: none;
     background: #d2d2d2; }
-  .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive {
+  .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #929598;
     background-color: rgba(222, 223, 223, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active {
+  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
     color: #f7f7f7;
     background-color: #495aff;
     box-shadow: none;
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover {
+  .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     color: #31363d;
     background-color: #d2d2d2;
     box-shadow: none; }
@@ -684,7 +684,7 @@ StScrollBar {
 
 .osd-window,
 .resize-popup,
-.switcher-list, .workspace-switcher-container {
+.switcher-list, .workspace-switcher-container, .screenshot-ui-panel {
   color: #31363d;
   background-color: #e9e9e9;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -2153,5 +2153,53 @@ StScrollBar {
   color: #31363d;
   background-color: #d2d2d2;
   box-shadow: none; }
+
+.screenshot-ui-close-button {
+  background-color: #FF044A; }
+  .screenshot-ui-close-button:hover, .screenshot-ui-close-button:active {
+    background-color: #ff1355; }
+
+.screenshot-ui-shot-cast-button:hover, .screenshot-ui-shot-cast-button:active, .screenshot-ui-shot-cast-button:checked {
+  color: #31363d;
+  background-color: #d2d2d2;
+  box-shadow: none; }
+
+.screenshot-ui-window-selector {
+  background-color: #f3f3f3; }
+
+.screenshot-ui-window-selector-window:hover .screenshot-ui-window-selector-window-border {
+  border-color: #0017fc; }
+.screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-window-border {
+  border-color: #495aff;
+  background-color: rgba(73, 90, 255, 0.2); }
+.screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-check {
+  color: #f3f3f3;
+  background-color: #495aff; }
+
+.screenshot-ui-capture-button {
+  border-color: #747474; }
+  .screenshot-ui-capture-button .screenshot-ui-capture-button-circle {
+    background-color: #747474; }
+  .screenshot-ui-capture-button:hover .screenshot-ui-capture-button-circle, .screenshot-ui-capture-button:focus .screenshot-ui-capture-button-circle {
+    background-color: #535c67; }
+  .screenshot-ui-capture-button:active .screenshot-ui-capture-button-circle {
+    background-color: #afb5be; }
+  .screenshot-ui-capture-button:cast .screenshot-ui-capture-button-circle {
+    background-color: #FF044A; }
+  .screenshot-ui-capture-button:cast:hover .screenshot-ui-capture-button-circle, .screenshot-ui-capture-button:cast:focus .screenshot-ui-capture-button-circle {
+    background-color: #ff1e5c; }
+  .screenshot-ui-capture-button:cast:active .screenshot-ui-capture-button-circle {
+    background-color: #df003e; }
+
+.screenshot-ui-screen-selector {
+  transition-duration: 200ms;
+  background-color: rgba(73, 90, 255, 0.5); }
+  .screenshot-ui-screen-selector:hover {
+    background-color: rgba(73, 90, 255, 0.3); }
+  .screenshot-ui-screen-selector:active {
+    background-color: rgba(73, 90, 255, 0.7); }
+  .screenshot-ui-screen-selector:checked {
+    background-color: transparent;
+    border: 2px #495aff; }
 
 /*# sourceMappingURL=gnome-shell.css.map */

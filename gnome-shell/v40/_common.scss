@@ -2377,3 +2377,93 @@ $base_padding: 6px;
 }
 
 .quick-slider .icon-button:hover { @include button(hover); }
+
+
+// Screenshot UI
+
+.screenshot-ui-panel {
+  @extend %osd-panel;
+}
+
+.screenshot-ui-close-button {
+  background-color: $red;
+  &:hover, &:active { background-color: lighten($red, 3%); }
+}
+
+.screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+  @extend %button;
+}
+
+.screenshot-ui-shot-cast-button {
+  &:hover, &:active, &:checked { @include button(hover);}
+}
+
+.screenshot-ui-window-selector {
+  background-color: $bg_color;
+}
+
+.screenshot-ui-window-selector-window {
+  &:hover {
+    .screenshot-ui-window-selector-window-border {
+      border-color: darken($selected_bg_color, 15%);
+    }
+  }
+  &:checked {
+    .screenshot-ui-window-selector-window-border {
+      border-color: $selected_bg_color;
+      background-color: transparentize($selected_bg_color, 0.8);
+    }
+
+    .screenshot-ui-window-selector-check {
+      color: $bg_color;
+      background-color: $selected_bg_color;
+    }
+  }
+}
+
+.screenshot-ui-capture-button {
+  border-color: darken($bg_color, 50%);
+  .screenshot-ui-capture-button-circle{
+    background-color: darken($bg_color, 50%);
+  }
+
+  &:hover, &:focus {
+    .screenshot-ui-capture-button-circle {
+      background-color: lighten($osd_fg_color, 15%);
+    }
+  }
+
+  &:active {
+    .screenshot-ui-capture-button-circle {
+      background-color: lighten($osd_fg_color, 50%);
+    }
+  }
+
+  &:cast {
+    .screenshot-ui-capture-button-circle {
+      background-color: $red;
+    }
+    &:hover, &:focus {
+      .screenshot-ui-capture-button-circle {
+        background-color: lighten($red, 5%);
+      }
+    }
+    &:active {
+      .screenshot-ui-capture-button-circle {
+        background-color: darken($red, 7%);
+      }
+    }
+  }
+}
+
+.screenshot-ui-screen-selector {
+  transition-duration: 200ms;
+  background-color: transparentize($selected_bg_color, 0.5);
+
+  &:hover { background-color: transparentize($selected_bg_color, 0.7);}
+  &:active { background-color: transparentize($selected_bg_color, 0.3);}
+  &:checked {
+    background-color: transparent;
+    border: 2px $selected_bg_color;
+  }
+}
