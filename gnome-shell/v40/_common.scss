@@ -202,10 +202,20 @@ $slider_size: 16px;
   padding: 0 !important;
 
   .modal-dialog-content-box {
-    margin: 32px 40px;
+    margin: 20px 40px;
     spacing: 32px;
     max-width: 28em;
   }
+
+  .modal-dialog-button-box {
+    padding-top: 0;
+    .modal-dialog-button {
+      @extend %button;
+      margin: 3px;
+      background-color: white;
+    }
+  }
+  
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -265,14 +275,15 @@ $slider_size: 16px;
       border-right: none;
     }
   }
-  & .modal-dialog-linked-button:last-child {
-    margin-right: 5px;
+  & .modal-dialog-linked-button:last-child,
+  & .modal-dialog-button:last-child {
     @include gradient(#ee0979, #ff6a00, horizontal);
     color: white;
     border-left: none;
     &:hover, &:focus {
       border-left: none;
       background: #d10869;
+      color: white;
     }
 
   }

@@ -8,29 +8,29 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button, .icon-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   color: #31363d;
   background-color: #e1e1e1;
   box-shadow: none;
   border: none;
   font-weight: bold; }
-  .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
+  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     color: #31363d;
-    box-shadow: none;
+    box-shadow: none !important;
     border: none;
     background: #d2d2d2; }
-  .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
+  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #929598;
     background-color: rgba(222, 223, 223, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
+  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     color: #31363d;
     background-color: #d2d2d2;
     box-shadow: none; }
-  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
     color: #f7f7f7;
     background-color: #495aff;
     box-shadow: none;
@@ -63,12 +63,12 @@ stage {
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
     color: #31363d;
-    box-shadow: none;
+    box-shadow: none !important;
     border: none;
     background: #d2d2d2; }
     .modal-dialog-linked-button:focus:hover {
       color: #31363d;
-      box-shadow: none;
+      box-shadow: none !important;
       border: none;
       background: #d2d2d2; }
   .modal-dialog-linked-button:hover {
@@ -210,9 +210,14 @@ StScrollBar {
   background-gradient-direction: vertical;
   padding: 0 !important; }
   .modal-dialog .modal-dialog-content-box {
-    margin: 32px 40px;
+    margin: 20px 40px;
     spacing: 32px;
     max-width: 28em; }
+  .modal-dialog .modal-dialog-button-box {
+    padding-top: 0; }
+    .modal-dialog .modal-dialog-button-box .modal-dialog-button {
+      margin: 3px;
+      background-color: white; }
   .modal-dialog .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px; }
@@ -259,16 +264,16 @@ StScrollBar {
     border-right: none; }
     .end-session-dialog .modal-dialog-linked-button:first-child:hover {
       border-right: none; }
-  .end-session-dialog .modal-dialog-linked-button:last-child {
-    margin-right: 5px;
+  .end-session-dialog .modal-dialog-linked-button:last-child, .end-session-dialog .modal-dialog-button:last-child {
     background-gradient-start: #ee0979;
     background-gradient-end: #ff6a00;
     background-gradient-direction: horizontal;
     color: white;
     border-left: none; }
-    .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus {
+    .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus, .end-session-dialog .modal-dialog-button:last-child:hover, .end-session-dialog .modal-dialog-button:last-child:focus {
       border-left: none;
-      background: #d10869; }
+      background: #d10869;
+      color: white; }
 
 .end-session-dialog-list {
   padding-top: 20px; }

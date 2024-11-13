@@ -163,7 +163,7 @@
                           $osd_bg_color);
 
     color: $osd_fg_color;
-    box-shadow: none;
+    box-shadow: none !important;
     border: none;
     background: darken($bg_color, 13%);
   }
