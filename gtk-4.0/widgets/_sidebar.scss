@@ -1,7 +1,7 @@
 /***********
  * Sidebar *
  ***********/
-.sidebar, .nautilus-window .navigation-sidebar {
+.sidebar, placessidebar {
   border-style: none;
   border-width: 0;
   background-color: $base_color;
@@ -34,28 +34,21 @@
   list { 
     background-color: $base_color;  
     @if $variant=='light' {
-    box-shadow: -10px 0px 12px rgba(162, 162, 165, 0.21) inset,
+    box-shadow: -10px 0px 12px rgba(162, 162, 165, 0.15) inset,
                 10px -7px 12px $base_color inset,
                 10px 7px 12px $base_color inset;
     }
               
   }
   row{
-    padding: 2px 14px;
+    padding: 8px 14px;
     transition: all .12s ease-in;
     border-radius: 0;
     margin: 0;
     &:selected{
       background: if($variant == 'light', transparentize( lighten($bg_color, 2%), 0.4), transparentize(lighten($base_color, 7%), 0.4));
       color: #ACACAC;
-      border-left: 4px solid $selected_bg_color;
-      &:backdrop{
-        color: $backdrop_selected_bg_color;
-        background: transparent;
-        label{
-          color: $backdrop_selected_bg_color;
-        }  
-      }
+      box-shadow: 4px 0 0 inset $selected_bg_color;
       &:hover{
         background-color: transparentize($selected_bg_color, 0.8);
       }
@@ -128,7 +121,14 @@ placessidebar {
   > viewport.frame { border-style: none; }
 
   row {
+    padding: 2px 14px;
     label { padding-left: 8px; }
+    &.sidebar-row:selected { 
+      &:backdrop, &:hover {
+        background: if($variant == 'light', transparentize( lighten($bg_color, 2%), 0.4), transparentize(lighten($base_color, 7%), 0.4));
+        &, label { color: #ACACAC; }
+      }
+    }
     
     &.sidebar-new-bookmark-row { color: $yellow; }
 
