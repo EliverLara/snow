@@ -210,14 +210,14 @@ StScrollBar {
   background-gradient-direction: vertical;
   padding: 0 !important; }
   .modal-dialog .modal-dialog-content-box {
-    margin: 20px 40px;
+    margin: 10px 30px;
     spacing: 32px;
     max-width: 28em; }
   .modal-dialog .modal-dialog-button-box {
-    padding-top: 0; }
+    padding: 0 10px 10px 10px; }
     .modal-dialog .modal-dialog-button-box .modal-dialog-button {
-      margin: 3px;
-      background-color: white; }
+      background-color: white;
+      border-radius: 10px; }
   .modal-dialog .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px; }
