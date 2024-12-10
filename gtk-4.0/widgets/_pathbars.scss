@@ -90,17 +90,8 @@
 
 // search entry
 #NautilusQueryEditor { 
-  margin-top: 6px;
-  #NautilusQueryEditorTag {
-    > button {
-      margin: 0;
-    }
-  }
 
   > menubutton > button {
-    min-width: 16px;
-    min-height: 16px;
-    margin: 4px;
     -gtk-icon-size: 12px;
     padding: 0 4px;
     &:hover, &:active, &:checked {
