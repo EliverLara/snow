@@ -2148,7 +2148,7 @@ GraniteWidgetsWelcome {
  * Header bars *
  ***************/
 .titlebar:not(headerbar), .titlebar, headerbar {
-  padding: 0 13px;
+  padding: 0 6px;
   min-height: 38px;
   background: #0d0d0d;
   color: #f8f8f2;
@@ -2172,12 +2172,17 @@ GraniteWidgetsWelcome {
     min-height: 24px; }
   .titlebar button,
   headerbar button {
+<<<<<<< HEAD
     color: #f8f8f2;
     border-radius: 6px;
+=======
+    color: #31363D;
+>>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
     text-shadow: none;
     box-shadow: none;
     border: 1px solid rgba(12, 12, 12, 0.8);
     font-weight: normal;
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #3f3f3f, #141414);
     min-height: 22px;
     margin-top: 8px;
@@ -2220,12 +2225,14 @@ GraniteWidgetsWelcome {
     headerbar button.appmenu:checked,
     headerbar button.appmenu:checked:backdrop {
       background: transparent; }
+=======
+    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6); }
+>>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
     .titlebar button:hover, .titlebar button:active, .titlebar button:checked,
     headerbar button:hover,
     headerbar button:active,
     headerbar button:checked {
       color: #fefefe;
-      border-radius: 6px;
       box-shadow: none;
       text-shadow: none;
       border-color: #758173;
@@ -2236,7 +2243,6 @@ GraniteWidgetsWelcome {
     headerbar button:backdrop:disabled {
       color: rgba(248, 248, 242, 0.2);
       background-color: transparent;
-      border-radius: 6px;
       text-shadow: none;
       box-shadow: none; }
     .titlebar button:backdrop:hover, .titlebar button:backdrop:active, .titlebar button:backdrop:checked,
@@ -2244,9 +2250,9 @@ GraniteWidgetsWelcome {
     headerbar button:backdrop:active,
     headerbar button:backdrop:checked {
       color: rgba(255, 255, 255, 0.3);
-      border-radius: 6px;
       box-shadow: none;
       text-shadow: none;
+<<<<<<< HEAD
       border-color: #758173;
       background-image: linear-gradient(to bottom, #758173, #444b43); }
     .titlebar button.suggested-action,
@@ -2358,6 +2364,10 @@ GraniteWidgetsWelcome {
         color: transparent;
         box-shadow: none;
         background-color: transparent; }
+=======
+      border-color: #495aff;
+      background-image: linear-gradient(to bottom, #495aff, #0015e2); }
+>>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
   .titlebar:not(headerbar) .linked > button, .titlebar .linked > button,
   .titlebar:not(headerbar) headerbar .linked > button,
   .titlebar headerbar .linked > button, .titlebar:not(headerbar) .path-bar-box button, .titlebar .path-bar-box button,
@@ -2444,9 +2454,7 @@ GraniteWidgetsWelcome {
   headerbar .linked > button:backdrop {
     border-radius: 0;
     border-right-style: none;
-    box-shadow: none;
-    margin: 5px 0px;
-    min-height: 20px; }
+    box-shadow: none; }
     .titlebar:not(headerbar) .linked > button:first-child, .titlebar .linked > button:first-child,
     .titlebar:not(headerbar) headerbar .linked > button:first-child,
     .titlebar headerbar .linked > button:first-child, .titlebar:not(headerbar) .path-bar-box button:first-child, .titlebar .path-bar-box button:first-child,
@@ -2657,7 +2665,6 @@ GraniteWidgetsWelcome {
   .titlebar .path-bar-box headerbar button:checked,
   headerbar .path-bar-box button:checked {
     color: #fefefe;
-    border-radius: 6px;
     box-shadow: none;
     text-shadow: none;
     border-color: #758173;
@@ -2676,7 +2683,6 @@ GraniteWidgetsWelcome {
     .titlebar .path-bar-box headerbar button:checked:backdrop,
     headerbar .path-bar-box button:checked:backdrop {
       color: rgba(255, 255, 255, 0.3);
-      border-radius: 6px;
       box-shadow: none;
       text-shadow: none;
       border-color: #758173;
@@ -2706,7 +2712,6 @@ GraniteWidgetsWelcome {
   headerbar .path-bar-box widget > .text-button:last-child {
     border-radius: 0px 6px 6px 0px;
     color: #fefefe;
-    border-radius: 6px;
     box-shadow: none;
     text-shadow: none;
     border-color: #758173;
@@ -2756,8 +2761,7 @@ headerbar menubutton {
 headerbar menubutton > button,
 headerbar spinbutton > button,
 headerbar splitbutton > button,
-headerbar splitbutton > menubutton,
-headerbar entry > menubutton {
+headerbar splitbutton > menubutton {
   margin-top: 0px;
   margin-bottom: 0px; }
 headerbar switch {
@@ -3470,8 +3474,12 @@ paned.vertical > separator {
   padding-right: 0; }
 
 #NautilusPathBar {
+<<<<<<< HEAD
   color: #f8f8f2;
   border-radius: 6px;
+=======
+  color: #31363D;
+>>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
   text-shadow: none;
   box-shadow: none;
   border: 1px solid rgba(12, 12, 12, 0.8);
@@ -3495,7 +3503,6 @@ paned.vertical > separator {
   #NautilusPathBar button:focus headerbar .subtitle,
   headerbar #NautilusPathBar button:focus .subtitle {
     color: #fff;
-    border-radius: 6px;
     box-shadow: none;
     text-shadow: none;
     border-color: #758173;
@@ -3526,20 +3533,13 @@ paned.vertical > separator {
     padding: 0px 0px 0px 12px;
     border-radius: 6px 0px 0px 6px; }
 
-#NautilusQueryEditor {
-  margin-top: 6px; }
-  #NautilusQueryEditor #NautilusQueryEditorTag > button {
-    margin: 0; }
-  #NautilusQueryEditor > menubutton > button {
-    min-width: 16px;
-    min-height: 16px;
-    margin: 4px;
-    -gtk-icon-size: 12px;
-    padding: 0 4px; }
-    #NautilusQueryEditor > menubutton > button:hover image, #NautilusQueryEditor > menubutton > button:active image, #NautilusQueryEditor > menubutton > button:checked image {
-      color: #fefefe; }
-  #NautilusQueryEditor > text, #NautilusQueryEditor > image {
-    margin: 0; }
+#NautilusQueryEditor > menubutton > button {
+  -gtk-icon-size: 12px;
+  padding: 0 4px; }
+  #NautilusQueryEditor > menubutton > button:hover image, #NautilusQueryEditor > menubutton > button:active image, #NautilusQueryEditor > menubutton > button:checked image {
+    color: #fefefe; }
+#NautilusQueryEditor > text, #NautilusQueryEditor > image {
+  margin: 0; }
 
 /***************
  * Popovers   *
@@ -4434,7 +4434,6 @@ placessidebar row {
   background-color: #202020; }
   .bottom-bar button {
     background-color: transparent;
-    border-radius: 0px;
     border: none; }
     .bottom-bar button .view, .bottom-bar button iconview {
       background-color: transparent; }
