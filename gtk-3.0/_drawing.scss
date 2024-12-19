@@ -246,7 +246,6 @@
   //
   color: if($tc==$text_color, $headerbar_fg_color, $tc);
   // background-color: transparent;
-  border-radius: 4px;
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $borders_color;
@@ -262,7 +261,6 @@
   // hovered button headerbar look
   //
   color: if($tc==$text_color, $selected_fg_color, $tc);
-  border-radius: 4px;
   box-shadow: none;
   text-shadow: none;
   border-color: $selected_bg_color;
@@ -276,7 +274,6 @@
   //
   color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
   background-color: transparent;
-  border-radius: 4px;
   text-shadow: none;
   box-shadow: none;
 }
