@@ -2172,62 +2172,12 @@ GraniteWidgetsWelcome {
     min-height: 24px; }
   .titlebar button,
   headerbar button {
-<<<<<<< HEAD
     color: #f8f8f2;
-    border-radius: 6px;
-=======
-    color: #31363D;
->>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
     text-shadow: none;
     box-shadow: none;
     border: 1px solid rgba(12, 12, 12, 0.8);
     font-weight: normal;
-<<<<<<< HEAD
-    background: linear-gradient(to bottom, #3f3f3f, #141414);
-    min-height: 22px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    box-shadow: none; }
-    .titlebar button.suggested-action,
-    headerbar button.suggested-action {
-      box-shadow: none;
-      border: none;
-      background-image: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
-      .titlebar button.suggested-action:disabled, .titlebar button.suggested-action:disabled:backdrop, .titlebar button.suggested-action:backdrop, .titlebar button.suggested-action:hover,
-      headerbar button.suggested-action:disabled,
-      headerbar button.suggested-action:disabled:backdrop,
-      headerbar button.suggested-action:backdrop,
-      headerbar button.suggested-action:hover {
-        border: none;
-        background-image: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
-        .titlebar button.suggested-action:disabled:hover, .titlebar button.suggested-action:disabled:active, .titlebar button.suggested-action:disabled:checked, .titlebar button.suggested-action:disabled:backdrop:hover, .titlebar button.suggested-action:disabled:backdrop:active, .titlebar button.suggested-action:disabled:backdrop:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar button.suggested-action:backdrop:active, .titlebar button.suggested-action:backdrop:checked, .titlebar button.suggested-action:hover:hover, .titlebar button.suggested-action:hover:active, .titlebar button.suggested-action:hover:checked,
-        headerbar button.suggested-action:disabled:hover,
-        headerbar button.suggested-action:disabled:active,
-        headerbar button.suggested-action:disabled:checked,
-        headerbar button.suggested-action:disabled:backdrop:hover,
-        headerbar button.suggested-action:disabled:backdrop:active,
-        headerbar button.suggested-action:disabled:backdrop:checked,
-        headerbar button.suggested-action:backdrop:hover,
-        headerbar button.suggested-action:backdrop:active,
-        headerbar button.suggested-action:backdrop:checked,
-        headerbar button.suggested-action:hover:hover,
-        headerbar button.suggested-action:hover:active,
-        headerbar button.suggested-action:hover:checked {
-          border: none;
-          background-image: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
-    .titlebar button.appmenu, .titlebar button.appmenu:backdrop, .titlebar button.appmenu:hover, .titlebar button.appmenu:hover:backdrop, .titlebar button.appmenu:active, .titlebar button.appmenu:active:backdrop, .titlebar button.appmenu:checked, .titlebar button.appmenu:checked:backdrop,
-    headerbar button.appmenu,
-    headerbar button.appmenu:backdrop,
-    headerbar button.appmenu:hover,
-    headerbar button.appmenu:hover:backdrop,
-    headerbar button.appmenu:active,
-    headerbar button.appmenu:active:backdrop,
-    headerbar button.appmenu:checked,
-    headerbar button.appmenu:checked:backdrop {
-      background: transparent; }
-=======
-    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6); }
->>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
+    background: linear-gradient(to bottom, #3f3f3f, #141414); }
     .titlebar button:hover, .titlebar button:active, .titlebar button:checked,
     headerbar button:hover,
     headerbar button:active,
@@ -2252,122 +2202,8 @@ GraniteWidgetsWelcome {
       color: rgba(255, 255, 255, 0.3);
       box-shadow: none;
       text-shadow: none;
-<<<<<<< HEAD
       border-color: #758173;
       background-image: linear-gradient(to bottom, #758173, #444b43); }
-    .titlebar button.suggested-action,
-    headerbar button.suggested-action {
-      font-weight: bold;
-      min-height: 22px;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      border-radius: 6px;
-      font-weight: normal;
-      color: white;
-      background-color: #2f2f2f;
-      text-shadow: none;
-      box-shadow: none; }
-      .titlebar button.suggested-action:hover,
-      headerbar button.suggested-action:hover {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00c1e4;
-        text-shadow: none; }
-      .titlebar button.suggested-action:active,
-      headerbar button.suggested-action:active {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background: #00c1e4;
-        text-shadow: none; }
-      .titlebar button.suggested-action:disabled,
-      headerbar button.suggested-action:disabled {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00c1e4;
-        text-shadow: none; }
-        .titlebar button.suggested-action:disabled label,
-        headerbar button.suggested-action:disabled label {
-          color: rgba(255, 255, 255, 0.5); }
-      .titlebar button.suggested-action:backdrop,
-      headerbar button.suggested-action:backdrop {
-        color: rgba(255, 255, 255, 0.4);
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00c1e4;
-        text-shadow: none;
-        border-radius: 6px; }
-      .titlebar button.suggested-action:backdrop:disabled,
-      headerbar button.suggested-action:backdrop:disabled {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00c1e4;
-        text-shadow: none; }
-    .titlebar button.destructive-action,
-    headerbar button.destructive-action {
-      font-weight: bold;
-      min-height: 22px;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      border-radius: 6px;
-      font-weight: normal;
-      color: white;
-      background-color: #2f2f2f;
-      text-shadow: none;
-      box-shadow: none; }
-      .titlebar button.destructive-action:hover,
-      headerbar button.destructive-action:hover {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ce1138;
-        text-shadow: none; }
-      .titlebar button.destructive-action:active,
-      headerbar button.destructive-action:active {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background: #ce1138;
-        text-shadow: none; }
-      .titlebar button.destructive-action:disabled,
-      headerbar button.destructive-action:disabled {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ce1138;
-        text-shadow: none; }
-        .titlebar button.destructive-action:disabled label,
-        headerbar button.destructive-action:disabled label {
-          color: rgba(255, 255, 255, 0.5); }
-      .titlebar button.destructive-action:backdrop,
-      headerbar button.destructive-action:backdrop {
-        color: rgba(255, 255, 255, 0.4);
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ce1138;
-        text-shadow: none;
-        border-radius: 6px; }
-      .titlebar button.destructive-action:backdrop:disabled,
-      headerbar button.destructive-action:backdrop:disabled {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ce1138;
-        text-shadow: none; }
-    .titlebar button.titlebutton,
-    headerbar button.titlebutton {
-      color: transparent;
-      box-shadow: none;
-      border: none;
-      background-color: transparent;
-      background-repeat: no-repeat; }
-      .titlebar button.titlebutton:hover, .titlebar button.titlebutton:active, .titlebar button.titlebutton:checked, .titlebar button.titlebutton:backdrop, .titlebar button.titlebutton:backdrop:hover, .titlebar button.titlebutton *,
-      headerbar button.titlebutton:hover,
-      headerbar button.titlebutton:active,
-      headerbar button.titlebutton:checked,
-      headerbar button.titlebutton:backdrop,
-      headerbar button.titlebutton:backdrop:hover,
-      headerbar button.titlebutton * {
-        color: transparent;
-        box-shadow: none;
-        background-color: transparent; }
-=======
-      border-color: #495aff;
-      background-image: linear-gradient(to bottom, #495aff, #0015e2); }
->>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
   .titlebar:not(headerbar) .linked > button, .titlebar .linked > button,
   .titlebar:not(headerbar) headerbar .linked > button,
   .titlebar headerbar .linked > button, .titlebar:not(headerbar) .path-bar-box button, .titlebar .path-bar-box button,
@@ -3474,12 +3310,7 @@ paned.vertical > separator {
   padding-right: 0; }
 
 #NautilusPathBar {
-<<<<<<< HEAD
   color: #f8f8f2;
-  border-radius: 6px;
-=======
-  color: #31363D;
->>>>>>> 4f84e28 (Gnome 47: Improve header bar appearance to get a better consistency)
   text-shadow: none;
   box-shadow: none;
   border: 1px solid rgba(12, 12, 12, 0.8);
