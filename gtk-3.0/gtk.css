@@ -2137,7 +2137,6 @@ GraniteWidgetsWelcome {
   .titlebar button,
   headerbar button {
     color: #f8f8f2;
-    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid rgba(12, 12, 12, 0.8);
@@ -2192,7 +2191,6 @@ GraniteWidgetsWelcome {
     headerbar button:active,
     headerbar button:checked {
       color: #fefefe;
-      border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
       border-color: rgba(12, 12, 12, 0.8);
@@ -2203,7 +2201,6 @@ GraniteWidgetsWelcome {
     headerbar button:backdrop:disabled {
       color: rgba(248, 248, 242, 0.2);
       background-color: transparent;
-      border-radius: 4px;
       text-shadow: none;
       box-shadow: none; }
     .titlebar button:backdrop:hover, .titlebar button:backdrop:active, .titlebar button:backdrop:checked,
@@ -2211,7 +2208,6 @@ GraniteWidgetsWelcome {
     headerbar button:backdrop:active,
     headerbar button:backdrop:checked {
       color: rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
       border-color: rgba(12, 12, 12, 0.8);
@@ -2624,7 +2620,6 @@ GraniteWidgetsWelcome {
   .titlebar .path-bar-box headerbar button:checked,
   headerbar .path-bar-box button:checked {
     color: #fefefe;
-    border-radius: 4px;
     box-shadow: none;
     text-shadow: none;
     border-color: rgba(12, 12, 12, 0.8);
@@ -2643,7 +2638,6 @@ GraniteWidgetsWelcome {
     .titlebar .path-bar-box headerbar button:checked:backdrop,
     headerbar .path-bar-box button:checked:backdrop {
       color: rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
       border-color: rgba(12, 12, 12, 0.8);
@@ -2673,7 +2667,6 @@ GraniteWidgetsWelcome {
   headerbar .path-bar-box widget > .text-button:last-child {
     border-radius: 0px 4px 4px 0px;
     color: #fefefe;
-    border-radius: 4px;
     box-shadow: none;
     text-shadow: none;
     border-color: rgba(12, 12, 12, 0.8);
@@ -6247,43 +6240,34 @@ ConversationListView {
 .nemo-window toolbar.primary-toolbar {
   margin-bottom: -1px;
   background: #191919; }
-  .nemo-window toolbar.primary-toolbar button {
+  .nemo-window toolbar.primary-toolbar button, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button {
     color: #f8f8f2;
-    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid rgba(12, 12, 12, 0.8);
     font-weight: normal;
-    background: linear-gradient(to bottom, #3f3f3f, #1d1d1d);
-    min-height: 24px;
-    padding: 3px; }
-    .nemo-window toolbar.primary-toolbar button:hover {
+    background: linear-gradient(to bottom, #3f3f3f, #1d1d1d); }
+    .nemo-window toolbar.primary-toolbar button:hover, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button:hover, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button:active, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button:checked {
       color: #fefefe;
-      border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
       border-color: rgba(12, 12, 12, 0.8);
       background-image: linear-gradient(to bottom, #758173, #444b43); }
-    .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
-      color: #fefefe;
-      outline-color: rgba(254, 254, 254, 0.3);
-      background: #758173;
-      text-shadow: none; }
-      .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
-        color: rgba(254, 254, 254, 0.5);
-        background-color: transparent;
-        border-radius: 4px;
-        text-shadow: none;
-        box-shadow: none; }
-    .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
-      color: rgba(248, 248, 242, 0.4);
+    .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button:backdrop, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button:disabled, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button:backdrop:disabled {
+      color: rgba(248, 248, 242, 0.2);
       background-color: transparent;
-      border-radius: 4px;
       text-shadow: none;
       box-shadow: none; }
+  .nemo-window toolbar.primary-toolbar .path-bar button {
+    margin-right: -1px; }
+  .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button {
+    background: transparent;
+    border: none; }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
 .nemo-window .nemo-inactive-pane iconview {
   background-color: #181818; }
+.nemo-window grid > paned > separator {
+  background-image: image(#1d1d1d); }
 
 .caja-notebook .frame {
   border-width: 0 0 1px; }
@@ -6326,7 +6310,6 @@ ConversationListView {
   .caja-navigation-window paned button.image-button,
   .caja-navigation-window paned .caja-pathbar button {
     color: #f8f8f2;
-    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid rgba(12, 12, 12, 0.8);
@@ -6336,7 +6319,6 @@ ConversationListView {
     .caja-navigation-window paned .caja-pathbar button:hover,
     .caja-navigation-window paned .caja-pathbar button:checked {
       color: #fefefe;
-      border-radius: 4px;
       box-shadow: none;
       text-shadow: none;
       border-color: rgba(12, 12, 12, 0.8);
@@ -6369,7 +6351,6 @@ ConversationListView {
     -gtk-icon-transform: scale(0.72); }
   .thunar toolbar.horizontal button.flat.image-button:hover {
     color: #fefefe;
-    border-radius: 4px;
     box-shadow: none;
     text-shadow: none;
     border-color: rgba(12, 12, 12, 0.8);
@@ -6379,7 +6360,6 @@ ConversationListView {
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button,
 .thunar toolbar .path-bar-button {
   color: #f8f8f2;
-  border-radius: 4px;
   text-shadow: none;
   box-shadow: none;
   border: 1px solid rgba(12, 12, 12, 0.8);
