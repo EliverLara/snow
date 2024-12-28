@@ -48,12 +48,22 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   
 /* thunar sidepane */
 .thunar scrolledwindow.sidebar treeview.view {
-    background: darken($base_color, 2%);
-    padding: 1.5px; 
+    background: $base_color;
+    padding: 4px; 
+    @if $variant=='light' {
+        box-shadow: -10px 0px 12px rgba(162, 162, 165, 0.21) inset,
+                10px -7px 12px $base_color inset,
+                10px 7px 12px $base_color inset;
+    }
     &:hover, &:selected {
-        background: $selected_bg_color;
-        color: $selected_fg_color;
-        border-radius: 0;
-        box-shadow: none;
+        background: if($variant == 'light', transparentize( lighten($bg_color, 3%), 0.4), transparentize(lighten($base_color, 7%), 0.4));
+        color: #ACACAC;
+        box-shadow: 2px 0px 0px 0px $selected_bg_color inset;
     }
 }
+
+.thunar paned separator {
+    background-image: image($base_color);
+}
+
+.thunar .frame { border-color: transparent; }
