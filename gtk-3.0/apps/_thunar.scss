@@ -49,11 +49,14 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 /* thunar sidepane */
 .thunar scrolledwindow.sidebar treeview.view {
     background: darken($base_color, 2%);
-    padding: 1.5px; 
+    padding: 4px; 
     &:hover, &:selected {
-        background: $selected_bg_color;
-        color: $selected_fg_color;
-        border-radius: 0;
-        box-shadow: none;
+        background: if($variant == 'light', transparentize( lighten($bg_color, 3%), 0.4), transparentize(lighten($base_color, 7%), 0.4));
+        color: #ACACAC;
+        box-shadow: 4px 0px 0px 0px $selected_bg_color inset;
     }
 }
+
+.thunar paned separator { background: image($base_color); }
+
+.thunar .frame { border-color: transparent; }

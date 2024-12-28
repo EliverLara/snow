@@ -6398,11 +6398,16 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 /* thunar sidepane */
 .thunar scrolledwindow.sidebar treeview.view {
   background: #1b1b1b;
-  padding: 1.5px; }
+  padding: 4px; }
   .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:selected {
-    background: #758173;
-    color: #fefefe;
-    border-radius: 0;
-    box-shadow: none; }
+    background: rgba(50, 50, 50, 0.6);
+    color: #ACACAC;
+    box-shadow: 4px 0px 0px 0px #758173 inset; }
+
+.thunar paned separator {
+  background: image(#202020); }
+
+.thunar .frame {
+  border-color: transparent; }
 
 /*# sourceMappingURL=gtk.css.map */
