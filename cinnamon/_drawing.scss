@@ -85,7 +85,7 @@
   // focused button
   //
     color: $fg_color;
-    background-color: $button_bg;
+    background-color: darken($bg_color, 13%);
     border: 1px solid $selected_bg_color;
     box-shadow: inset 0 2px 4px transparentize($button_bg, 0.95);
     border-radius: 8px;
@@ -96,7 +96,7 @@
   // focused button
   //
     color: $fg_color;
-    background-color: $button_bg;
+    background-color: darken($bg_color, 13%);
     border: 1px solid $selected_bg_color;
     box-shadow: inset 0 2px 4px transparentize($button_bg, 0.95);
     border-radius: 8px;
@@ -107,7 +107,7 @@
   // hovered button
   //
     color: $fg_color;
-    background-color: lighten($button_bg, 5%);
+    background-color: darken($bg_color, 13%);
     border: 1px solid $button_border;
     box-shadow: inset 0 2px 4px transparentize(lighten($button_bg, 5%), 0.95);
     text-shadow: none;
