@@ -5734,6 +5734,30 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .-vala-panel-appmenu-private > menuitem:first-child > label {
   color: #f8f8f2; }
 
+#XfceNotifyWindow {
+  background-color: rgba(0, 0, 0, 0.99);
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid rgba(12, 12, 12, 0.8);
+  color: #f8f8f2;
+  padding: 40px; }
+  #XfceNotifyWindow:hover, #XfceNotifyWindow:focus {
+    background-color: #2d2d2d; }
+  #XfceNotifyWindow label, #XfceNotifyWindow image {
+    color: #f8f8f2; }
+  #XfceNotifyWindow button {
+    font-weight: normal;
+    color: #f8f8f2;
+    background-color: #1f1f1f;
+    text-shadow: none; }
+    #XfceNotifyWindow button:hover {
+      color: #f8f8f2;
+      outline-color: rgba(248, 248, 242, 0.3);
+      background-color: #758173;
+      text-shadow: none; }
+      #XfceNotifyWindow button:hover label {
+        color: #fefefe; }
+
 /********
  * Gala *
  *******/

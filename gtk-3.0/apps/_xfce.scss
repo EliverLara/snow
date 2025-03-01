@@ -70,3 +70,23 @@
 .-vala-panel-appmenu-private > menuitem:first-child > label {
     color: $fg_color;
 }
+
+// Notifications
+
+#XfceNotifyWindow {
+  background-color: $panel_bg_color;
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid $borders_color;
+  color: $fg_color;
+  padding: 40px;
+  &:hover, &:focus { background-color: lighten($base_color, 5%); }
+  label, image { color: $fg_color; }
+  button { 
+    @include button(normal); 
+    &:hover {
+      @include button(hover, $selected_bg_color);
+      label { color: $selected_fg_color; }
+    }
+  }
+}
