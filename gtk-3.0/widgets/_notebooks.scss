@@ -4,9 +4,9 @@
 notebook {
   > header {
     padding: 1px;
-    border-color: $borders_color;
+    border-color: $base_color;
     border-width: 1px;
-    background-color: $base_color;
+    background-color: mix($base_color, $headerbar_color, 20%);
 
     &:backdrop {
       border-color: $backdrop_borders_color;
@@ -18,7 +18,7 @@ notebook {
     &.top {
       border-bottom-style: solid;
       > tabs {
-        margin-bottom: -3px;
+        margin-bottom: -2px;
         > tab {
 
 
@@ -43,9 +43,9 @@ notebook {
 
           &:checked { 
             background-color: $base_color; 
-            box-shadow: -1px 0 0 $borders_color,
-            0px 1px 0 $borders_color,
-            1px 0 0 $borders_color;
+            box-shadow: -1px 0 0 $base_color,
+            0px 1px 0 $base_color,
+            1px 0 0 $base_color;
           }
         }
       }
@@ -62,9 +62,9 @@ notebook {
 
           &:checked { 
             background-color: $base_color; 
-            box-shadow: 0px 1px 0 $borders_color,
-            0px -1px 0 $borders_color,
-            0px 1px 0 $borders_color;
+            box-shadow: 0px 1px 0 $base_color,
+            0px -1px 0 $base_color,
+            0px 1px 0 $base_color;
            }
         }
       }
@@ -81,9 +81,9 @@ notebook {
 
           &:checked { 
             background-color: $base_color; 
-            box-shadow: 0px 1px 0 $borders_color,
-            0px -1px 0 $borders_color,
-            1px 0 0 $borders_color;
+            box-shadow: 0px 1px 0 $base_color,
+            0px -1px 0 $base_color,
+            1px 0 0 $base_color;
           }
         }
       }
@@ -188,9 +188,9 @@ notebook {
 
       &:checked {
         color: $fg_color;
-        box-shadow: -1px 0 0 $borders_color,
-                    0px -1px 0 $borders_color,
-                    1px 0 0 $borders_color;
+        box-shadow: -1px 0 0 $base_color
+                    0px -1px 0 $base_color
+                    1px 0 0 $base_color;
         &.reorderable-page {
           border-color: transparentize($borders_color, 0.5);
           background-color: transparentize($bg_color, 0.5);

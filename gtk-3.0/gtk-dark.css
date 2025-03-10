@@ -3175,9 +3175,9 @@ assistant {
  *************/
 notebook > header {
   padding: 1px;
-  border-color: rgba(238, 238, 238, 0.1);
+  border-color: #181b28;
   border-width: 1px;
-  background-color: #181b28; }
+  background-color: #161926; }
   notebook > header:backdrop {
     border-color: rgba(91, 93, 102, 0.19);
     background-color: #161925; }
@@ -3186,7 +3186,7 @@ notebook > header {
   notebook > header.top {
     border-bottom-style: solid; }
     notebook > header.top > tabs {
-      margin-bottom: -3px; }
+      margin-bottom: -2px; }
       notebook > header.top > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.top > tabs > tab:checked {
@@ -3201,7 +3201,7 @@ notebook > header {
         box-shadow: none; }
       notebook > header.bottom > tabs > tab:checked {
         background-color: #181b28;
-        box-shadow: -1px 0 0 rgba(238, 238, 238, 0.1), 0px 1px 0 rgba(238, 238, 238, 0.1), 1px 0 0 rgba(238, 238, 238, 0.1); }
+        box-shadow: -1px 0 0 #181b28, 0px 1px 0 #181b28, 1px 0 0 #181b28; }
   notebook > header.left {
     border-right-style: solid; }
     notebook > header.left > tabs {
@@ -3210,7 +3210,7 @@ notebook > header {
         box-shadow: none; }
       notebook > header.left > tabs > tab:checked {
         background-color: #181b28;
-        box-shadow: 0px 1px 0 rgba(238, 238, 238, 0.1), 0px -1px 0 rgba(238, 238, 238, 0.1), 0px 1px 0 rgba(238, 238, 238, 0.1); }
+        box-shadow: 0px 1px 0 #181b28, 0px -1px 0 #181b28, 0px 1px 0 #181b28; }
   notebook > header.right {
     border-left-style: solid; }
     notebook > header.right > tabs {
@@ -3219,7 +3219,7 @@ notebook > header {
         box-shadow: none; }
       notebook > header.right > tabs > tab:checked {
         background-color: #181b28;
-        box-shadow: 0px 1px 0 rgba(238, 238, 238, 0.1), 0px -1px 0 rgba(238, 238, 238, 0.1), 1px 0 0 rgba(238, 238, 238, 0.1); }
+        box-shadow: 0px 1px 0 #181b28, 0px -1px 0 #181b28, 1px 0 0 #181b28; }
   notebook > header.top > tabs > arrow {
     border-top-style: none; }
   notebook > header.bottom > tabs > arrow {
@@ -3284,7 +3284,7 @@ notebook > header {
         background-color: transparent; }
     notebook > header tab:checked {
       color: #C3C7D1;
-      box-shadow: -1px 0 0 rgba(238, 238, 238, 0.1), 0px -1px 0 rgba(238, 238, 238, 0.1), 1px 0 0 rgba(238, 238, 238, 0.1); }
+      box-shadow: -1px 0 0 #181b28 0px -1px 0 #181b28 1px 0 0 #181b28; }
       notebook > header tab:checked.reorderable-page {
         border-color: rgba(238, 238, 238, 0);
         background-color: rgba(22, 25, 37, 0.5); }
