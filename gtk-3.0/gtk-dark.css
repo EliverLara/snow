@@ -2114,7 +2114,7 @@ GraniteWidgetsWelcome {
 .titlebar:not(headerbar), .titlebar, headerbar {
   padding: 0 13px;
   min-height: 34px;
-  background: #0d0d0d;
+  background: #0a0a0a;
   color: #f8f8f2;
   border-radius: 0; }
   .titlebar:backdrop,
@@ -2804,7 +2804,7 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none; }
 .titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
-  background: #0d0d0d; }
+  background: #0a0a0a; }
 
 /**************
  * GtkInfoBar *
@@ -3007,7 +3007,7 @@ row {
  *********/
 menubar,
 .menubar {
-  background-color: #191919;
+  background-color: #121212;
   color: #f8f8f2;
   -GtkWidget-window-dragging: true;
   padding: 0px;
@@ -3154,7 +3154,7 @@ notebook > header {
   padding: 1px;
   border-color: rgba(12, 12, 12, 0.8);
   border-width: 1px;
-  background-color: #202020; }
+  background-color: #0f0f0f; }
   notebook > header:backdrop {
     border-color: rgba(14, 14, 14, 0.82);
     background-color: #191919; }
@@ -4798,7 +4798,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
 .budgie-popover.background {
   border-radius: 2px;
   padding: 0;
-  background: #0d0d0d;
+  background: #0a0a0a;
   background-clip: border-box;
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.35);
   border: 1px solid black; }
@@ -5254,7 +5254,7 @@ button.raven-trigger {
 .raven {
   padding: 0;
   color: #f8f8f2;
-  background: #0d0d0d;
+  background: #0a0a0a;
   transition: 170ms ease-out; }
   .raven .raven-header {
     min-height: 32px;
@@ -5560,10 +5560,10 @@ headerbar .budgie-run-dialog list row:selected .subtitle {
   min-height: 16px; }
   .budgie-menubar arrow.top {
     -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-    border-bottom: 1px solid rgba(51, 51, 50, 0.928); }
+    border-bottom: 1px solid rgba(45, 45, 44, 0.928); }
   .budgie-menubar arrow.bottom {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-    border-top: 1px solid rgba(51, 51, 50, 0.928); }
+    border-top: 1px solid rgba(45, 45, 44, 0.928); }
 .budgie-menubar menuitem accelerator {
   color: rgba(248, 248, 242, 0.35); }
 .budgie-menubar menuitem check, .budgie-menubar menuitem radio {
@@ -6174,7 +6174,7 @@ ConversationListView {
   padding-top: 20px;
   padding-bottom: 0px;
   border-style: none;
-  background-color: #191919;
+  background-color: #121212;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
@@ -6259,7 +6259,7 @@ ConversationListView {
     color: #fefefe; }
 .nemo-window toolbar.primary-toolbar {
   margin-bottom: -1px;
-  background: #191919; }
+  background: #121212; }
   .nemo-window toolbar.primary-toolbar button, .nemo-window toolbar.primary-toolbar .horizontal > button.flat.image-button {
     color: #f8f8f2;
     text-shadow: none;
@@ -6361,7 +6361,7 @@ ConversationListView {
 
 /* thunar */
 .thunar toolbar {
-  background-color: #191919; }
+  background-color: #121212; }
 
 /* buttons in toolbar */
 .thunar toolbar.horizontal button.flat.image-button {

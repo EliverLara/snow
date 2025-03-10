@@ -6,7 +6,7 @@ notebook {
     padding: 1px;
     border-color: $borders_color;
     border-width: 1px;
-    background-color: $base_color;
+    background-color: darken($headerbar_color, 1%);
 
     &:backdrop {
       border-color: $backdrop_borders_color;
