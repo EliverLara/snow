@@ -2305,8 +2305,9 @@ $base_padding: 6px;
 .quick-toggle {
   border-radius: 99px;
   &:checked { 
-    @include button(active, lighten($bg_color, 12%));
-    color: $selected_fg_color;
+    @include button(active);
+    &:hover { @include button(active, transparentize(darken($selected_bg_color, 6%), 0.2)); }
+    &, &:hover { color: $selected_fg_color; }
   }
 
   &, &:hover, &:checked { text-shadow: none; }
@@ -2324,7 +2325,7 @@ $base_padding: 6px;
   //.quick-toggle-icon, .quick-toggle-arrow { icon-size: $base_icon_size; }
 }
 
-.quick-menu-toggle {
+.quick-menu-toggle, .quick-toggle-has-menu {
   &:ltr > StBoxLayout { padding-right: 0; }
   &:rtl > StBoxLayout { padding-left: 0; }
 
@@ -2340,18 +2341,25 @@ $base_padding: 6px;
   }
 
 
-  & .quick-toggle-arrow {
-    @include button(normal);
+  & .quick-toggle-arrow, & .quick-toggle-menu-button {
+    background-color: darken($bg_color, 9%);
     padding: $base_padding $base_padding*1.75;
     &:checked { 
-      @include button(active, darken($base_color, 3%));
-      color: $selected_fg_color;
-      border-width: 0;
+      @include button(active, darken($selected_bg_color, 7%));
+      &:hover { @include button(active, transparentize(darken($selected_bg_color, 5%), 0.1)); }
+      &, &:hover {
+        color: $selected_fg_color;
+        border-width: 0;
+      }
     }
+
+    &:hover { background-color: darken($bg_color, 14%);}
   
     &:ltr { border-radius: 0 99px 99px 0; }
     &:rtl { border-radius: 99px 0 0 99px; }
   }
+
+  & .quick-toggle-separator { width: 0px; }
 }
 
 .quick-toggle-menu {
