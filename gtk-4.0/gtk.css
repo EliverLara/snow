@@ -2155,7 +2155,7 @@ GraniteWidgetsWelcome {
 .titlebar:not(headerbar), .titlebar, headerbar {
   padding: 0 6px;
   min-height: 38px;
-  background: #0d0d0d;
+  background: #0a0a0a;
   color: #f8f8f2;
   border-radius: 0; }
   .titlebar:backdrop,
@@ -2634,10 +2634,10 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none; }
 .titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
-  background: #0d0d0d; }
+  background: #0a0a0a; }
 
 .sidebar-pane .top-bar, .sidebar-pane .top-bar headerbar, .content-pane .top-bar, .content-pane .top-bar headerbar {
-  background-color: #191919; }
+  background-color: #121212; }
 
 /**************
  * GtkInfoBar *
@@ -2907,7 +2907,7 @@ columnview.complex.data-table > listview > row > cell {
  *********/
 menubar,
 .menubar {
-  background-color: #191919;
+  background-color: #121212;
   color: #f8f8f2;
   padding: 0px;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1); }
@@ -3233,7 +3233,7 @@ tabbar:backdrop .box > .start-action,
 tabbar:backdrop .box > .end-action {
   filter: opacity(1); }
 tabbar tabbox {
-  background-color: #1b1b1b;
+  background-color: #161616;
   padding: 0px;
   color: #f8f8f2; }
   tabbar tabbox:backdrop {
@@ -3372,7 +3372,8 @@ paned.vertical > separator {
   headerbar .pathbar button > .horizontal > image.subtitle {
     padding: 3px 0px 3px 12px;
     border-right: none;
-    margin-right: -6px; }
+    margin-right: -6px;
+    border-radius: 6px 0px 0px 6px; }
   #NautilusPathBar button, .pathbar button {
     background: transparent;
     border: none;
@@ -3380,6 +3381,17 @@ paned.vertical > separator {
     padding: 0; }
     #NautilusPathBar button:hover, #NautilusPathBar button:active, #NautilusPathBar button:checked, .pathbar button:hover, .pathbar button:active, .pathbar button:checked {
       color: #758173; }
+  #NautilusPathBar .flat.popup, .pathbar .flat.popup {
+    margin: 0; }
+    #NautilusPathBar .flat.popup button, .pathbar .flat.popup button {
+      padding: 4px 6px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px; }
+      #NautilusPathBar .flat.popup button:hover, #NautilusPathBar .flat.popup button:active, #NautilusPathBar .flat.popup button:checked, .pathbar .flat.popup button:hover, .pathbar .flat.popup button:active, .pathbar .flat.popup button:checked {
+        color: #fefefe;
+        outline-color: rgba(254, 254, 254, 0.3);
+        background-color: #758173;
+        text-shadow: none; }
   #NautilusPathBar .current-dir label, .pathbar .current-dir label {
     padding: 1px 12px; }
   #NautilusPathBar .current-dir label, #NautilusPathBar .current-dir image, .pathbar .current-dir label, .pathbar .current-dir image {
@@ -4778,7 +4790,7 @@ window {
     padding: 4px;
     border: solid 1px rgba(12, 12, 12, 0.8);
     border-radius: 0;
-    box-shadow: inset 0 0 0 4px rgba(12, 12, 12, 0.8), inset 0 0 0 3px #191919, inset 0 1px rgba(248, 248, 242, 0.07); }
+    box-shadow: inset 0 0 0 4px rgba(12, 12, 12, 0.8), inset 0 0 0 3px #121212, inset 0 1px rgba(248, 248, 242, 0.07); }
     window.solid-csd:backdrop {
       box-shadow: inset 0 0 0 4px rgba(12, 12, 12, 0.8), inset 0 0 0 3px #191919, inset 0 1px rgba(248, 248, 242, 0.07); }
   window.maximized, window.fullscreen {
@@ -4907,7 +4919,7 @@ treeview.view:selected {
 .budgie-popover.background {
   border-radius: 2px;
   padding: 0;
-  background: #0d0d0d;
+  background: #0a0a0a;
   background-clip: border-box;
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.35);
   border: 1px solid black; }
@@ -5363,7 +5375,7 @@ button.raven-trigger {
 .raven {
   padding: 0;
   color: #f8f8f2;
-  background: #0d0d0d;
+  background: #0a0a0a;
   transition: 170ms ease-out; }
   .raven .raven-header {
     min-height: 32px;
@@ -5669,10 +5681,10 @@ headerbar .budgie-run-dialog list row:selected .subtitle {
   min-height: 16px; }
   .budgie-menubar arrow.top {
     -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-    border-bottom: 1px solid rgba(51, 51, 50, 0.928); }
+    border-bottom: 1px solid rgba(45, 45, 44, 0.928); }
   .budgie-menubar arrow.bottom {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-    border-top: 1px solid rgba(51, 51, 50, 0.928); }
+    border-top: 1px solid rgba(45, 45, 44, 0.928); }
 .budgie-menubar menuitem accelerator {
   color: rgba(248, 248, 242, 0.35); }
 .budgie-menubar menuitem check, .budgie-menubar menuitem radio {
@@ -6221,7 +6233,7 @@ ConversationListView .view .cell, ConversationListView iconview .cell {
   padding-top: 20px;
   padding-bottom: 0px;
   border-style: none;
-  background-color: #191919;
+  background-color: #121212;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);

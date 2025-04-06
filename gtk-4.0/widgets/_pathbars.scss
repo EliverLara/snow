@@ -59,6 +59,7 @@
     padding: 3px 0px 3px 12px; 
     border-right: none;
     margin-right: -6px;
+    border-radius: 6px 0px 0px 6px;
   }
 
   // Reset path buttons appearance
@@ -69,6 +70,19 @@
     padding: 0;
     &:hover, &:active, &:checked {
       color: $selected_bg_color;
+    }
+  }
+
+  // Current directory options button
+  .flat.popup {
+    margin: 0;
+    button {
+      padding: 4px 6px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &:hover, &:active, &:checked {
+        @include button(hover, $selected_bg_color, $selected_fg_color);
+      }
     }
   }
 
