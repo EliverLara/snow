@@ -35,7 +35,7 @@
     }
 
     &.dialog.message {
-      border-radius: $_window_radius;
+      border-radius: 10px;
       box-shadow: 0 1px 2px transparentize(black, 0.8),
                   0 0 0 1px transparentize($_wm_border, 0.1);
     }
