@@ -2844,6 +2844,8 @@ row.activatable.button {
   color: #31363D;
   background-color: whitesmoke;
   text-shadow: none; }
+row .view, row iconview {
+  background-color: transparent; }
 
 columnview > listview > row {
   padding: 0; }
