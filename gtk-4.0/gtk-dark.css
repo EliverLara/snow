@@ -5817,6 +5817,44 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: #C3C7D1;
   opacity: 1; }
 
+/*******************
+ * Calendar sidebar *
+********************/
+datechooser .flat, datechooser .flat:backdrop {
+  background-color: transparent;
+  border-color: transparent; }
+datechooser .flat:hover, datechooser .flat:active, datechooser .flat:checked {
+  color: #fefefe;
+  outline-color: rgba(254, 254, 254, 0.3);
+  background: #495aff;
+  text-shadow: none; }
+datechooser .circular.day.text-button {
+  padding: 6px;
+  border-radius: 50%;
+  min-height: 22px;
+  min-width: 22px;
+  border: none; }
+  datechooser .circular.day.text-button.flat.other-month, datechooser .circular.day.text-button.flat.non-workday {
+    color: #6d707b; }
+  datechooser .circular.day.text-button.today {
+    color: #495aff; }
+  datechooser .circular.day.text-button:active, datechooser .circular.day.text-button:selected {
+    color: #fefefe;
+    outline-color: rgba(254, 254, 254, 0.3);
+    background: #495aff;
+    text-shadow: none;
+    font-weight: bold; }
+
+agenda-view list.background {
+  padding: 8px; }
+  agenda-view list.background .caption-heading, agenda-view list.background .dim-label.no-events, agenda-view list.background label.no-events.separator, agenda-view list.background .titlebar .no-events.subtitle, .titlebar agenda-view list.background .no-events.subtitle,
+  agenda-view list.background headerbar .no-events.subtitle,
+  headerbar agenda-view list.background .no-events.subtitle {
+    color: #C3C7D1; }
+
+datechooser, datechooser:backdrop, agenda-view list.background, agenda-view list.background:backdrop {
+  background-color: #181b28; }
+
 /******************************
  * Gnome system monitor graph *
 ******************************/
