@@ -200,12 +200,7 @@ agenda-view list.background {
 
 datechooser, agenda-view list.background {
   &, &:backdrop { 
-    background-color: $base_color;  
-    @if $variant=='light' {
-    box-shadow: -10px 0px 12px rgba(162, 162, 165, 0.15) inset,
-                10px -7px 12px $base_color inset,
-                10px 7px 12px $base_color inset;
-    }
+    background-color: $headerbar_color;  
   }
 }
 
