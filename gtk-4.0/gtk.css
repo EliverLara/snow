@@ -4328,12 +4328,12 @@ placessidebar row {
       placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
         color: #fefefe; }
 
-.bottom-bar {
+.sidebar-pane .bottom-bar {
   background-color: #f8f8f8; }
-  .bottom-bar button.toggle:not(.image-button) {
+  .sidebar-pane .bottom-bar button.toggle:not(.image-button) {
     background-color: transparent;
     border: none; }
-    .bottom-bar button.toggle:not(.image-button) .view, .bottom-bar button.toggle:not(.image-button) iconview {
+    .sidebar-pane .bottom-bar button.toggle:not(.image-button) .view, .sidebar-pane .bottom-bar button.toggle:not(.image-button) iconview {
       background-color: transparent; }
 
 /*****************
