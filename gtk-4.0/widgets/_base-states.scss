@@ -98,6 +98,7 @@ flowbox {
 }
 
 gridview {
+  padding: 10px;
   > child {
     padding: 6px;
     box { //cells
