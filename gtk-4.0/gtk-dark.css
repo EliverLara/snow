@@ -610,11 +610,15 @@ button.suggested-action {
   color: white;
   border-radius: 6px;
   background: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
+  button.suggested-action label {
+    color: #fff; }
   .selection-mode windowcontrols button, button.suggested-action.flat {
     box-shadow: none;
     color: white;
     border-radius: 6px;
     background: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
+    .selection-mode windowcontrols button label, button.suggested-action.flat label {
+      color: #fff; }
   button.suggested-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -664,7 +668,8 @@ button.suggested-action {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #00c1e4;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.7; }
     button.suggested-action:disabled:active, button.suggested-action:disabled:checked {
       color: rgba(254, 254, 254, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
@@ -721,11 +726,15 @@ button.destructive-action {
   color: white;
   border-radius: 6px;
   background: linear-gradient(to right, #bc4e9c, #f80759); }
+  button.destructive-action label {
+    color: #fff; }
   button.destructive-action.flat {
     box-shadow: none;
     color: white;
     border-radius: 6px;
     background: linear-gradient(to right, #11998e 0%, #38ef7d 100%); }
+    button.destructive-action.flat label {
+      color: #fff; }
   button.destructive-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -775,7 +784,8 @@ button.destructive-action {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #ce1138;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.7; }
     button.destructive-action:disabled:active, button.destructive-action:disabled:checked {
       color: rgba(254, 254, 254, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);

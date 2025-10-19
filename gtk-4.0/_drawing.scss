@@ -208,6 +208,7 @@
     box-shadow: none;
   //  border: 1px solid $c;
     color: white;
+    label { color: #fff; }
     border-radius: 6px;
     background: $suggested_bg_color; }
 
@@ -215,6 +216,7 @@
       box-shadow: none;
     //  border: 1px solid $c;
       color: white;
+      label { color: #fff; }
       border-radius: 6px;
       background: $destructive_bg_color; 
     }
