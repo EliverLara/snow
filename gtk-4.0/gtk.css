@@ -2754,7 +2754,7 @@ banner revealer widget {
     banner revealer widget button.suggested-action:hover, banner revealer widget button.suggested-action:active {
       background-color: rgba(255, 255, 255, 0.5); }
     banner revealer widget button.suggested-action:backdrop {
-      background-color: rgba(255, 255, 255, 0.3); }
+      background-color: rgba(255, 255, 255, 0.1); }
 
 levelbar.horizontal trough > block {
   min-height: 5px;
@@ -4352,13 +4352,14 @@ placessidebar row {
       placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
         color: #fefefe; }
 
-.sidebar-pane .bottom-bar {
-  background-color: #f8f8f8; }
-  .sidebar-pane .bottom-bar button.toggle:not(.image-button) {
-    background-color: transparent;
-    border: none; }
-    .sidebar-pane .bottom-bar button.toggle:not(.image-button) .view, .sidebar-pane .bottom-bar button.toggle:not(.image-button) iconview {
-      background-color: transparent; }
+.sidebar-pane, .sidebar-pane .bottom-bar {
+  background-color: #f8f8f8;
+  box-shadow: none; }
+.sidebar-pane .bottom-bar button.toggle:not(.image-button) {
+  background-color: transparent;
+  border: none; }
+  .sidebar-pane .bottom-bar button.toggle:not(.image-button) .view, .sidebar-pane .bottom-bar button.toggle:not(.image-button) iconview {
+    background-color: transparent; }
 
 /*****************
  * GtkSpinButton *
@@ -5878,6 +5879,12 @@ datechooser .circular.day.text-button {
     background: #495aff;
     text-shadow: none;
     font-weight: bold; }
+datechooser .weekday, datechooser .weeknum {
+  color: #8c8e92; }
+datechooser .weeknum {
+  background-color: #eeeeee; }
+datechooser .current-week {
+  background-color: rgba(140, 142, 146, 0.1); }
 
 agenda-view list.background {
   padding: 8px; }
@@ -5886,9 +5893,15 @@ agenda-view list.background {
   headerbar agenda-view list.background .no-events.subtitle {
     color: #31363D; }
 
-datechooser, datechooser:backdrop, agenda-view list.background, agenda-view list.background:backdrop {
-  background-color: #f8f8f8;
-  box-shadow: -10px 0px 12px rgba(162, 162, 165, 0.15) inset, 10px -7px 12px #f8f8f8 inset, 10px 7px 12px #f8f8f8 inset; }
+datechooser, datechooser:backdrop,
+agenda-view list.background,
+agenda-view list.background:backdrop,
+.calendar-list,
+.calendar-list:backdrop {
+  background-color: #f8f8f8; }
+
+popover datechooser {
+  background-color: transparent; }
 
 /******************************
  * Gnome system monitor graph *

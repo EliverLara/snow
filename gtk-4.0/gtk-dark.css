@@ -4345,13 +4345,14 @@ placessidebar row {
       placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
         color: #fefefe; }
 
-.sidebar-pane .bottom-bar {
-  background-color: #181b28; }
-  .sidebar-pane .bottom-bar button.toggle:not(.image-button) {
-    background-color: transparent;
-    border: none; }
-    .sidebar-pane .bottom-bar button.toggle:not(.image-button) .view, .sidebar-pane .bottom-bar button.toggle:not(.image-button) iconview {
-      background-color: transparent; }
+.sidebar-pane, .sidebar-pane .bottom-bar {
+  background-color: #181b28;
+  box-shadow: none; }
+.sidebar-pane .bottom-bar button.toggle:not(.image-button) {
+  background-color: transparent;
+  border: none; }
+  .sidebar-pane .bottom-bar button.toggle:not(.image-button) .view, .sidebar-pane .bottom-bar button.toggle:not(.image-button) iconview {
+    background-color: transparent; }
 
 /*****************
  * GtkSpinButton *
@@ -5868,6 +5869,12 @@ datechooser .circular.day.text-button {
     background: #495aff;
     text-shadow: none;
     font-weight: bold; }
+datechooser .weekday, datechooser .weeknum {
+  color: #6d707b; }
+datechooser .weeknum {
+  background-color: #10131b; }
+datechooser .current-week {
+  background-color: rgba(109, 112, 123, 0.1); }
 
 agenda-view list.background {
   padding: 8px; }
@@ -5876,8 +5883,15 @@ agenda-view list.background {
   headerbar agenda-view list.background .no-events.subtitle {
     color: #C3C7D1; }
 
-datechooser, datechooser:backdrop, agenda-view list.background, agenda-view list.background:backdrop {
+datechooser, datechooser:backdrop,
+agenda-view list.background,
+agenda-view list.background:backdrop,
+.calendar-list,
+.calendar-list:backdrop {
   background-color: #181b28; }
+
+popover datechooser {
+  background-color: transparent; }
 
 /******************************
  * Gnome system monitor graph *
