@@ -625,8 +625,9 @@ StScrollBar {
 
 .switcher-list .item-box {
   padding: 8px;
-  border-radius: 4px;
-  background-color: transparent; }
+  border-radius: 12px;
+  background-color: transparent;
+  color: #31363d; }
 
 .switcher-list .item-box:outlined {
   padding: 6px;
