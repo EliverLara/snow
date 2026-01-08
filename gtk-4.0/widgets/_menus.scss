@@ -12,7 +12,7 @@ menubar,
     min-height: 16px;
     padding: 4px 8px;
 
-    &:hover { //Seems like it :hover even with keyboard focus
+    &:hover, &:selected { //Seems like it :hover even with keyboard focus
       box-shadow: inset 0 -3px $selected_bg_color;
     }
 
@@ -27,7 +27,6 @@ menu,
 .menu,
 .context-menu {
   font: initial;
-  margin: 4px;
   padding: 2px 0px;
   background: $menu_color;
   border-radius: 8px;
