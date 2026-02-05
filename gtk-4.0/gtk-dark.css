@@ -315,7 +315,7 @@ button {
   button:checked {
     color: #fefefe;
     outline-color: rgba(254, 254, 254, 0.3);
-    background: #697467;
+    background-color: #697467;
     text-shadow: none;
     transition-duration: 50ms; }
   notebook > header > tabs > arrow:active,
@@ -628,7 +628,7 @@ button.suggested-action {
   button.suggested-action:active, button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #00c1e4;
+    background-color: #00c1e4;
     text-shadow: none; }
   .selection-mode windowcontrols button:backdrop, button.suggested-action:backdrop, button.suggested-action.flat:backdrop {
     color: rgba(255, 255, 255, 0.4);
@@ -744,7 +744,7 @@ button.destructive-action {
   button.destructive-action:active, button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #ce1138;
+    background-color: #ce1138;
     text-shadow: none; }
   button.destructive-action:backdrop, button.destructive-action.flat:backdrop {
     color: rgba(255, 255, 255, 0.4);
@@ -1041,20 +1041,26 @@ toggle-group {
       toggle-group toggle:checked, toggle-group toggle:checked label {
         color: #fefefe; }
 
-button.accent-button, button.accent-button:backdrop {
+/*
+  * Gnome 48 accent color buttons
+  * Gnome papers - buttons in context menu
+*/
+button.accent-button, button.accent-button:backdrop, button.color-button, button.color-button:backdrop {
   min-height: 24px;
   min-width: 24px;
-  padding: 5px;
+  padding: 3px;
   border-radius: 100%;
   background: var(--accent-bg-color);
   outline: none;
   background-clip: content-box;
   box-shadow: none;
   border: none; }
-button.accent-button:hover {
-  box-shadow: 0 0 0 3px #323232; }
-button.accent-button:checked, button.accent-button:checked:backdrop {
-  box-shadow: 0 0 0 3px var(--accent-bg-color); }
+button.accent-button:hover, button.color-button:hover {
+  box-shadow: 0 0 0 3px #323232;
+  background-color: var(--accent-bg-color); }
+button.accent-button:checked, button.accent-button:checked:backdrop, button.color-button:checked, button.color-button:checked:backdrop {
+  box-shadow: 0 0 0 3px var(--accent-bg-color);
+  background-color: var(--accent-bg-color); }
 
 /************
  * Calendar *
@@ -3460,7 +3466,7 @@ paned.vertical > separator {
   #NautilusPathBar .current-dir label, #NautilusPathBar .current-dir image, .pathbar .current-dir label, .pathbar .current-dir image {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #758173;
+    background-color: #758173;
     text-shadow: none; }
   #NautilusPathBar button.current-dir:only-child image, .pathbar button.current-dir:only-child image {
     margin-right: -6px;
@@ -5870,7 +5876,7 @@ datechooser .flat, datechooser .flat:backdrop {
 datechooser .flat:hover, datechooser .flat:active, datechooser .flat:checked {
   color: #fefefe;
   outline-color: rgba(254, 254, 254, 0.3);
-  background: #758173;
+  background-color: #758173;
   text-shadow: none; }
 datechooser .circular.day.text-button {
   padding: 6px;
@@ -5885,7 +5891,7 @@ datechooser .circular.day.text-button {
   datechooser .circular.day.text-button:active, datechooser .circular.day.text-button:selected {
     color: #fefefe;
     outline-color: rgba(254, 254, 254, 0.3);
-    background: #758173;
+    background-color: #758173;
     text-shadow: none;
     font-weight: bold; }
 datechooser .weekday, datechooser .weeknum {
@@ -6342,7 +6348,7 @@ ConversationListView .view .cell, ConversationListView iconview .cell {
   #content_frame button:active, #content_frame button:checked {
     color: #f8f8f2;
     outline-color: rgba(248, 248, 242, 0.3);
-    background: #758173;
+    background-color: #758173;
     text-shadow: none; }
   #content_frame button:disabled {
     color: #cdcdc9;
