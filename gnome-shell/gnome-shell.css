@@ -1264,6 +1264,9 @@ StScrollBar {
   .list-search-result:selected {
     background-color: #373737;
     transition-duration: 200ms; }
+  .search-provider-icon:focus,
+  .list-search-result:focus {
+    box-shadow: 0px 0px 2px 2px inset #758173 !important; }
   .search-provider-icon:active,
   .list-search-result:active, .search-provider-icon:checked,
   .list-search-result:checked {
@@ -1398,6 +1401,12 @@ StScrollBar {
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
+  .app-well-app:focus,
+  .app-well-app.app-folder:focus,
+  .show-apps:focus,
+  .grid-search-result:focus,
+  .overview-tile:focus {
+    box-shadow: 0px 0px 2px 2px inset #758173 !important; }
 
 .dash-item-container .show-apps:hover .overview-icon, .dash-item-container .show-apps:focus .overview-icon, .dash-item-container .show-apps:selected .overview-icon, .dash-item-container .show-apps:active .overview-icon, .dash-item-container .show-apps:checked .overview-icon,
 .dash-item-container .overview-tile:hover .overview-icon,
