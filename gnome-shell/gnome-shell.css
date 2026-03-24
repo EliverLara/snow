@@ -1315,6 +1315,10 @@ StScrollBar {
 .search-provider-icon {
   padding: 15px; }
 
+.search-provider-icon:focus,
+.list-search-result:focus {
+  box-shadow: 0px 0px 2px 2px inset #495aff !important; }
+
 /* DASHBOARD */
 .dash-background {
   background-color: rgba(243, 243, 243, 0.85); }
@@ -1412,6 +1416,12 @@ StScrollBar {
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
+  .app-well-app:focus,
+  .app-well-app.app-folder:focus,
+  .show-apps:focus,
+  .grid-search-result:focus,
+  .overview-tile:focus {
+    box-shadow: 0px 0px 2px 2px inset #495aff !important; }
 
 .dash-item-container .show-apps:hover .overview-icon, .dash-item-container .show-apps:focus .overview-icon, .dash-item-container .show-apps:selected .overview-icon, .dash-item-container .show-apps:active .overview-icon, .dash-item-container .show-apps:checked .overview-icon,
 .dash-item-container .overview-tile:hover .overview-icon,

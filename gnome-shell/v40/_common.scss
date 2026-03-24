@@ -1524,6 +1524,10 @@ $slider_size: 16px;
   .list-search-provider-content { spacing: 20px; }
   .search-provider-icon { padding: 15px; }
 
+  .search-provider-icon,
+  .list-search-result {
+    &:focus { box-shadow: 0px 0px 2px 2px inset $selected_bg_color !important; }
+  }
 
   /* DASHBOARD */
 
@@ -1616,6 +1620,10 @@ $slider_size: 16px;
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 2px 2px inset $selected_bg_color !important;
     }
 
   }
